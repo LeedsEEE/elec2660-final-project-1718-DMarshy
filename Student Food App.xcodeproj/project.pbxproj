@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACB8367F1FC302D600B419B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8367E1FC302D600B419B0 /* main.m */; };
+		ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836811FC302D600B419B0 /* AppDelegate.m */; };
+		ACB836851FC302D600B419B0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836841FC302D600B419B0 /* FirstViewController.m */; };
+		ACB836881FC302D600B419B0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836871FC302D600B419B0 /* SecondViewController.m */; };
+		ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB836891FC302D600B419B0 /* Main.storyboard */; };
+		ACB8368D1FC302D600B419B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368C1FC302D600B419B0 /* Assets.xcassets */; };
+		ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */; };
+		ACB8369B1FC302D600B419B0 /* Student_Food_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8369A1FC302D600B419B0 /* Student_Food_AppTests.m */; };
+		ACB836A61FC302D600B419B0 /* Student_Food_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACB836971FC302D600B419B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACB836721FC302D500B419B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACB836791FC302D500B419B0;
+			remoteInfo = "Student Food App";
+		};
+		ACB836A21FC302D600B419B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACB836721FC302D500B419B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACB836791FC302D500B419B0;
+			remoteInfo = "Student Food App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACB8367A1FC302D600B419B0 /* Student Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB8367E1FC302D600B419B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACB836801FC302D600B419B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ACB836811FC302D600B419B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ACB836831FC302D600B419B0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		ACB836841FC302D600B419B0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		ACB836861FC302D600B419B0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		ACB836871FC302D600B419B0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		ACB8368A1FC302D600B419B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACB8368C1FC302D600B419B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACB8368F1FC302D600B419B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACB836911FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB836961FC302D600B419B0 /* Student Food AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Food AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB8369A1FC302D600B419B0 /* Student_Food_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student_Food_AppTests.m; sourceTree = "<group>"; };
+		ACB8369C1FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student_Food_AppUITests.m; sourceTree = "<group>"; };
+		ACB836A71FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACB836771FC302D500B419B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB836931FC302D600B419B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB8369E1FC302D600B419B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACB836711FC302D500B419B0 = {
+			isa = PBXGroup;
+			children = (
+				ACB8367C1FC302D600B419B0 /* Student Food App */,
+				ACB836991FC302D600B419B0 /* Student Food AppTests */,
+				ACB836A41FC302D600B419B0 /* Student Food AppUITests */,
+				ACB8367B1FC302D600B419B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACB8367B1FC302D600B419B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACB8367A1FC302D600B419B0 /* Student Food App.app */,
+				ACB836961FC302D600B419B0 /* Student Food AppTests.xctest */,
+				ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACB8367C1FC302D600B419B0 /* Student Food App */ = {
+			isa = PBXGroup;
+			children = (
+				ACB836801FC302D600B419B0 /* AppDelegate.h */,
+				ACB836811FC302D600B419B0 /* AppDelegate.m */,
+				ACB836831FC302D600B419B0 /* FirstViewController.h */,
+				ACB836841FC302D600B419B0 /* FirstViewController.m */,
+				ACB836861FC302D600B419B0 /* SecondViewController.h */,
+				ACB836871FC302D600B419B0 /* SecondViewController.m */,
+				ACB836891FC302D600B419B0 /* Main.storyboard */,
+				ACB8368C1FC302D600B419B0 /* Assets.xcassets */,
+				ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */,
+				ACB836911FC302D600B419B0 /* Info.plist */,
+				ACB8367D1FC302D600B419B0 /* Supporting Files */,
+			);
+			path = "Student Food App";
+			sourceTree = "<group>";
+		};
+		ACB8367D1FC302D600B419B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACB8367E1FC302D600B419B0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACB836991FC302D600B419B0 /* Student Food AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACB8369A1FC302D600B419B0 /* Student_Food_AppTests.m */,
+				ACB8369C1FC302D600B419B0 /* Info.plist */,
+			);
+			path = "Student Food AppTests";
+			sourceTree = "<group>";
+		};
+		ACB836A41FC302D600B419B0 /* Student Food AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */,
+				ACB836A71FC302D600B419B0 /* Info.plist */,
+			);
+			path = "Student Food AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACB836791FC302D500B419B0 /* Student Food App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB836AA1FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food App" */;
+			buildPhases = (
+				ACB836761FC302D500B419B0 /* Sources */,
+				ACB836771FC302D500B419B0 /* Frameworks */,
+				ACB836781FC302D500B419B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Student Food App";
+			productName = "Student Food App";
+			productReference = ACB8367A1FC302D600B419B0 /* Student Food App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACB836951FC302D600B419B0 /* Student Food AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB836AD1FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food AppTests" */;
+			buildPhases = (
+				ACB836921FC302D600B419B0 /* Sources */,
+				ACB836931FC302D600B419B0 /* Frameworks */,
+				ACB836941FC302D600B419B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACB836981FC302D600B419B0 /* PBXTargetDependency */,
+			);
+			name = "Student Food AppTests";
+			productName = "Student Food AppTests";
+			productReference = ACB836961FC302D600B419B0 /* Student Food AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACB836A01FC302D600B419B0 /* Student Food AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB836B01FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food AppUITests" */;
+			buildPhases = (
+				ACB8369D1FC302D600B419B0 /* Sources */,
+				ACB8369E1FC302D600B419B0 /* Frameworks */,
+				ACB8369F1FC302D600B419B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACB836A31FC302D600B419B0 /* PBXTargetDependency */,
+			);
+			name = "Student Food AppUITests";
+			productName = "Student Food AppUITests";
+			productReference = ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACB836721FC302D500B419B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Daniel Marshall [el16dm]";
+				TargetAttributes = {
+					ACB836791FC302D500B419B0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					ACB836951FC302D600B419B0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACB836791FC302D500B419B0;
+					};
+					ACB836A01FC302D600B419B0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACB836791FC302D500B419B0;
+					};
+				};
+			};
+			buildConfigurationList = ACB836751FC302D500B419B0 /* Build configuration list for PBXProject "Student Food App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACB836711FC302D500B419B0;
+			productRefGroup = ACB8367B1FC302D600B419B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACB836791FC302D500B419B0 /* Student Food App */,
+				ACB836951FC302D600B419B0 /* Student Food AppTests */,
+				ACB836A01FC302D600B419B0 /* Student Food AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACB836781FC302D500B419B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */,
+				ACB8368D1FC302D600B419B0 /* Assets.xcassets in Resources */,
+				ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB836941FC302D600B419B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB8369F1FC302D600B419B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACB836761FC302D500B419B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB836881FC302D600B419B0 /* SecondViewController.m in Sources */,
+				ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */,
+				ACB836851FC302D600B419B0 /* FirstViewController.m in Sources */,
+				ACB8367F1FC302D600B419B0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB836921FC302D600B419B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB8369B1FC302D600B419B0 /* Student_Food_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB8369D1FC302D600B419B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB836A61FC302D600B419B0 /* Student_Food_AppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACB836981FC302D600B419B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACB836791FC302D500B419B0 /* Student Food App */;
+			targetProxy = ACB836971FC302D600B419B0 /* PBXContainerItemProxy */;
+		};
+		ACB836A31FC302D600B419B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACB836791FC302D500B419B0 /* Student Food App */;
+			targetProxy = ACB836A21FC302D600B419B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACB836891FC302D600B419B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACB8368A1FC302D600B419B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACB8368F1FC302D600B419B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACB836A81FC302D600B419B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACB836A91FC302D600B419B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACB836AB1FC302D600B419B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Student Food App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACB836AC1FC302D600B419B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Student Food App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ACB836AE1FC302D600B419B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Student Food AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Student Food App.app/Student Food App";
+			};
+			name = Debug;
+		};
+		ACB836AF1FC302D600B419B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Student Food AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Student Food App.app/Student Food App";
+			};
+			name = Release;
+		};
+		ACB836B11FC302D600B419B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Student Food AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Student Food App";
+			};
+			name = Debug;
+		};
+		ACB836B21FC302D600B419B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Student Food AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Student Food App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACB836751FC302D500B419B0 /* Build configuration list for PBXProject "Student Food App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB836A81FC302D600B419B0 /* Debug */,
+				ACB836A91FC302D600B419B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACB836AA1FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB836AB1FC302D600B419B0 /* Debug */,
+				ACB836AC1FC302D600B419B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACB836AD1FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB836AE1FC302D600B419B0 /* Debug */,
+				ACB836AF1FC302D600B419B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACB836B01FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB836B11FC302D600B419B0 /* Debug */,
+				ACB836B21FC302D600B419B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACB836721FC302D500B419B0 /* Project object */;
+}
