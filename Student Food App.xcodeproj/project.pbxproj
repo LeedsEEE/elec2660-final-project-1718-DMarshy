@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */; };
+		ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */; };
+		ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */; };
+		ACA61D381FC309E900BE5127 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D371FC309E900BE5127 /* Recipe.m */; };
+		ACA61D3B1FC30C0C00BE5127 /* RecipeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */; };
 		ACB8367F1FC302D600B419B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8367E1FC302D600B419B0 /* main.m */; };
 		ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836811FC302D600B419B0 /* AppDelegate.m */; };
 		ACB836851FC302D600B419B0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836841FC302D600B419B0 /* FirstViewController.m */; };
@@ -16,6 +21,7 @@
 		ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */; };
 		ACB8369B1FC302D600B419B0 /* Student_Food_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8369A1FC302D600B419B0 /* Student_Food_AppTests.m */; };
 		ACB836A61FC302D600B419B0 /* Student_Food_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */; };
+		ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE71D011FC32241006D93BD /* RecipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
+		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
+		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewController.h; sourceTree = "<group>"; };
+		ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewController.m; sourceTree = "<group>"; };
+		ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingTableViewController.h; sourceTree = "<group>"; };
+		ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingTableViewController.m; sourceTree = "<group>"; };
+		ACA61D361FC309E900BE5127 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		ACA61D371FC309E900BE5127 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDataModel.h; sourceTree = "<group>"; };
+		ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDataModel.m; sourceTree = "<group>"; };
 		ACB8367A1FC302D600B419B0 /* Student Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB8367E1FC302D600B419B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACB836801FC302D600B419B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +70,8 @@
 		ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student_Food_AppUITests.m; sourceTree = "<group>"; };
 		ACB836A71FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		ACE71D011FC32241006D93BD /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +125,22 @@
 				ACB836801FC302D600B419B0 /* AppDelegate.h */,
 				ACB836811FC302D600B419B0 /* AppDelegate.m */,
 				ACB836831FC302D600B419B0 /* FirstViewController.h */,
+				ACE71D001FC32241006D93BD /* RecipeViewController.h */,
+				ACE71D011FC32241006D93BD /* RecipeViewController.m */,
 				ACB836841FC302D600B419B0 /* FirstViewController.m */,
 				ACB836861FC302D600B419B0 /* SecondViewController.h */,
 				ACB836871FC302D600B419B0 /* SecondViewController.m */,
 				ACB836891FC302D600B419B0 /* Main.storyboard */,
+				ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */,
+				ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */,
+				ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */,
+				ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */,
+				ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */,
+				ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */,
+				ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */,
+				ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */,
+				ACA61D361FC309E900BE5127 /* Recipe.h */,
+				ACA61D371FC309E900BE5127 /* Recipe.m */,
 				ACB8368C1FC302D600B419B0 /* Assets.xcassets */,
 				ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */,
 				ACB836911FC302D600B419B0 /* Info.plist */,
@@ -278,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA61D3B1FC30C0C00BE5127 /* RecipeDataModel.m in Sources */,
+				ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */,
+				ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */,
 				ACB836881FC302D600B419B0 /* SecondViewController.m in Sources */,
+				ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */,
+				ACA61D381FC309E900BE5127 /* Recipe.m in Sources */,
 				ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */,
 				ACB836851FC302D600B419B0 /* FirstViewController.m in Sources */,
+				ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */,
 				ACB8367F1FC302D600B419B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +549,7 @@
 				ACB836AC1FC302D600B419B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACB836AD1FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food AppTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +558,7 @@
 				ACB836AF1FC302D600B419B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACB836B01FC302D600B419B0 /* Build configuration list for PBXNativeTarget "Student Food AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +567,7 @@
 				ACB836B21FC302D600B419B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
