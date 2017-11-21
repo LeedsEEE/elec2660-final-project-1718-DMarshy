@@ -16,11 +16,16 @@
     if (self) {
         self.inventoryArray = [NSMutableArray array];
         
+        Inventory *addItem = [[Inventory alloc] init];
+        addItem.itemName = @"Add Item";
+        addItem.itemCount = 0;
+        
         Inventory *bread = [[Inventory alloc] init];
         bread.itemName = @"Bread";
         bread.itemCount = 2;
-        
-        [self.inventoryArray addObject: bread];
+ 
+        [self.inventoryArray addObject: addItem];//index 0
+        [self.inventoryArray addObject: bread];// index 1
         
         
         

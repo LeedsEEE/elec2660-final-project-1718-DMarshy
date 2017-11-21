@@ -39,7 +39,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     NSInteger numberOfRows;
     numberOfRows = self.inventory.inventoryArray.count;
     
@@ -48,12 +48,23 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
     
-  
-    // Configure the cell...
     
-    return cell;
+    if (indexPath.row == 0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
+        return cell;
+    } else {
+        InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
+        Inventory *tempItem = [self.inventory.inventoryArray objectAtIndex:indexPath.row];
+        cell.invItemName.text = tempItem.itemName;
+        cell.userInteractionEnabled = false;
+        
+        cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
+        cell.stepperValue.value = tempItem.itemCount;
+        return cell;
+    }
+    
+    
 }
 
 
@@ -91,15 +102,17 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-}
-*/
+    
+
+
+    }
 
 
 @end

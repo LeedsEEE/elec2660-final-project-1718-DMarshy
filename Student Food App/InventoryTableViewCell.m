@@ -10,12 +10,10 @@
 
 @implementation InventoryTableViewCell
 
-NSInteger Count;
 
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
 
     // Configure the view for the selected state
     // Initialization code
@@ -27,19 +25,10 @@ NSInteger Count;
 
 }
 
+
 - (IBAction)StepperPressed:(UIStepper *)sender {
-    
-
-    
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
   
-    Inventory *tempInventory = [self.invItem.inventoryArray objectAtIndex:indexPath.row];
-    self.invItemName.text = tempInventory.itemName;
-    
-    return cell;
+    self.stepperCount.text = [NSString stringWithFormat:@"%d",(int)sender.value];
     
 }
 @end

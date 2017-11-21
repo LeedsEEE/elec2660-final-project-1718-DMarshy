@@ -131,46 +131,67 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mbE-Ny-yLu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InventoryCell" id="cYY-s3-fEv" customClass="InventoryTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InventoryCell2" textLabel="0CM-at-Sqq" style="IBUITableViewCellStyleDefault" id="cYY-s3-fEv" customClass="InventoryTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cYY-s3-fEv" id="IFx-os-AKm">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="y4M-bm-DoK">
-                                            <connections>
-                                                <action selector="StepperPressed:" destination="cYY-s3-fEv" eventType="valueChanged" id="7pH-xd-OY6"/>
-                                            </connections>
-                                        </stepper>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlY-GT-HJO">
-                                            <accessibility key="accessibilityConfiguration" label="ItemNameLabel"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Add Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0CM-at-Sqq">
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfA-RM-NvO">
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.77108190753021277" green="1" blue="0.82671783906892782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="lPe-sj-GfE" kind="show" identifier="AddItem" id="sgp-K9-mtb"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InventoryCell" id="ciO-Ri-Cwr" customClass="InventoryTableViewCell">
+                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciO-Ri-Cwr" id="AcW-et-WMY">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="06i-Xx-zYl">
+                                            <connections>
+                                                <action selector="StepperPressed:" destination="ciO-Ri-Cwr" eventType="valueChanged" id="Glg-R4-qiE"/>
+                                            </connections>
+                                        </stepper>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsU-KW-GP4">
                                             <accessibility key="accessibilityConfiguration" identifier="countLabel" label="CountLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZ4-s0-QLJ">
+                                            <accessibility key="accessibilityConfiguration" label="ItemNameLabel"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="AfA-RM-NvO" firstAttribute="top" secondItem="IFx-os-AKm" secondAttribute="topMargin" constant="2" id="Nzy-gq-hb8"/>
-                                        <constraint firstItem="y4M-bm-DoK" firstAttribute="top" secondItem="IFx-os-AKm" secondAttribute="topMargin" constant="-2" id="bxl-nx-bbd"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="y4M-bm-DoK" secondAttribute="trailing" id="cpi-8I-Yk5"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="KlY-GT-HJO" secondAttribute="trailing" constant="280" id="f8D-1m-KvJ"/>
-                                        <constraint firstItem="y4M-bm-DoK" firstAttribute="leading" secondItem="AfA-RM-NvO" secondAttribute="trailing" constant="8" id="gY4-De-efv"/>
-                                        <constraint firstItem="KlY-GT-HJO" firstAttribute="top" secondItem="IFx-os-AKm" secondAttribute="topMargin" constant="3" id="oZS-mi-zhf"/>
+                                        <constraint firstItem="YsU-KW-GP4" firstAttribute="top" secondItem="AcW-et-WMY" secondAttribute="topMargin" constant="2" id="8zR-1V-oSL"/>
+                                        <constraint firstItem="YZ4-s0-QLJ" firstAttribute="top" secondItem="AcW-et-WMY" secondAttribute="topMargin" constant="3" id="FkA-hv-OWv"/>
+                                        <constraint firstItem="YZ4-s0-QLJ" firstAttribute="leading" secondItem="AcW-et-WMY" secondAttribute="leadingMargin" constant="12" id="V5V-hn-F3G"/>
+                                        <constraint firstItem="06i-Xx-zYl" firstAttribute="top" secondItem="AcW-et-WMY" secondAttribute="topMargin" constant="-2" id="cUl-Sm-kMp"/>
+                                        <constraint firstItem="06i-Xx-zYl" firstAttribute="leading" secondItem="YsU-KW-GP4" secondAttribute="trailing" constant="8" id="muW-t1-0Al"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="06i-Xx-zYl" secondAttribute="trailing" id="sLr-ye-EG3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="invItemName" destination="KlY-GT-HJO" id="fnJ-yT-XZO"/>
-                                    <outlet property="stepperCount" destination="AfA-RM-NvO" id="ahN-Qe-pFw"/>
-                                    <segue destination="lPe-sj-GfE" kind="show" id="sgp-K9-mtb"/>
+                                    <outlet property="invItemName" destination="YZ4-s0-QLJ" id="OGB-Lb-fwY"/>
+                                    <outlet property="stepperCount" destination="YsU-KW-GP4" id="u6I-nY-pWA"/>
+                                    <outlet property="stepperValue" destination="06i-Xx-zYl" id="4uJ-va-cKC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
