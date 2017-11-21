@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5367FD1FC44EE400DC947A /* Inventory.m */; };
+		AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368001FC44F3800DC947A /* InventoryDataModel.m */; };
+		AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368031FC4542600DC947A /* InventoryViewController.m */; };
+		AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368091FC461C000DC947A /* InventoryTableViewCell.m */; };
 		ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */; };
 		ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */; };
 		ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */; };
@@ -42,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC5367FC1FC44EE400DC947A /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
+		AC5367FD1FC44EE400DC947A /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inventory.m; sourceTree = "<group>"; };
+		AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryDataModel.h; sourceTree = "<group>"; };
+		AC5368001FC44F3800DC947A /* InventoryDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryDataModel.m; sourceTree = "<group>"; };
+		AC5368021FC4542600DC947A /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
+		AC5368031FC4542600DC947A /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
+		AC5368081FC461C000DC947A /* InventoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewCell.h; sourceTree = "<group>"; };
+		AC5368091FC461C000DC947A /* InventoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewCell.m; sourceTree = "<group>"; };
 		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
 		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
 		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewController.h; sourceTree = "<group>"; };
@@ -122,25 +134,33 @@
 		ACB8367C1FC302D600B419B0 /* Student Food App */ = {
 			isa = PBXGroup;
 			children = (
+				ACB836891FC302D600B419B0 /* Main.storyboard */,
+				ACA61D361FC309E900BE5127 /* Recipe.h */,
+				ACA61D371FC309E900BE5127 /* Recipe.m */,
+				ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */,
+				ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */,
+				ACE71D001FC32241006D93BD /* RecipeViewController.h */,
+				ACE71D011FC32241006D93BD /* RecipeViewController.m */,
+				ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */,
+				ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */,
+				AC5367FC1FC44EE400DC947A /* Inventory.h */,
+				AC5367FD1FC44EE400DC947A /* Inventory.m */,
+				AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */,
+				AC5368001FC44F3800DC947A /* InventoryDataModel.m */,
+				AC5368021FC4542600DC947A /* InventoryViewController.h */,
+				AC5368031FC4542600DC947A /* InventoryViewController.m */,
+				ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */,
+				ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */,
+				AC5368081FC461C000DC947A /* InventoryTableViewCell.h */,
+				AC5368091FC461C000DC947A /* InventoryTableViewCell.m */,
 				ACB836801FC302D600B419B0 /* AppDelegate.h */,
 				ACB836811FC302D600B419B0 /* AppDelegate.m */,
 				ACB836831FC302D600B419B0 /* FirstViewController.h */,
-				ACE71D001FC32241006D93BD /* RecipeViewController.h */,
-				ACE71D011FC32241006D93BD /* RecipeViewController.m */,
 				ACB836841FC302D600B419B0 /* FirstViewController.m */,
 				ACB836861FC302D600B419B0 /* SecondViewController.h */,
 				ACB836871FC302D600B419B0 /* SecondViewController.m */,
-				ACB836891FC302D600B419B0 /* Main.storyboard */,
 				ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */,
 				ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */,
-				ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */,
-				ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */,
-				ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */,
-				ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */,
-				ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */,
-				ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */,
-				ACA61D361FC309E900BE5127 /* Recipe.h */,
-				ACA61D371FC309E900BE5127 /* Recipe.m */,
 				ACB8368C1FC302D600B419B0 /* Assets.xcassets */,
 				ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */,
 				ACB836911FC302D600B419B0 /* Info.plist */,
@@ -308,13 +328,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */,
 				ACA61D3B1FC30C0C00BE5127 /* RecipeDataModel.m in Sources */,
+				AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */,
 				ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */,
 				ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */,
+				AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */,
 				ACB836881FC302D600B419B0 /* SecondViewController.m in Sources */,
 				ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */,
 				ACA61D381FC309E900BE5127 /* Recipe.m in Sources */,
 				ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */,
+				AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */,
 				ACB836851FC302D600B419B0 /* FirstViewController.m in Sources */,
 				ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */,
 				ACB8367F1FC302D600B419B0 /* main.m in Sources */,
