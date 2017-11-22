@@ -22,7 +22,7 @@
         
         Inventory *bread = [[Inventory alloc] init];
         bread.itemName = @"Bread";
-        bread.itemCount = 2;
+        bread.itemCount = 3;
  
         [self.inventoryArray addObject: addItem];//index 0
         [self.inventoryArray addObject: bread];// index 1

@@ -53,11 +53,11 @@
     if (indexPath.row == 0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
         return cell;
-    } else {
+    }
+    else {
         InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
         Inventory *tempItem = [self.inventory.inventoryArray objectAtIndex:indexPath.row];
         cell.invItemName.text = tempItem.itemName;
-        cell.userInteractionEnabled = false;
         
         cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
         cell.stepperValue.value = tempItem.itemCount;
