@@ -58,6 +58,7 @@
         InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
         Inventory *tempItem = [self.inventory.inventoryArray objectAtIndex:indexPath.row];
         cell.invItemName.text = tempItem.itemName;
+        cell.userInteractionEnabled = true;
         
         cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
         cell.stepperValue.value = tempItem.itemCount;
