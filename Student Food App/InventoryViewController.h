@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "Inventory.h"
 #import "InventoryDataModel.h"
+#import "InventoryTableViewController.h"
 
-@interface InventoryViewController : UIViewController
-- (IBAction)inventoryItemTextField:(UITextField *)sender;
+@interface InventoryViewController : UIViewController <UITextFieldDelegate>
+- (IBAction)InventoryTextField:(UITextField *)sender;
+@property (nonatomic, strong) InventoryDataModel *inventory;
+
 
 @end

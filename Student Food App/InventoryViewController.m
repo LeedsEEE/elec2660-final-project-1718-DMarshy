@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+         self.inventory.inventoryArray = [NSMutableArray alloc];
     // Do any additional setup after loading the view.
 }
 
@@ -34,6 +35,18 @@
 }
 */
 
-- (IBAction)inventoryItemTextField:(UITextField *)sender {
+
+
+
+- (IBAction)InventoryTextField:(UITextField *)sender {
+    
+     Inventory *tempItemName = [[Inventory alloc] init];
+     tempItemName.itemName = sender.text;
+     tempItemName.itemCount = 0;
+     [self.inventory.inventoryArray addObject: tempItemName];
+     NSLog(@"item = %@",sender.text);
+  
 }
+
+
 @end

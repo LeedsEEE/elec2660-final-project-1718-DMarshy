@@ -8,16 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Inventory.h"
-#import "InventoryDataModel.h"
 #import "InventoryTableViewCell.h"
 #import "InventoryViewController.h"
+#import "InventoryDataModel.h"
 
 @interface InventoryTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) InventoryDataModel *inventory;
-
-
-
-
 
 @end
