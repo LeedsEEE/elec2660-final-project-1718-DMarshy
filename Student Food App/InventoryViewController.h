@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Inventory.h"
 #import "InventoryDataModel.h"
+#import "Inventory.h"
 #import "InventoryTableViewController.h"
 
 @interface InventoryViewController : UIViewController <UITextFieldDelegate>
