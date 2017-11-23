@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "InventoryViewController.h"
 #import "InventoryDataModel.h"
-#import "Inventory.h"
 #import "InventoryTableViewCell.h"
 
 @interface InventoryTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
