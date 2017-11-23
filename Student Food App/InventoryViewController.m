@@ -44,7 +44,7 @@
      tempItemName.itemName = sender.text;
      tempItemName.itemCount = 0;
      [self.inventory.inventoryArray addObject: tempItemName];
-     NSLog(@"item = %@",sender.text);
+    NSLog(@"item = %@",tempItemName.itemName);
 
 }
 

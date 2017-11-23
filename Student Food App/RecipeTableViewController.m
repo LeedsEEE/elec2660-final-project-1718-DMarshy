@@ -34,13 +34,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     NSInteger numberOfRows;
-    if (section == 0){
+    if(section == 0){
+        numberOfRows=1;
+    }
+    else if (section == 1){
         numberOfRows = self.recipe.cheapRecipes.count;
     }
     return numberOfRows;
@@ -49,14 +52,19 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-    
-    if (indexPath.section == 0){
+    if(indexPath.section == 0){
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddRecipeCell" forIndexPath:indexPath];
+        cell.textLabel.text = @"Add Recipe";
+        return cell;
+    }
+    else {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
         Recipe *tempRecipe = [self.recipe.cheapRecipes objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
+            return cell;
     }
 
-    return cell;
+
 }
 
 
@@ -104,9 +112,10 @@
     
     if ([[segue identifier] isEqualToString:@"ShowRecipe"]){
         RecipeViewController *destinationViewController = [segue destinationViewController];
+    
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        if (indexPath.section == 0) { //cheap meals
+        if (indexPath.section == 1) { //cheap meals
             Recipe *tempRecipe = [self.recipe.cheapRecipes objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
             

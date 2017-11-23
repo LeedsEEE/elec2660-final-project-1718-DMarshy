@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.inventory = [[InventoryDataModel alloc] init];
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -48,9 +49,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
+
     
     if (indexPath.row == 0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
+
         return cell;
     }
     else {
@@ -61,8 +64,10 @@
         
         cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
         cell.stepperValue.value = tempItem.itemCount;
+
         return cell;
     }
+    
     
     
 }
