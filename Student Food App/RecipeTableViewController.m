@@ -34,7 +34,22 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 2;
+    return 3;
+}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *sectionName;
+    switch (section)
+    {
+        case 1:
+            sectionName = @"Cheap Meals";
+            break;
+            // ...
+        case 2:
+            sectionName = @"Meat Meals";
+            break;
+    }
+    return sectionName; //https://stackoverflow.com/questions/10505708/how-to-set-the-uitableview-section-title-programmatically-iphone-ipad
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -46,28 +61,36 @@
     else if (section == 1){
         numberOfRows = self.recipe.cheapRecipes.count;
     }
+    else if (section == 2){
+        numberOfRows = self.recipe.meatRecipes.count;
+    }
     return numberOfRows;
 
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
     if(indexPath.section == 0){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddRecipeCell" forIndexPath:indexPath];
         cell.textLabel.text = @"Add Recipe";
         return cell;
     }
-    else {
+    else if (indexPath.section == 1){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
         Recipe *tempRecipe = [self.recipe.cheapRecipes objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
             return cell;
     }
-
-
-}
-
-
+    else{
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
+        Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+        cell.textLabel.text = tempRecipe.name;
+        return cell;
+    }
+    
+    
+    }
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -118,7 +141,10 @@
         if (indexPath.section == 1) { //cheap meals
             Recipe *tempRecipe = [self.recipe.cheapRecipes objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
-            
+        }
+        if (indexPath.section == 2) { //cheap meals
+            Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+            destinationViewController.recipe = tempRecipe;
         }
     }
 }

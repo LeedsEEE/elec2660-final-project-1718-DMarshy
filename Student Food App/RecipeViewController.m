@@ -13,12 +13,20 @@
 @end
 
 @implementation RecipeViewController
+@synthesize managedObjectContext = _managedObjectContext;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.recipeNameLabel.text = self.recipe.name;
-}
+    self.managedObjectContext = self.managedObjectContext;
+    self.ingredientsLabel.text = self.recipe.ingredients;
+    self.instructionsLabel.text = self.recipe.instructions;
+    self.instructionsLabel.layer.borderColor = [UIColor blackColor].CGColor;
+    self.ingredientsLabel.layer.borderColor = [UIColor blackColor].CGColor;
+    self.instructionsLabel.layer.borderWidth = 1.0f;
+    self.ingredientsLabel.layer.borderWidth = 1.0f;
+        }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

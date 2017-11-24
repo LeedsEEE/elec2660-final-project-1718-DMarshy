@@ -25,6 +25,8 @@
 		ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */; };
 		ACB8369B1FC302D600B419B0 /* Student_Food_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8369A1FC302D600B419B0 /* Student_Food_AppTests.m */; };
 		ACB836A61FC302D600B419B0 /* Student_Food_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */; };
+		ACDC94621FC858F700227F1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC94611FC858F700227F1F /* CoreData.framework */; };
+		ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */; };
 		ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE71D011FC32241006D93BD /* RecipeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student_Food_AppUITests.m; sourceTree = "<group>"; };
 		ACB836A71FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDC94611FC858F700227F1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		ACE71D011FC32241006D93BD /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDC94621FC858F700227F1F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,7 @@
 				ACB836991FC302D600B419B0 /* Student Food AppTests */,
 				ACB836A41FC302D600B419B0 /* Student Food AppUITests */,
 				ACB8367B1FC302D600B419B0 /* Products */,
+				ACDC94601FC858F700227F1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +171,7 @@
 				ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */,
 				ACB836911FC302D600B419B0 /* Info.plist */,
 				ACB8367D1FC302D600B419B0 /* Supporting Files */,
+				ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */,
 			);
 			path = "Student Food App";
 			sourceTree = "<group>";
@@ -193,6 +200,14 @@
 				ACB836A71FC302D600B419B0 /* Info.plist */,
 			);
 			path = "Student Food AppUITests";
+			sourceTree = "<group>";
+		};
+		ACDC94601FC858F700227F1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC94611FC858F700227F1F /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +345,7 @@
 			files = (
 				AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */,
 				ACA61D3B1FC30C0C00BE5127 /* RecipeDataModel.m in Sources */,
+				ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */,
 				AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */,
 				ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */,
 				ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */,
@@ -594,6 +610,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */,
+			);
+			currentVersion = ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ACB836721FC302D500B419B0 /* Project object */;
 }

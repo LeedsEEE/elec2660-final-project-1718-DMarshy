@@ -13,10 +13,11 @@
 @end
 
 @implementation InventoryViewController
-
+@synthesize managedObjectContext = _managedObjectContext;
 - (void)viewDidLoad {
     [super viewDidLoad];
         self.inventory.inventoryArray = [NSMutableArray alloc];
+        self.managedObjectContext = self.managedObjectContext;
     // Do any additional setup after loading the view.
 }
 

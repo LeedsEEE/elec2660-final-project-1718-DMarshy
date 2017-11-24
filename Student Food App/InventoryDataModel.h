@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "inventory.h"
+#import <CoreData/CoreData.h>
 
 @interface InventoryDataModel : NSObject
 @property (nonatomic, strong) NSMutableArray *inventoryArray;

@@ -10,10 +10,12 @@
 #import "InventoryDataModel.h"
 #import "Inventory.h"
 #import "InventoryTableViewController.h"
+#import <CoreData/CoreData.h> 
 
 @interface InventoryViewController : UIViewController <UITextFieldDelegate>
 - (IBAction)InventoryTextField:(UITextField *)sender;
 @property (nonatomic, strong) InventoryDataModel *inventory;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 
 @end

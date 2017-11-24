@@ -48,16 +48,16 @@
         <scene sceneID="l3o-Ko-cVm">
             <objects>
                 <tableViewController id="LtX-HS-R3j" customClass="RecipeTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aNB-7P-ka5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="aNB-7P-ka5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddRecipeCell" id="YSM-K7-tmq">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YSM-K7-tmq" id="rKz-0a-SE8">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" red="0.55098334790000003" green="0.97680455450000003" blue="0.53628916309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
@@ -67,7 +67,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" textLabel="emF-ZC-GM0" imageView="mVG-dH-JQJ" style="IBUITableViewCellStyleDefault" id="nnL-2h-ETp">
-                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nnL-2h-ETp" id="U3x-zp-e2d">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -163,20 +163,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-zd-G7I">
+                                <frame key="frameInset" minX="67" minY="114" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-8v-ibz">
+                                <frame key="frameInset" minX="10" minY="420" width="349" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r92-ez-tP8">
+                                <frame key="frameInset" minX="10" minY="255" width="349" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rlA-5G-TYR" firstAttribute="top" secondItem="jhM-9i-ADU" secondAttribute="bottom" constant="16" id="4r0-Kd-4fv"/>
+                            <constraint firstItem="DRr-zd-G7I" firstAttribute="top" secondItem="rlA-5G-TYR" secondAttribute="bottom" constant="13.5" id="7Pt-DJ-VRd"/>
                             <constraint firstItem="rlA-5G-TYR" firstAttribute="centerX" secondItem="rRi-pR-NFX" secondAttribute="centerX" id="b0o-KU-pn4"/>
-                            <constraint firstItem="rlA-5G-TYR" firstAttribute="top" secondItem="jhM-9i-ADU" secondAttribute="bottom" constant="193" id="sIr-D6-1Z6"/>
+                            <constraint firstItem="DRr-zd-G7I" firstAttribute="centerX" secondItem="rRi-pR-NFX" secondAttribute="centerX" id="qDY-S8-K2R"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ingredientsLabel" destination="r92-ez-tP8" id="nr6-x2-khx"/>
+                        <outlet property="instructionsLabel" destination="Cg2-8v-ibz" id="SIr-fQ-Sh2"/>
+                        <outlet property="recipeImageView" destination="DRr-zd-G7I" id="2kR-8e-WKA"/>
                         <outlet property="recipeNameLabel" destination="rlA-5G-TYR" id="GTm-fJ-yS3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smr-wK-vNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="-669"/>
+            <point key="canvasLocation" x="1820" y="-669.71514242878561"/>
         </scene>
         <!--Inventory-->
         <scene sceneID="Kx4-jd-VOo">
