@@ -21,6 +21,14 @@
     // Do any additional setup after loading the view.
 }
 
+
+- (IBAction)addToList:(UIButton *)sender{
+    NSDictionary *ItemInfo = @{@"name":self.nameField.text,@"amount":self.amountTextField.text};
+    self.outputTextView.text = [InventoryItem addItemInfoFromDictionary:ItemInfo].description;
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -48,6 +56,7 @@
     NSLog(@"item = %@",tempItemName.itemName);
 
 }
+
 
 
 @end

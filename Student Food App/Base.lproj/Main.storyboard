@@ -118,28 +118,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Recipe Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rG4-4d-kGA">
-                                <frame key="frameInset" minX="87" minY="147" width="201" height="30"/>
+                                <frame key="frameInset" minX="97" minY="78" width="201" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Recipe Ingredients here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7X7-oo-bsT">
-                                <frame key="frameInset" minX="87" minY="205" width="201" height="30"/>
+                                <frame key="frameInset" minX="97" minY="126" width="201" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Recipe Instructions here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GEV-TQ-XSU">
-                                <frame key="frameInset" minX="87" minY="265" width="201" height="30"/>
+                                <frame key="frameInset" minX="97" minY="172" width="201" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wT7-2f-bvx">
+                                <frame key="frameInset" minX="16" minY="302" width="343" height="159"/>
+                                <color key="backgroundColor" red="0.2728109433" green="1" blue="0.26950986640000002" alpha="0.21505779110000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dFV-fe-hFv">
+                                <frame key="frameInset" minX="19" minY="482" width="337" height="165"/>
+                                <color key="backgroundColor" red="0.27281094329928302" green="1" blue="0.26950986635555352" alpha="0.2150577910958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JQL-RD-YLD">
+                                <frame key="frameInset" minX="11" minY="219" width="353" height="37"/>
+                                <color key="backgroundColor" red="0.2728109433" green="1" blue="0.26950986640000002" alpha="0.21505779110000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dFV-fe-hFv" firstAttribute="top" secondItem="ElN-tu-gJY" secondAttribute="bottom" constant="418" id="IUx-Km-Evp"/>
+                            <constraint firstItem="wT7-2f-bvx" firstAttribute="top" secondItem="ElN-tu-gJY" secondAttribute="bottom" constant="238" id="OqG-Rf-c1C"/>
+                            <constraint firstItem="JQL-RD-YLD" firstAttribute="centerX" secondItem="hjg-3j-y6f" secondAttribute="centerX" id="QXp-Qy-ZWQ"/>
+                            <constraint firstItem="wT7-2f-bvx" firstAttribute="centerX" secondItem="hjg-3j-y6f" secondAttribute="centerX" id="bCb-Hq-Ne8"/>
+                            <constraint firstItem="dFV-fe-hFv" firstAttribute="centerX" secondItem="hjg-3j-y6f" secondAttribute="centerX" id="eRP-3V-cJM"/>
+                            <constraint firstItem="JQL-RD-YLD" firstAttribute="top" secondItem="ElN-tu-gJY" secondAttribute="bottom" constant="155" id="uSI-eq-hYH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJ3-Ui-HRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,17 +330,46 @@
                                     <outlet property="delegate" destination="lPe-sj-GfE" id="lES-Go-BTT"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9A-bK-vNo">
+                                <state key="normal" title="Add to Inventory List"/>
+                                <connections>
+                                    <action selector="addToList:" destination="lPe-sj-GfE" eventType="touchUpInside" id="Sil-3o-OS1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Output" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-lM-eRW">
+                                <frame key="frameInset" minX="16" minY="236" width="343" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Amount here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1rs-b4-kgc">
+                                <frame key="frameInset" minX="139" minY="156" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="m9A-bK-vNo" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="119" id="4f5-36-gvR"/>
                             <constraint firstItem="FdA-Vs-aJx" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="54" id="4xS-YF-gkN"/>
+                            <constraint firstItem="1rs-b4-kgc" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="92" id="T4n-Tx-sUe"/>
+                            <constraint firstItem="Opr-lM-eRW" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="Vcc-E5-oP7"/>
+                            <constraint firstItem="1rs-b4-kgc" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="l12-g8-zBS"/>
                             <constraint firstItem="FdA-Vs-aJx" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="rws-3G-ONa"/>
+                            <constraint firstItem="m9A-bK-vNo" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="wKA-aC-Mab"/>
+                            <constraint firstItem="Opr-lM-eRW" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="172" id="zVA-6p-p1W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="1rs-b4-kgc" id="rwc-Fa-inM"/>
+                        <outlet property="nameField" destination="FdA-Vs-aJx" id="G2v-vl-b4A"/>
+                        <outlet property="outputTextView" destination="Opr-lM-eRW" id="yK0-Pd-iMk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HC9-q4-9Ui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="48"/>
+            <point key="canvasLocation" x="1820" y="47.226386806596707"/>
         </scene>
         <!--Shopping List-->
         <scene sceneID="YGv-3w-PbD">

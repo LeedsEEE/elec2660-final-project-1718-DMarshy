@@ -11,11 +11,16 @@
 #import "Inventory.h"
 #import "InventoryTableViewController.h"
 #import <CoreData/CoreData.h> 
+#import "InventoryItem+AddInventoryItem.h"
 
 @interface InventoryViewController : UIViewController <UITextFieldDelegate>
 - (IBAction)InventoryTextField:(UITextField *)sender;
 @property (nonatomic, strong) InventoryDataModel *inventory;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+- (IBAction)addToList:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITextView *outputTextView;
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+@property (weak, nonatomic) IBOutlet UITextField *amountTextField;
 
 
 @end

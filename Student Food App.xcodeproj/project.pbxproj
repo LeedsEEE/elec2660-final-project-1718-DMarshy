@@ -28,6 +28,9 @@
 		ACDC94621FC858F700227F1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC94611FC858F700227F1F /* CoreData.framework */; };
 		ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */; };
 		ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE71D011FC32241006D93BD /* RecipeViewController.m */; };
+		ACEB8F4B1FCC75240042E983 /* InventoryItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */; };
+		ACEB8F4C1FCC75240042E983 /* InventoryItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */; };
+		ACEB8F4F1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,12 @@
 		ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		ACE71D011FC32241006D93BD /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InventoryItem+CoreDataClass.h"; sourceTree = "<group>"; };
+		ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InventoryItem+CoreDataClass.m"; sourceTree = "<group>"; };
+		ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InventoryItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InventoryItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InventoryItem+AddInventoryItem.h"; sourceTree = "<group>"; };
+		ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InventoryItem+AddInventoryItem.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +149,10 @@
 		ACB8367C1FC302D600B419B0 /* Student Food App */ = {
 			isa = PBXGroup;
 			children = (
+				ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */,
+				ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */,
+				ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */,
+				ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */,
 				ACB836891FC302D600B419B0 /* Main.storyboard */,
 				ACA61D361FC309E900BE5127 /* Recipe.h */,
 				ACA61D371FC309E900BE5127 /* Recipe.m */,
@@ -151,6 +164,8 @@
 				ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */,
 				AC5367FC1FC44EE400DC947A /* Inventory.h */,
 				AC5367FD1FC44EE400DC947A /* Inventory.m */,
+				ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */,
+				ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */,
 				AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */,
 				AC5368001FC44F3800DC947A /* InventoryDataModel.m */,
 				AC5368021FC4542600DC947A /* InventoryViewController.h */,
@@ -277,6 +292,7 @@
 				TargetAttributes = {
 					ACB836791FC302D500B419B0 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					ACB836951FC302D600B419B0 = {
@@ -349,9 +365,12 @@
 				AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */,
 				ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */,
 				ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */,
+				ACEB8F4F1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m in Sources */,
 				AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */,
 				ACB836881FC302D600B419B0 /* SecondViewController.m in Sources */,
 				ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */,
+				ACEB8F4C1FCC75240042E983 /* InventoryItem+CoreDataProperties.m in Sources */,
+				ACEB8F4B1FCC75240042E983 /* InventoryItem+CoreDataClass.m in Sources */,
 				ACA61D381FC309E900BE5127 /* Recipe.m in Sources */,
 				ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */,
 				AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */,
@@ -506,10 +525,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Student Food App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Student Food App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -517,16 +540,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Student Food App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Student Food App-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		ACB836AE1FC302D600B419B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Student Food AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -539,6 +566,7 @@
 		ACB836AF1FC302D600B419B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Student Food AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -551,6 +579,7 @@
 		ACB836B11FC302D600B419B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Student Food AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-AppUITests";
@@ -562,6 +591,7 @@
 		ACB836B21FC302D600B419B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Student Food AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Student-Food-AppUITests";
