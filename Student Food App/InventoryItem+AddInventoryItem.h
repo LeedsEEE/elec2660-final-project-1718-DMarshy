@@ -10,4 +10,5 @@
 
 @interface InventoryItem (AddInventoryItem)
 + (InventoryItem *)addItemInfoFromDictionary:(NSDictionary *)ItemInfo;
+@property(readonly) NSUInteger count;
 @end

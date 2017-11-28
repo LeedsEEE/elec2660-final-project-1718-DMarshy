@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 @implementation InventoryItem (AddInventoryItem)
 
-
+@dynamic count;
 
 + (InventoryItem *)addItemInfoFromDictionary:(NSDictionary *)ItemInfo{
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];

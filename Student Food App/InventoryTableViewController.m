@@ -27,6 +27,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -43,17 +44,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     NSInteger numberOfRows;
+    
     if (section == 0){
         numberOfRows = self.inventory.inventoryArray.count;
-
     }
-   /* else{
-        NSMutableArray *InventoryArray =[[NSMutableArray alloc] init];
-        InventoryArray = [self.inventorydictionary valueForKey:@"name"];//returns array
-        NSUInteger numberOfRows = [InventoryArray count];
-            return numberOfRows;
+    else{
+        numberOfRows = self.inventorydictionary.count;
     }
-*/            return numberOfRows;
+       return numberOfRows;
 }
 
 
@@ -78,16 +76,19 @@
     }
     else{
         InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
-        NSMutableArray *InventoryArray =[[NSMutableArray alloc] init];
-        InventoryArray = [self.inventorydictionary valueForKey:@"name"];
-        Inventory *tempAddedItem = [InventoryArray objectAtIndex:indexPath.row];
-        cell.invItemName.text = tempAddedItem.itemName;
         
+
+        
+        NSMutableArray *DictionaryArray =[[NSMutableArray alloc] init];
+        DictionaryArray = [self.inventorydictionary valueForKey:@"name"];
+        Inventory *tempAddedItem = [DictionaryArray objectAtIndex:(indexPath.row-self.inventory.inventoryArray.count)];
+        cell.invItemName.text = [tempAddedItem valueForKey:@"name"];
+        NSLog(@"tempaddeditem = %@",tempAddedItem.itemName);
         cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempAddedItem.itemCount];
         cell.stepperValue.value = tempAddedItem.itemCount;
            return cell;
     }
-
+    
     }
     
     
