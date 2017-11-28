@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.inventory = [[InventoryDataModel alloc] init];
+    self.inventorydictionary = [[InventoryItem alloc] init];
 
     
     // Uncomment the following line to preserve selection between presentations.
@@ -42,9 +43,17 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     NSInteger numberOfRows;
-    numberOfRows = self.inventory.inventoryArray.count;
-    
-    return numberOfRows;
+    if (section == 0){
+        numberOfRows = self.inventory.inventoryArray.count;
+
+    }
+   /* else{
+        NSMutableArray *InventoryArray =[[NSMutableArray alloc] init];
+        InventoryArray = [self.inventorydictionary valueForKey:@"name"];//returns array
+        NSUInteger numberOfRows = [InventoryArray count];
+            return numberOfRows;
+    }
+*/            return numberOfRows;
 }
 
 
@@ -57,7 +66,7 @@
 
         return cell;
     }
-    else {
+    else if(indexPath.row >0 & indexPath.row < self.inventory.inventoryArray.count){
         
         InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
         Inventory *tempItem = [self.inventory.inventoryArray objectAtIndex:indexPath.row];
@@ -65,13 +74,25 @@
         
         cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
         cell.stepperValue.value = tempItem.itemCount;
+                return cell;
+    }
+    else{
+        InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
+        NSMutableArray *InventoryArray =[[NSMutableArray alloc] init];
+        InventoryArray = [self.inventorydictionary valueForKey:@"name"];
+        Inventory *tempAddedItem = [InventoryArray objectAtIndex:indexPath.row];
+        cell.invItemName.text = tempAddedItem.itemName;
+        
+        cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempAddedItem.itemCount];
+        cell.stepperValue.value = tempAddedItem.itemCount;
+           return cell;
+    }
 
-        return cell;
     }
     
     
     
-}
+
 
 
 /*

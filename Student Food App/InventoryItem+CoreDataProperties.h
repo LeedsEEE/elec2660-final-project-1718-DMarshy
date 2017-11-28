@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSFetchRequest<InventoryItem *> *)fetchRequest;
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *amount;
+@property  (nonatomic, strong) NSString *amount;
 
 @end
 

@@ -260,7 +260,7 @@
                                 <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciO-Ri-Cwr" id="AcW-et-WMY">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="06i-Xx-zYl">
@@ -336,8 +336,7 @@
                                     <action selector="addToList:" destination="lPe-sj-GfE" eventType="touchUpInside" id="Sil-3o-OS1"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Output" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-lM-eRW">
-                                <frame key="frameInset" minX="16" minY="236" width="343" height="135"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Output" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-lM-eRW">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -353,12 +352,14 @@
                         <constraints>
                             <constraint firstItem="m9A-bK-vNo" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="119" id="4f5-36-gvR"/>
                             <constraint firstItem="FdA-Vs-aJx" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="54" id="4xS-YF-gkN"/>
+                            <constraint firstItem="Fdt-5R-VwG" firstAttribute="top" secondItem="Opr-lM-eRW" secondAttribute="bottom" constant="247" id="Jb6-1c-9F0"/>
                             <constraint firstItem="1rs-b4-kgc" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="92" id="T4n-Tx-sUe"/>
-                            <constraint firstItem="Opr-lM-eRW" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="Vcc-E5-oP7"/>
+                            <constraint firstItem="Opr-lM-eRW" firstAttribute="top" secondItem="m9A-bK-vNo" secondAttribute="bottom" constant="23" id="hm1-fr-Ja4"/>
                             <constraint firstItem="1rs-b4-kgc" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="l12-g8-zBS"/>
+                            <constraint firstItem="Opr-lM-eRW" firstAttribute="centerX" secondItem="m9A-bK-vNo" secondAttribute="centerX" id="oUS-Xv-ZXz"/>
+                            <constraint firstItem="Opr-lM-eRW" firstAttribute="leading" secondItem="vgR-Oo-4U7" secondAttribute="leadingMargin" id="qYg-km-F9n"/>
                             <constraint firstItem="FdA-Vs-aJx" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="rws-3G-ONa"/>
                             <constraint firstItem="m9A-bK-vNo" firstAttribute="centerX" secondItem="vgR-Oo-4U7" secondAttribute="centerX" id="wKA-aC-Mab"/>
-                            <constraint firstItem="Opr-lM-eRW" firstAttribute="top" secondItem="na8-0D-s85" secondAttribute="bottom" constant="172" id="zVA-6p-p1W"/>
                         </constraints>
                     </view>
                     <connections>
@@ -384,7 +385,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uTd-FR-fb3" id="bEY-aZ-ja2">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

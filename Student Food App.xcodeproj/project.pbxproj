@@ -51,18 +51,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC5367FC1FC44EE400DC947A /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
-		AC5367FD1FC44EE400DC947A /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inventory.m; sourceTree = "<group>"; };
-		AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryDataModel.h; sourceTree = "<group>"; };
-		AC5368001FC44F3800DC947A /* InventoryDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryDataModel.m; sourceTree = "<group>"; };
-		AC5368021FC4542600DC947A /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
-		AC5368031FC4542600DC947A /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
-		AC5368081FC461C000DC947A /* InventoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewCell.h; sourceTree = "<group>"; };
-		AC5368091FC461C000DC947A /* InventoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewCell.m; sourceTree = "<group>"; };
+		AC5367FC1FC44EE400DC947A /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inventory.h; path = "Student Food App/Inventory.h"; sourceTree = "<group>"; };
+		AC5367FD1FC44EE400DC947A /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Inventory.m; path = "Student Food App/Inventory.m"; sourceTree = "<group>"; };
+		AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryDataModel.h; path = "Student Food App/InventoryDataModel.h"; sourceTree = "<group>"; };
+		AC5368001FC44F3800DC947A /* InventoryDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryDataModel.m; path = "Student Food App/InventoryDataModel.m"; sourceTree = "<group>"; };
+		AC5368021FC4542600DC947A /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryViewController.h; path = "Student Food App/InventoryViewController.h"; sourceTree = "<group>"; };
+		AC5368031FC4542600DC947A /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryViewController.m; path = "Student Food App/InventoryViewController.m"; sourceTree = "<group>"; };
+		AC5368081FC461C000DC947A /* InventoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewCell.h; path = "Student Food App/InventoryTableViewCell.h"; sourceTree = "<group>"; };
+		AC5368091FC461C000DC947A /* InventoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryTableViewCell.m; path = "Student Food App/InventoryTableViewCell.m"; sourceTree = "<group>"; };
 		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
 		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
-		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewController.h; sourceTree = "<group>"; };
-		ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewController.m; sourceTree = "<group>"; };
+		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewController.h; path = "Student Food App/InventoryTableViewController.h"; sourceTree = "<group>"; };
+		ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryTableViewController.m; path = "Student Food App/InventoryTableViewController.m"; sourceTree = "<group>"; };
 		ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingTableViewController.h; sourceTree = "<group>"; };
 		ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingTableViewController.m; sourceTree = "<group>"; };
 		ACA61D361FC309E900BE5127 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
@@ -91,12 +91,12 @@
 		ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		ACE71D011FC32241006D93BD /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
-		ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InventoryItem+CoreDataClass.h"; sourceTree = "<group>"; };
-		ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InventoryItem+CoreDataClass.m"; sourceTree = "<group>"; };
-		ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InventoryItem+CoreDataProperties.h"; sourceTree = "<group>"; };
-		ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InventoryItem+CoreDataProperties.m"; sourceTree = "<group>"; };
-		ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InventoryItem+AddInventoryItem.h"; sourceTree = "<group>"; };
-		ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InventoryItem+AddInventoryItem.m"; sourceTree = "<group>"; };
+		ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "InventoryItem+CoreDataClass.h"; path = "Student Food App/InventoryItem+CoreDataClass.h"; sourceTree = "<group>"; };
+		ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "InventoryItem+CoreDataClass.m"; path = "Student Food App/InventoryItem+CoreDataClass.m"; sourceTree = "<group>"; };
+		ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "InventoryItem+CoreDataProperties.h"; path = "Student Food App/InventoryItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "InventoryItem+CoreDataProperties.m"; path = "Student Food App/InventoryItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "InventoryItem+AddInventoryItem.h"; path = "Student Food App/InventoryItem+AddInventoryItem.h"; sourceTree = "<group>"; };
+		ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "InventoryItem+AddInventoryItem.m"; path = "Student Food App/InventoryItem+AddInventoryItem.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +125,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC4C93661FCD89AA002C4CFA /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */,
+				ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */,
+				ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */,
+				ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */,
+				ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */,
+				ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */,
+				AC5367FC1FC44EE400DC947A /* Inventory.h */,
+				AC5367FD1FC44EE400DC947A /* Inventory.m */,
+				AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */,
+				AC5368001FC44F3800DC947A /* InventoryDataModel.m */,
+				AC5368021FC4542600DC947A /* InventoryViewController.h */,
+				AC5368031FC4542600DC947A /* InventoryViewController.m */,
+				ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */,
+				ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */,
+				AC5368081FC461C000DC947A /* InventoryTableViewCell.h */,
+				AC5368091FC461C000DC947A /* InventoryTableViewCell.m */,
+			);
+			name = Inventory;
+			sourceTree = "<group>";
+		};
 		ACB836711FC302D500B419B0 = {
 			isa = PBXGroup;
 			children = (
+				AC4C93661FCD89AA002C4CFA /* Inventory */,
 				ACB8367C1FC302D600B419B0 /* Student Food App */,
 				ACB836991FC302D600B419B0 /* Student Food AppTests */,
 				ACB836A41FC302D600B419B0 /* Student Food AppUITests */,
@@ -149,10 +173,6 @@
 		ACB8367C1FC302D600B419B0 /* Student Food App */ = {
 			isa = PBXGroup;
 			children = (
-				ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */,
-				ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */,
-				ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */,
-				ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */,
 				ACB836891FC302D600B419B0 /* Main.storyboard */,
 				ACA61D361FC309E900BE5127 /* Recipe.h */,
 				ACA61D371FC309E900BE5127 /* Recipe.m */,
@@ -162,18 +182,6 @@
 				ACE71D011FC32241006D93BD /* RecipeViewController.m */,
 				ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */,
 				ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */,
-				AC5367FC1FC44EE400DC947A /* Inventory.h */,
-				AC5367FD1FC44EE400DC947A /* Inventory.m */,
-				ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */,
-				ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */,
-				AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */,
-				AC5368001FC44F3800DC947A /* InventoryDataModel.m */,
-				AC5368021FC4542600DC947A /* InventoryViewController.h */,
-				AC5368031FC4542600DC947A /* InventoryViewController.m */,
-				ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */,
-				ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */,
-				AC5368081FC461C000DC947A /* InventoryTableViewCell.h */,
-				AC5368091FC461C000DC947A /* InventoryTableViewCell.m */,
 				ACB836801FC302D600B419B0 /* AppDelegate.h */,
 				ACB836811FC302D600B419B0 /* AppDelegate.m */,
 				ACB836831FC302D600B419B0 /* FirstViewController.h */,
