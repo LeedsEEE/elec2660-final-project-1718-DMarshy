@@ -68,8 +68,9 @@
         Recipe *limeTunaCousCous = [[Recipe alloc] init];
         limeTunaCousCous.name = @"Lime Tuna With CousCous";
         limeTunaCousCous.ingredients = @"3/4 mug couscous\n2 tablespoons olive oil\n1 1/2 mugs boiling water\n185g tin tuna\n1 vegetable stock cube\n125g cherry tomatoes, halved\nzest and juice of a lime\n7cm piece of cucumber, halves, deseeded and thinly sliced\n1 teaspoon sugar\nsalt and pepper\n1/2 x 340g tin sweetcorn";
+        limeTunaCousCous.instructions = @" -1- Place the couscous and lime \est in a bowl and pour over the boiling water and crumbled vegetable stock cube. Put a plate over the top to keep the heat in and leave to stand for 5 minutes. \n -2-\n Mix together the limejuice, sugar, salk and pepper and olive oil to make a dressing. \n -3-\n Once the cous cous is cooked, add the drained tuna, tomatoes, cucumber, sweetcorn and the dressing to the couscouus. Stir and serve.";
         
-        
+        [self.fishRecipes addObject:limeTunaCousCous];
         [self.fishRecipes addObject:salmonPasta];
         
         
