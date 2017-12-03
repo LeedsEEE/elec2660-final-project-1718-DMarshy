@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSMutableArray *PastaRecipes;
 @property (nonatomic, strong) NSMutableArray *fishRecipes;
 @property (nonatomic, strong) NSMutableArray *VegetarianRecipes;
+@property (nonatomic, strong) NSMutableArray *sauces;
 
 
 @end
