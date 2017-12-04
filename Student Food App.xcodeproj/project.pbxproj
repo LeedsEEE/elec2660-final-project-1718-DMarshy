@@ -25,6 +25,7 @@
 		ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */; };
 		ACB8369B1FC302D600B419B0 /* Student_Food_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8369A1FC302D600B419B0 /* Student_Food_AppTests.m */; };
 		ACB836A61FC302D600B419B0 /* Student_Food_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */; };
+		ACD05F721FD5B2F40020269B /* BeansOnToast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACD05F711FD5B2F40020269B /* BeansOnToast.jpg */; };
 		ACDC94621FC858F700227F1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC94611FC858F700227F1F /* CoreData.framework */; };
 		ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */; };
 		ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE71D011FC32241006D93BD /* RecipeViewController.m */; };
@@ -87,6 +88,7 @@
 		ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student_Food_AppUITests.m; sourceTree = "<group>"; };
 		ACB836A71FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD05F711FD5B2F40020269B /* BeansOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BeansOnToast.jpg; path = ../../../Desktop/BeansOnToast.jpg; sourceTree = "<group>"; };
 		ACDC94611FC858F700227F1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		ACB8367D1FC302D600B419B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACD05F711FD5B2F40020269B /* BeansOnToast.jpg */,
 				ACB8367E1FC302D600B419B0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -340,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD05F721FD5B2F40020269B /* BeansOnToast.jpg in Resources */,
 				ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */,
 				ACB8368D1FC302D600B419B0 /* Assets.xcassets in Resources */,
 				ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */,

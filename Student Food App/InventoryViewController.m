@@ -12,19 +12,40 @@
 
 @end
 
-@implementation InventoryViewController
-@synthesize managedObjectContext = _managedObjectContext;
+@implementation InventoryViewController;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
         self.inventory.inventoryArray = [NSMutableArray alloc];
         self.managedObjectContext = self.managedObjectContext;
-    // Do any additional setup after loading the view.
 }
+- (void)initializeFetchedResultsController{
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"InventoryItem"];
+    
+    NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+    
+    [request setSortDescriptors:@[nameSort]];
+    
+    NSManagedObjectContext *moc = self.managedObjectContext; //Retrieve the main queue NSManagedObjectContext
+    
+    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:nil cacheName:nil]];
+    [[self fetchedResultsController] setDelegate:self];
+    
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Failed to initialize FetchedResultsController: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
+}//https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/nsfetchedresultscontroller.html
+
 
 
 - (IBAction)addToList:(UIButton *)sender{
+        [self initializeFetchedResultsController];
     NSDictionary *ItemInfo = @{@"name":self.nameField.text,@"amount":self.amountTextField.text};
-    self.outputTextView.text = [InventoryItem addItemInfoFromDictionary:ItemInfo].description;
+    self.outputTextView.text = [NSString stringWithFormat:@"description = %@\n array = %@\n",[InventoryItem addItemInfoFromDictionary:ItemInfo].description,
+    [self.fetchedResultsController fetchedObjects]];
     
 }
 

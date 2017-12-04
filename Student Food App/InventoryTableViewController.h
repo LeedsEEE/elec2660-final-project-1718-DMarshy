@@ -10,9 +10,11 @@
 #import "InventoryViewController.h"
 #import "InventoryDataModel.h"
 #import "InventoryTableViewCell.h"
-#import "InventoryItem+CoreDataProperties.h"
+@class InventoryViewController;
 
-@interface InventoryTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) InventoryDataModel *inventory;
-@property (nonatomic, strong) InventoryItem *inventorydictionary;
+
+@interface InventoryTableViewController : UITableViewController
+
+//@property (nonatomic, strong) InventoryItem *inventorydictionary;
+@property (nonatomic, strong) InventoryViewController *additem;
 @end

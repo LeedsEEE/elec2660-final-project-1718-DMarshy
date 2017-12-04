@@ -21,11 +21,13 @@
         beansOnToast.name = @"Beans On Toast";
         beansOnToast.ingredients = @"-1 Tin of Baked Beans \n-2 slices ofBread \n-Cheese (Optional)";
         beansOnToast.instructions = @"just do it";
+        beansOnToast.photo = @"BeansOnToast.jpg";
         
         Recipe *mackerelOnToast= [[Recipe alloc] init];
         mackerelOnToast.name = @"Mackerel On Toast";
         mackerelOnToast.ingredients = @"-1 can of mackerel in tomato sauce \n-2 slices ofBread";
         mackerelOnToast.instructions = @"just do it";
+        mackerelOnToast.photo = @"MackerelOnToast.jpg";
        
         Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
         tunaMushroomSpaghetti.name = @"Tuna and Mushroom Spaghetti";

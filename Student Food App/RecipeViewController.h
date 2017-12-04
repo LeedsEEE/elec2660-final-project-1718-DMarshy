@@ -12,12 +12,12 @@
 #import <CoreData/CoreData.h> // https://stackoverflow.com/questions/2032818/adding-core-data-to-existing-iphone-project
 
 @interface RecipeViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *recipeNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *recipeNameLabel;
 @property (nonatomic, strong) Recipe *recipe;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (weak, nonatomic) IBOutlet UITextView *ingredientsLabel;
-@property (weak, nonatomic) IBOutlet UITextView *instructionsLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
+@property (strong, nonatomic) IBOutlet UITextView *ingredientsLabel;
+@property (strong, nonatomic) IBOutlet UITextView *instructionsLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *recipeImageView;
 
 
 @end

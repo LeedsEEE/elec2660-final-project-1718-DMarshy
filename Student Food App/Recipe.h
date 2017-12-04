@@ -13,6 +13,5 @@
 @property (nonatomic, strong) NSString *ingredients;
 @property (nonatomic, strong) NSString *instructions;
 @property (nonatomic, strong) NSString *name;
-
-
+@property (nonatomic, strong) NSString *photo;
 @end
