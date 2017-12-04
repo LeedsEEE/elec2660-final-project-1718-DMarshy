@@ -34,7 +34,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 3;
+    return 7;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
@@ -47,6 +47,18 @@
             // ...
         case 2:
             sectionName = @"Meat Meals";
+            break;
+        case 3:
+            sectionName = @"Pasta Meals";
+            break;
+        case 4:
+            sectionName = @"Fish Meals";
+            break;
+        case 5:
+            sectionName = @"Vegetarian Meals";
+            break;
+        case 6:
+            sectionName = @"Sauces";
             break;
     }
     return sectionName; //https://stackoverflow.com/questions/10505708/how-to-set-the-uitableview-section-title-programmatically-iphone-ipad
@@ -63,6 +75,18 @@
     }
     else if (section == 2){
         numberOfRows = self.recipe.meatRecipes.count;
+    }
+    else if (section == 3){
+        numberOfRows = self.recipe.PastaRecipes.count;
+    }
+    else if (section == 4){
+        numberOfRows = self.recipe.fishRecipes.count;
+    }
+    else if (section == 5){
+        numberOfRows = self.recipe.VegetarianRecipes.count;
+    }
+    else if (section == 6){
+        numberOfRows = self.recipe.sauces.count;
     }
     return numberOfRows;
 
@@ -82,9 +106,33 @@
         cell.textLabel.text = tempRecipe.name;
             return cell;
     }
+        else if (indexPath.section == 2){
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
+            Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+            cell.textLabel.text = tempRecipe.name;
+            return cell;
+    }
+        else if (indexPath.section == 3){
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
+            Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
+            cell.textLabel.text = tempRecipe.name;
+            return cell;
+        }
+        else if (indexPath.section == 4){
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
+            Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
+            cell.textLabel.text = tempRecipe.name;
+            return cell;
+        }
+        else if (indexPath.section == 5){
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
+            Recipe *tempRecipe = [self.recipe.VegetarianRecipes objectAtIndex:indexPath.row];
+            cell.textLabel.text = tempRecipe.name;
+            return cell;
+        }
     else{
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-        Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+        Recipe *tempRecipe = [self.recipe.sauces objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
         return cell;
     }
@@ -142,8 +190,24 @@
             Recipe *tempRecipe = [self.recipe.cheapRecipes objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
         }
-        if (indexPath.section == 2) { //cheap meals
+        if (indexPath.section == 2) { //meat meals
             Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+            destinationViewController.recipe = tempRecipe;
+        }
+        if (indexPath.section == 3) { //pasta meals
+            Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
+            destinationViewController.recipe = tempRecipe;
+        }
+        if (indexPath.section == 4) { //fish meals
+            Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
+            destinationViewController.recipe = tempRecipe;
+        }
+        if (indexPath.section == 5) { //veggie meals
+            Recipe *tempRecipe = [self.recipe.VegetarianRecipes objectAtIndex:indexPath.row];
+            destinationViewController.recipe = tempRecipe;
+        }
+        if (indexPath.section == 6) { //sauces
+            Recipe *tempRecipe = [self.recipe.sauces objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
         }
     }

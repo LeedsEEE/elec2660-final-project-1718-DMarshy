@@ -15,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *recipeNameLabel;
 @property (nonatomic, strong) Recipe *recipe;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (weak, nonatomic) IBOutlet UILabel *ingredientsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *instructionsLabel;
+@property (weak, nonatomic) IBOutlet UITextView *ingredientsLabel;
+@property (weak, nonatomic) IBOutlet UITextView *instructionsLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
 
 

@@ -27,16 +27,16 @@
         mackerelOnToast.ingredients = @"-1 can of mackerel in tomato sauce \n-2 slices ofBread";
         mackerelOnToast.instructions = @"just do it";
        
-        Recipe tunaMushroomSpaghetti* = [[Recipe alloc] init]; //NOSH BOOK
+        Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
         tunaMushroomSpaghetti.name = @"Tuna and Mushroom Spaghetti";
         tunaMushroomSpaghetti.ingredients = @" 1 1/2 portions spaghetti\n185g can tuna in oil, drained\n1 teaspoon oil to fry\njuice of a 1/2 lemon\n1 small onion, sliced\n1/2 mug grated parmesan\n5-6 mushrooms, sliced\n1 desserspoon dried chives\n1/2 mug frozen peas, defrosted\n3 tablespoons Greek yogurt";
         tunaMushroomSpaghetti.instructions = @"   -1-\nCook the spaghetti. Drain and return to the pan. \n -2- \nWhile the spaghetti is cooking, heat a little oil in a wok, fry the onion until i begins to softenn. Add the mushrooms and the peas and cook for 1 minute. Season Well.\n -3-/nTake the pan off the heat and add the yogurt, tuna, lemon juice, grated Parmesan and the chives. Stir gently. Add to the drained spaghetti. Stir gently and serve.";
-                
+    /*
         Recipe * = [[Recipe alloc] init];
 .name = @" ";
         .ingredients = ";
         .instructions = @" ";
-
+*/
        
         [self.cheapRecipes addObject:beansOnToast];//index 0
         [self.cheapRecipes addObject:mackerelOnToast]; //index 16
@@ -57,9 +57,9 @@
         self.PastaRecipes = [NSMutableArray array]; // pasta recipes
         
         Recipe *salmonPasta = [[Recipe alloc] init]; //NOSH BOOK
-        salmonPasta.name = @"Salmon Pasta"
+        salmonPasta.name = @"Salmon Pasta";
         salmonPasta.ingredients = @"2 small bunches of Tagliatelle pasta\n 2 tablespoons of double cream\n 1 small piece of salmon\n1 teaspoon of dried chives\n1 tablespoon olive oil to fry\n3 spring onions, chopped";
-        salmonPasta.instructions = @" -1-\nCook the tagliatelle. It should only take about 3-4 minutes to cook. Leave to drain\n -2-\n Fry the salmon in a little olive oil (if you have a small pice it should only take 2-3 minutes each side). Add the spring onions to the pan towards the end of the cooking time and allow them to brown a little\n -3-\nRemove the pan from the heat and gently break up the salmon. Add the cream and the chives and return to the heat. As soon as the cream beginns to bubble, add the pasta and stir everything together. Allow the pasta to heat through. This should take around 1 minute.\n -4-\n Season well with salt and pepper"
+        salmonPasta.instructions = @" -1-\nCook the tagliatelle. It should only take about 3-4 minutes to cook. Leave to drain\n -2-\n Fry the salmon in a little olive oil (if you have a small pice it should only take 2-3 minutes each side). Add the spring onions to the pan towards the end of the cooking time and allow them to brown a little\n -3-\nRemove the pan from the heat and gently break up the salmon. Add the cream and the chives and return to the heat. As soon as the cream beginns to bubble, add the pasta and stir everything together. Allow the pasta to heat through. This should take around 1 minute.\n -4-\n Season well with salt and pepper";
             
         [self.PastaRecipes addObject:salmonPasta];
         
@@ -80,7 +80,7 @@
         Recipe *cauliflowerAndBroccoliCheese = [[Recipe alloc] init]; //NOSH BOOK
         cauliflowerAndBroccoliCheese.name = @"Cauliflower and Broccoli Cheese";
         cauliflowerAndBroccoliCheese.ingredients = @"1 small cauliflower, broken into florets\ndouble quanity of cheese sauce (see sauces)\n1 small piece of broccoli, broken into florets\n1/2 mug grated cheese";
-        cauliflowerAndBroccoliCheese.instructions = @" -1-\nPreheat the oven to 200 degrees (220 fan oven/ gas mark 7).\n -2-\nBoil the cauliflower and broccoli for 5-7 minutes.\n -3-\nMake the Quick cheese sauce.\n -4-\n Put the drained vegetables in a greased casserole dish and pour the sauce over them. Top with grated cheese and put in the oven for 10-15 minutes until browned on top."
+        cauliflowerAndBroccoliCheese.instructions = @" -1-\nPreheat the oven to 200 degrees (220 fan oven/ gas mark 7).\n -2-\nBoil the cauliflower and broccoli for 5-7 minutes.\n -3-\nMake the Quick cheese sauce.\n -4-\n Put the drained vegetables in a greased casserole dish and pour the sauce over them. Top with grated cheese and put in the oven for 10-15 minutes until browned on top.";
        
         [self.VegetarianRecipes addObject:cauliflowerAndBroccoliCheese];
         
@@ -96,10 +96,10 @@
         tomatoSauce.ingredients = @"1 tablespoon of oil to fry\n1 tablepoon tomato puree\n1 onion, sliced\n1 tablespoon white win vinegar\n400g tin tomatoes\n1teaspoon sugar\n1 teaspoon black pepper";
         tomatoSauce.instructions = @" -1-\nHeat the oil in a saucepan and fry the onions until they become soft. Add the tomatoes\n -2-\nAdd the rest of the ingredients and bring to the boil. Simmer for 2-3 minutes.\n -3-\nBlitz with a hand-held blender if you have one or use as it is.";
         
-        Recipe *pepperSauce = [Recipe alloc] init];
+        Recipe *pepperSauce = [[Recipe alloc] init];
         pepperSauce.name = @"Pepper Sauce";
         pepperSauce.ingredients = @"1 tablespoon of oil to fry\n1 clove garlic, chopped\n1 1/2 red peppers, chopped\n1 tablespoon cream\n1/2 onion, slice\n1/2 teaspoon sugar";
-        pepperSauce.instructions = @" -1-\n\Heat the oil in a saucepan and fry the peppers, onions, garlic, over a medium heat for 5 minutes, until they are really soft.\n -2-\nAdd the sugar and cream and mix\n -3-\nUse a hand-held blender to liquidise, or leave as it is\n -4-\nAdd the cream and season well with salk and freshly ground black pepper. You can add half a teaspoon of chilli powder if you like.";
+        pepperSauce.instructions = @" -1-\nHeat the oil in a saucepan and fry the peppers, onions, garlic, over a medium heat for 5 minutes, until they are really soft.\n -2-\nAdd the sugar and cream and mix\n -3-\nUse a hand-held blender to liquidise, or leave as it is\n -4-\nAdd the cream and season well with salk and freshly ground black pepper. You can add half a teaspoon of chilli powder if you like.";
         
             
         [self.sauces addObject:quickCheeseSauce];
