@@ -7,14 +7,14 @@
 //
 
 #import "InventoryItem+CoreDataClass.h"
-#import "InventoryTableViewController.h"
+#import <CoreData/CoreData.h>
 #import "InventoryDataModel.h"
-@class InventoryTableViewController;
 
-@interface InventoryItem (AddInventoryItem) <UITableViewDataSource, UITableViewDelegate>
+
+@interface InventoryItem (AddInventoryItem) 
 + (InventoryItem *)addItemInfoFromDictionary:(NSDictionary *)ItemInfo;
 @property(readonly) NSUInteger count;
-@property (nonatomic, strong) InventoryTableViewController *inventoryTableView;
+
 @property (nonatomic, strong) InventoryDataModel *inventory;
 
 @end

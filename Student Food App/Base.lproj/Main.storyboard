@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5ET-q8-UM8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5ET-q8-UM8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -195,14 +195,14 @@
                                 <frame key="frameInset" minX="67" minY="119" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j74-D7-HFB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j74-D7-HFB">
                                 <frame key="frameInset" minX="16" minY="276" width="343" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o9Q-BW-1eA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o9Q-BW-1eA">
                                 <frame key="frameInset" minX="16" minY="451" width="343" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,8 +295,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Uez-uo-ohh" id="TpL-VB-dps"/>
-                            <outlet property="delegate" destination="Uez-uo-ohh" id="sna-WA-4uV"/>
+                            <outlet property="dataSource" destination="Uez-uo-ohh" id="lhY-2V-RQz"/>
+                            <outlet property="delegate" destination="Uez-uo-ohh" id="Vz6-fd-OdM"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Inventory" selectedImage="first" id="ejY-rH-Re0"/>
@@ -333,8 +333,7 @@
                                     <action selector="addToList:" destination="lPe-sj-GfE" eventType="touchUpInside" id="Sil-3o-OS1"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Output" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-lM-eRW">
-                                <frame key="frameInset" minX="16" minY="236" width="342" height="135"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Output" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-lM-eRW">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -379,50 +378,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingCell" textLabel="Wmf-6T-2ml" rowHeight="35" style="IBUITableViewCellStyleDefault" id="uTd-FR-fb3">
-                                <rect key="frame" x="0.0" y="92" width="375" height="35"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddItemCell" id="Oq2-Cw-69a" customClass="AddShopTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uTd-FR-fb3" id="bEY-aZ-ja2">
-                                    <frame key="frameInset" width="375" height="34"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oq2-Cw-69a" id="YgC-wF-mBt">
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Add Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wmf-6T-2ml">
-                                            <frame key="frameInset" minX="15" width="345" height="34"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwA-Ji-KFg">
+                                            <state key="normal" title="Add Item"/>
+                                            <connections>
+                                                <action selector="AddShopItem:" destination="Oq2-Cw-69a" eventType="touchUpInside" id="gEa-1D-FbN"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hwA-Ji-KFg" firstAttribute="centerX" secondItem="YgC-wF-mBt" secondAttribute="centerX" id="0G1-zA-OAC"/>
+                                        <constraint firstItem="hwA-Ji-KFg" firstAttribute="centerY" secondItem="YgC-wF-mBt" secondAttribute="centerY" id="5Fj-CS-2oi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.55098334790000003" green="0.97680455450000003" blue="0.53628916309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="rLE-44-1bb" kind="show" id="Je1-B8-0vb"/>
+                                    <outlet property="AddItemtext" destination="hwA-Ji-KFg" id="ImP-9d-Hdf"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="mCG-nw-gCn">
-                                <rect key="frame" x="0.0" y="127" width="375" height="53"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="53" id="mCG-nw-gCn" customClass="ShoppingItemCell">
+                                <rect key="frame" x="0.0" y="136" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mCG-nw-gCn" id="FUc-TN-VpT">
                                     <frame key="frameInset" width="375" height="52"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgu-Mf-ZvL">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gE-S3-vqd">
                                             <state key="normal" title="Item bought"/>
+                                            <connections>
+                                                <action selector="ItemBought:" destination="mCG-nw-gCn" eventType="touchUpInside" id="3u9-YM-RKJ"/>
+                                            </connections>
                                         </button>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-wv-PZ0">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="248" id="PdF-CC-zZf"/>
+                                                <constraint firstAttribute="height" constant="30" id="aMk-9O-I2w"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Zgu-Mf-ZvL" firstAttribute="top" secondItem="FUc-TN-VpT" secondAttribute="topMargin" constant="8" id="6Jd-Zg-WqE"/>
+                                        <constraint firstItem="8pP-wv-PZ0" firstAttribute="centerY" secondItem="FUc-TN-VpT" secondAttribute="centerY" id="6Yj-E3-JNF"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="8pP-wv-PZ0" secondAttribute="leading" id="72M-98-Zct"/>
                                         <constraint firstItem="4gE-S3-vqd" firstAttribute="top" secondItem="FUc-TN-VpT" secondAttribute="topMargin" constant="3" id="IAM-7r-D4e"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="4gE-S3-vqd" secondAttribute="trailing" constant="20" id="aYc-E9-KqR"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Zgu-Mf-ZvL" secondAttribute="trailing" constant="309" id="ri7-eu-ct0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ItemName" destination="8pP-wv-PZ0" id="Ytq-DH-ZB1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -436,24 +447,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jju-tb-FRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1037.5999999999999" y="779.46026986506752"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2fy-Ea-LO7">
-            <objects>
-                <viewController id="rLE-44-1bb" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hl2-Tq-9QT"/>
-                        <viewControllerLayoutGuide type="bottom" id="BJT-X0-Svz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PEU-PV-fFm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wc1-Lr-s2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1748" y="779"/>
         </scene>
     </scenes>
     <resources>

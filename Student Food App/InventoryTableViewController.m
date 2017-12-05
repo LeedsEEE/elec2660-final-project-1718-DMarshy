@@ -16,11 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   self.additem.inventory = [[InventoryDataModel alloc] init];
     
-   // self.inventorydictionary = [[InventoryItem alloc] init];
-    
-    
+
+   self.inventory = [[InventoryDataModel alloc] init];
+
+   
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -34,7 +35,7 @@
 
 
 #pragma mark - Table view data source
-/*
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     return 1;
@@ -42,20 +43,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
         [self.additem.fetchedResultsController fetchedObjects];
-    NSInteger numberOfRows;
     
-    if (section == 0){
+    NSInteger numberOfRows;
+    if(section == 0){
+    
         numberOfRows = self.inventory.inventoryArray.count;
     }
     else{
          numberOfRows = [[[self.additem fetchedResultsController] sections] count];
     }
-       return numberOfRows;
+    NSLog(@"fetched results controller count %ld",[[[self.additem fetchedResultsController] sections] count]);
+    
+    return numberOfRows;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-           [self.additem.fetchedResultsController fetchedObjects];
+          // [self.additem.fetchedResultsController fetchedObjects];
     
     if (indexPath.row == 0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
@@ -76,14 +79,14 @@
         InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
         
 
-        NSMutableArray *DictionaryArray =[[NSMutableArray alloc] init];
+     /*  NSMutableArray *DictionaryArray =[[NSMutableArray alloc] init];
         DictionaryArray = [self.inventorydictionary valueForKey:@"name"];
         Inventory *tempAddedItem = [DictionaryArray objectAtIndex:(indexPath.row-self.inventory.inventoryArray.count)];
         cell.invItemName.text = [tempAddedItem valueForKey:@"name"];
         NSLog(@"tempaddeditem = %@",tempAddedItem.itemName);
         cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempAddedItem.itemCount];
         cell.stepperValue.value = tempAddedItem.itemCount;
-        
+        */
         NSManagedObject *object = [self.additem.fetchedResultsController objectAtIndexPath:indexPath];
         cell.invItemName.text = [object valueForKey:@"name"];
         cell.stepperCount.text = @"0";
@@ -91,7 +94,7 @@
            return cell;
     }
     
-    }*/
+    }
 
     
 

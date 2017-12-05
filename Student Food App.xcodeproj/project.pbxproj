@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0032991FD6C9B100B177E8 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0032981FD6C9B100B177E8 /* ShoppingViewController.m */; };
+		AC00329C1FD6CA2900B177E8 /* AddShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */; };
+		AC00329F1FD6CB1200B177E8 /* ShoppingItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */; };
 		AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5367FD1FC44EE400DC947A /* Inventory.m */; };
 		AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368001FC44F3800DC947A /* InventoryDataModel.m */; };
 		AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368031FC4542600DC947A /* InventoryViewController.m */; };
@@ -19,7 +22,6 @@
 		ACB8367F1FC302D600B419B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8367E1FC302D600B419B0 /* main.m */; };
 		ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836811FC302D600B419B0 /* AppDelegate.m */; };
 		ACB836851FC302D600B419B0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836841FC302D600B419B0 /* FirstViewController.m */; };
-		ACB836881FC302D600B419B0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836871FC302D600B419B0 /* SecondViewController.m */; };
 		ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB836891FC302D600B419B0 /* Main.storyboard */; };
 		ACB8368D1FC302D600B419B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368C1FC302D600B419B0 /* Assets.xcassets */; };
 		ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC0032971FD6C9B100B177E8 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
+		AC0032981FD6C9B100B177E8 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
+		AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddShopTableViewCell.h; path = ../AddShopTableViewCell.h; sourceTree = "<group>"; };
+		AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddShopTableViewCell.m; path = ../AddShopTableViewCell.m; sourceTree = "<group>"; };
+		AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingItemCell.h; sourceTree = "<group>"; };
+		AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingItemCell.m; sourceTree = "<group>"; };
 		AC5367FC1FC44EE400DC947A /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inventory.h; path = "Student Food App/Inventory.h"; sourceTree = "<group>"; };
 		AC5367FD1FC44EE400DC947A /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Inventory.m; path = "Student Food App/Inventory.m"; sourceTree = "<group>"; };
 		AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryDataModel.h; path = "Student Food App/InventoryDataModel.h"; sourceTree = "<group>"; };
@@ -76,8 +84,6 @@
 		ACB836811FC302D600B419B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ACB836831FC302D600B419B0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		ACB836841FC302D600B419B0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		ACB836861FC302D600B419B0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		ACB836871FC302D600B419B0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		ACB8368A1FC302D600B419B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACB8368C1FC302D600B419B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB8368F1FC302D600B419B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -176,6 +182,12 @@
 			isa = PBXGroup;
 			children = (
 				ACB836891FC302D600B419B0 /* Main.storyboard */,
+				AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */,
+				AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */,
+				AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */,
+				AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */,
+				ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */,
+				ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */,
 				ACA61D361FC309E900BE5127 /* Recipe.h */,
 				ACA61D371FC309E900BE5127 /* Recipe.m */,
 				ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */,
@@ -188,10 +200,8 @@
 				ACB836811FC302D600B419B0 /* AppDelegate.m */,
 				ACB836831FC302D600B419B0 /* FirstViewController.h */,
 				ACB836841FC302D600B419B0 /* FirstViewController.m */,
-				ACB836861FC302D600B419B0 /* SecondViewController.h */,
-				ACB836871FC302D600B419B0 /* SecondViewController.m */,
-				ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */,
-				ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */,
+				AC0032971FD6C9B100B177E8 /* ShoppingViewController.h */,
+				AC0032981FD6C9B100B177E8 /* ShoppingViewController.m */,
 				ACB8368C1FC302D600B419B0 /* Assets.xcassets */,
 				ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */,
 				ACB836911FC302D600B419B0 /* Info.plist */,
@@ -375,11 +385,13 @@
 				ACA61D3B1FC30C0C00BE5127 /* RecipeDataModel.m in Sources */,
 				ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */,
 				AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */,
+				AC00329C1FD6CA2900B177E8 /* AddShopTableViewCell.m in Sources */,
 				ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */,
 				ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */,
 				ACEB8F4F1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m in Sources */,
+				AC00329F1FD6CB1200B177E8 /* ShoppingItemCell.m in Sources */,
+				AC0032991FD6C9B100B177E8 /* ShoppingViewController.m in Sources */,
 				AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */,
-				ACB836881FC302D600B419B0 /* SecondViewController.m in Sources */,
 				ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */,
 				ACEB8F4C1FCC75240042E983 /* InventoryItem+CoreDataProperties.m in Sources */,
 				ACEB8F4B1FCC75240042E983 /* InventoryItem+CoreDataClass.m in Sources */,

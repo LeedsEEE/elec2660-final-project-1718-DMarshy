@@ -12,7 +12,7 @@
 #import <CoreData/CoreData.h> 
 #import "InventoryItem+AddInventoryItem.h"
 
-@interface InventoryViewController : UIViewController <UITextFieldDelegate,NSFetchedResultsControllerDelegate>
+@interface InventoryViewController : UIViewController <UITextFieldDelegate>
 - (IBAction)InventoryTextField:(UITextField *)sender;
 @property (nonatomic, strong) InventoryDataModel *inventory;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *amountTextField;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) InventoryItem *inventoryItem;
+
 
 
 @end

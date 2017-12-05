@@ -9,14 +9,16 @@
 #import "InventoryItem+AddInventoryItem.h"
 #import "AppDelegate.h"
 @implementation InventoryItem (AddInventoryItem)
-@dynamic inventoryTableView;
+
 @dynamic inventory;
 @dynamic count;
 
 
+
 + (InventoryItem *)addItemInfoFromDictionary:(NSDictionary *)ItemInfo{
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+  
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = appDelegate.managedObjectContext;
     
     InventoryItem *inventoryItemEntity = nil;
     
@@ -33,7 +35,7 @@
     return inventoryItemEntity;
     
 }
-/*
+
  - (void)setupFetchedResultsController
 {
     NSManagedObjectContext *moc = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
@@ -51,13 +53,13 @@
     }
     else
     {
-        // your data is in array
+ 
     }
-}*/
+}
 
-
-
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    NSLog(@"number of Rows");
     
     return 1;
 }
@@ -71,7 +73,7 @@
     else{
         numberOfRows = [[[self.inventoryTableView.additem fetchedResultsController] sections] count];
     }
-    return numberOfRows;
+    return 1;
 }
     - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
       self.inventory = [[InventoryDataModel alloc] init];
@@ -95,14 +97,14 @@
             InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
             
            NSManagedObject *object = [self.inventoryTableView.additem.fetchedResultsController objectAtIndexPath:indexPath];
-            cell.invItemName.text = [object valueForKey:@"name"];
+            cell.invItemName.text = [NSString stringWithFormat:@"%@", [object valueForKey:@"name"]];
             cell.stepperCount.text = @"0";
             cell.stepperValue.value = 0;
             return cell;
         }
         
-    }
-
-
+   }*/
 
 @end
+
+

@@ -19,7 +19,12 @@
     [super viewDidLoad];
         self.inventory.inventoryArray = [NSMutableArray alloc];
         self.managedObjectContext = self.managedObjectContext;
+      // [self initializeFetchedResultsController];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = appDelegate.managedObjectContext;
+    
 }
+/*
 - (void)initializeFetchedResultsController{
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"InventoryItem"];
     
@@ -38,11 +43,12 @@
         abort();
     }
 }//https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/nsfetchedresultscontroller.html
-
+*/
 
 
 - (IBAction)addToList:(UIButton *)sender{
-        [self initializeFetchedResultsController];
+    
+
     NSDictionary *ItemInfo = @{@"name":self.nameField.text,@"amount":self.amountTextField.text};
     self.outputTextView.text = [NSString stringWithFormat:@"description = %@\n array = %@\n",[InventoryItem addItemInfoFromDictionary:ItemInfo].description,
     [self.fetchedResultsController fetchedObjects]];

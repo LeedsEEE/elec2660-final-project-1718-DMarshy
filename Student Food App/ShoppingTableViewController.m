@@ -16,13 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.addItem = [[AddShopTableViewCell alloc]init];
+   
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -30,26 +27,47 @@
 }
 
 #pragma mark - Table view data source
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+            [self.tableView reloadData];
+    }
+    return self;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    NSInteger numberOfRows;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+          NSLog(@"ROWS = %ld",[defaults integerForKey:@"numberOfRows"]);
+    numberOfRows = [defaults integerForKey:@"numberOfRows"];
+    return numberOfRows;
+
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    if(indexPath.row == 0){
+        
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddItemCell" forIndexPath:indexPath];
+      
+        
+        return cell;
+    }
+    else{
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemCell" forIndexPath:indexPath];
+
+            return cell;
+    }
+
     
-    // Configure the cell...
-    
-    return cell;
+
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
