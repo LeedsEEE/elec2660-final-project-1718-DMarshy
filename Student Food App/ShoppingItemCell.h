@@ -12,10 +12,12 @@
 @class AddShopTableViewCell;
 
 @class ShoppingTableViewController;
-@interface ShoppingItemCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UITextField *ItemName;
+@interface ShoppingItemCell : UITableViewCell <UITextFieldDelegate>
+
 - (IBAction)ItemBought:(UIButton *)sender;
 @property (nonatomic, strong) ShoppingTableViewController *shoppingTableViewController;
 @property (nonatomic, strong) AddShopTableViewCell *addItemCell;
 - (IBAction)ItemNameAdded:(UITextField *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *ItemName;
+
 @end

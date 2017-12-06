@@ -23,13 +23,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
- /*
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:2 forKey:@"numberOfRows"];
-    [defaults synchronize];
-    self.numberOfCells = [defaults integerForKey:@"numberOfRows"];
-    
-*/
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -38,7 +32,7 @@
     // Configure the view for the selected state
 }
 
-
+/*
 - (IBAction)AddShopItem:(UIButton *)sender {
     self.numberOfCells ++;
      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -50,7 +44,7 @@
     self.shoppingTableViewController = [[ShoppingTableViewController alloc]init];
 
 
-    //[self.shoppingTableViewController.tableView reloadData];
+    [self.shoppingTableViewController.tableView reloadData];
     
-}
+}*/
 @end

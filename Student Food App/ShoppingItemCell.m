@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.ItemName.text = [NSString stringWithFormat:@"thing = %@",self.shoppingTableViewController.sharedName];
     // Initialization code
 }
 
@@ -19,23 +20,19 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-}/*
+}
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-       NSInteger Row = [defaults integerForKey:[NSString stringWithFormat:@"%ld",self.shoppingTableViewController.tableView.indexPathForSelectedRow.row]];
-        for(i=0,i++){
-            self.ItemName.text = self.ItemName
-  [defaults integerForKey:[NSString stringWithFormat:@"%ld",Row+]]
-            
-            
+        self.ItemName.text = [NSString stringWithFormat:@"thing = %@",self.shoppingTableViewController.sharedName];
+        
+        NSLog(@"opening shopping item cell");
         }
             
-    }
+    
     return self;
-}*/
+}
 
 
 - (IBAction)ItemBought:(UIButton *)sender {

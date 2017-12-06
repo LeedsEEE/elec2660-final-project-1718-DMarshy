@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ShoppingDataModel : NSObject
+@property (nonatomic, strong) NSArray *shoppingArray;
 
 @end

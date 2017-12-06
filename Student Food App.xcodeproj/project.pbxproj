@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC0032991FD6C9B100B177E8 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0032981FD6C9B100B177E8 /* ShoppingViewController.m */; };
 		AC00329C1FD6CA2900B177E8 /* AddShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */; };
 		AC00329F1FD6CB1200B177E8 /* ShoppingItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */; };
 		AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5367FD1FC44EE400DC947A /* Inventory.m */; };
@@ -16,6 +15,9 @@
 		AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368091FC461C000DC947A /* InventoryTableViewCell.m */; };
 		AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */; };
 		AC8676F01FD731B000021516 /* ShoppingDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8676EF1FD731B000021516 /* ShoppingDataModel.m */; };
+		AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48B1FD860B1006EF502 /* Red-x.png */; };
+		AC92C48E1FD860FA006EF502 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48D1FD860FA006EF502 /* Icon-29.png */; };
+		AC92C4911FD87C25006EF502 /* ShoppingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC92C4901FD87C25006EF502 /* ShoppingItem.m */; };
 		ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */; };
 		ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */; };
 		ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */; };
@@ -55,8 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC0032971FD6C9B100B177E8 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
-		AC0032981FD6C9B100B177E8 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
 		AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddShopTableViewCell.h; path = ../AddShopTableViewCell.h; sourceTree = "<group>"; };
 		AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddShopTableViewCell.m; path = ../AddShopTableViewCell.m; sourceTree = "<group>"; };
 		AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingItemCell.h; sourceTree = "<group>"; };
@@ -72,6 +72,10 @@
 		AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeansOnToast.jpg; sourceTree = "<group>"; };
 		AC8676EE1FD731B000021516 /* ShoppingDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingDataModel.h; sourceTree = "<group>"; };
 		AC8676EF1FD731B000021516 /* ShoppingDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingDataModel.m; sourceTree = "<group>"; };
+		AC92C48B1FD860B1006EF502 /* Red-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-x.png"; sourceTree = "<group>"; };
+		AC92C48D1FD860FA006EF502 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		AC92C48F1FD87C25006EF502 /* ShoppingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingItem.h; sourceTree = "<group>"; };
+		AC92C4901FD87C25006EF502 /* ShoppingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingItem.m; sourceTree = "<group>"; };
 		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
 		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
 		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewController.h; path = "Student Food App/InventoryTableViewController.h"; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				ACB836891FC302D600B419B0 /* Main.storyboard */,
+				AC92C48F1FD87C25006EF502 /* ShoppingItem.h */,
+				AC92C4901FD87C25006EF502 /* ShoppingItem.m */,
 				AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */,
 				AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */,
 				AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */,
@@ -205,8 +211,6 @@
 				ACB836811FC302D600B419B0 /* AppDelegate.m */,
 				ACB836831FC302D600B419B0 /* FirstViewController.h */,
 				ACB836841FC302D600B419B0 /* FirstViewController.m */,
-				AC0032971FD6C9B100B177E8 /* ShoppingViewController.h */,
-				AC0032981FD6C9B100B177E8 /* ShoppingViewController.m */,
 				ACB8368C1FC302D600B419B0 /* Assets.xcassets */,
 				ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */,
 				ACB836911FC302D600B419B0 /* Info.plist */,
@@ -219,6 +223,8 @@
 		ACB8367D1FC302D600B419B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC92C48D1FD860FA006EF502 /* Icon-29.png */,
+				AC92C48B1FD860B1006EF502 /* Red-x.png */,
 				AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */,
 				ACB8367E1FC302D600B419B0 /* main.m */,
 			);
@@ -358,10 +364,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */,
 				AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */,
 				ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */,
 				ACB8368D1FC302D600B419B0 /* Assets.xcassets in Resources */,
 				ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */,
+				AC92C48E1FD860FA006EF502 /* Icon-29.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,12 +398,12 @@
 				ACA61D3B1FC30C0C00BE5127 /* RecipeDataModel.m in Sources */,
 				ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */,
 				AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */,
+				AC92C4911FD87C25006EF502 /* ShoppingItem.m in Sources */,
 				AC00329C1FD6CA2900B177E8 /* AddShopTableViewCell.m in Sources */,
 				ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */,
 				ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */,
 				ACEB8F4F1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m in Sources */,
 				AC00329F1FD6CB1200B177E8 /* ShoppingItemCell.m in Sources */,
-				AC0032991FD6C9B100B177E8 /* ShoppingViewController.m in Sources */,
 				AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */,
 				ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */,
 				ACEB8F4C1FCC75240042E983 /* InventoryItem+CoreDataProperties.m in Sources */,

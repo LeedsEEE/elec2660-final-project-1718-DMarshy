@@ -21,13 +21,15 @@
         beansOnToast.name = @"Beans On Toast";
         beansOnToast.ingredients = @"1/2 Tin of Baked Beans \n2 slices ofBread \nCheese, sliced or grated";
         beansOnToast.instructions = @" -1-\nHeat the beans in a pan on a medium heat for 5 minutes until bubbling\n -2-\nToast the bread in a toaster\n -3-\nAdd the cheese on top of the toast and pour the beans on top (you may decide to put the cheese on top of the beans, but if you do you are wrong)";
-      //  beansOnToast.photo = @"BeansOnToast.jpg";
+        beansOnToast.photo = @"BeansOnToast.jpg";
+        beansOnToast.cookingTime = @"10 minutes";
         
         Recipe *mackerelOnToast= [[Recipe alloc] init];
         mackerelOnToast.name = @"Mackerel On Toast";
         mackerelOnToast.ingredients = @"1 can of mackerel in tomato sauce \n2 slices ofBread";
         mackerelOnToast.instructions = @" -1-\nHeat up the mackerel in tomato sauce while the bread is in the toaster. \n -2-\nPut the mackerel on top of the toast";
      //   mackerelOnToast.photo = @"MackerelOnToast.jpg";
+        mackerelOnToast.cookingTime = @"5 minutes";
        
         Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
         tunaMushroomSpaghetti.name = @"Tuna and Mushroom Spaghetti";
@@ -35,9 +37,7 @@
         tunaMushroomSpaghetti.instructions = @"   -1-\nCook the spaghetti. Drain and return to the pan. \n -2- \nWhile the spaghetti is cooking, heat a little oil in a wok, fry the onion until i begins to softenn. Add the mushrooms and the peas and cook for 1 minute. Season Well.\n -3-/nTake the pan off the heat and add the yogurt, tuna, lemon juice, grated Parmesan and the chives. Stir gently. Add to the drained spaghetti. Stir gently and serve.";
     
        
-        [self.cheapRecipes addObject:beansOnToast];//index 0
-        [self.cheapRecipes addObject:mackerelOnToast]; //index 16
-        [self.cheapRecipes addObject:tunaMushroomSpaghetti];
+
         
         
         self.meatRecipes = [NSMutableArray array]; //meat recipes
@@ -48,13 +48,12 @@
         mediterraneanChicken.instructions = @" -1-\n Preheat the oen to 180 degrees/ fn oven 200 degrees/gas mark 6.\n -2- Put all the ingreients, except the sock and paprika, in a casserole dish. Distribute the oil evenly and arrange the pieces so that the skins of the chicken will brown. Add the stock and sprinke the casserole with paprika\n -3-\nPut in the oven for 45-50 minutes until the chicken is browned and cooked through. Test one piece to make sure";
         
         Recipe *chickpeaChorizocouscous = [[Recipe alloc] init];
-        *chickpeaChorizocouscous.name = @"Chickpeak and Chorizo Couscous";
-        *chickpeaChorizocouscous.ingredients = @"1/2 mug couscous\n1 mug boiling water + 1 vegetable stock cube\n1/2 teaspoon paprika\n1/2 teaspoon cumin\n1/2teaspoon ground coriander\n1\2 tablespoon oil\n1 small onion, sliced\n1 clove garlic, finely chopped\n2 small chorizo sausages, chopped\n400g can chickpeas, drained and rinsed\n2 tomatoes, roughly chopped\n1/4 mug water";
-        *chickpeaChorizocouscous.instructions = @" -1-\nPut the couscous in a bowl and add the boiling water, stock cube, paprika, cumin and coriander. Stir together. Cover with a plate and leave to stand for at least 5 minutes, until the water is absorbed.\n -2-\nHeat the oil in a frying pan or wok. Add the onions, garli and chopped choriza. Fry until the chorizo is browned.\n -3-\nAdd the chickpeas, toatoes and water, and cook for another 1-2 minutes, stirring frequently. Most of the liquid should be gone.\n -4-\n Add the couscous, mix together and serve.";
+        chickpeaChorizocouscous.name = @"Chickpeak and Chorizo Couscous";
+        chickpeaChorizocouscous.ingredients = @"1/2 mug couscous\n1 mug boiling water + 1 vegetable stock cube\n1/2 teaspoon paprika\n1/2 teaspoon cumin\n1/2teaspoon ground coriander\n1\2 tablespoon oil\n1 small onion, sliced\n1 clove garlic, finely chopped\n2 small chorizo sausages, chopped\n400g can chickpeas, drained and rinsed\n2 tomatoes, roughly chopped\n1/4 mug water";
+        chickpeaChorizocouscous.instructions = @" -1-\nPut the couscous in a bowl and add the boiling water, stock cube, paprika, cumin and coriander. Stir together. Cover with a plate and leave to stand for at least 5 minutes, until the water is absorbed.\n -2-\nHeat the oil in a frying pan or wok. Add the onions, garli and chopped choriza. Fry until the chorizo is browned.\n -3-\nAdd the chickpeas, toatoes and water, and cook for another 1-2 minutes, stirring frequently. Most of the liquid should be gone.\n -4-\n Add the couscous, mix together and serve.";
         
-        [self.meatRecipes addObject:chickpeaChorizocouscous];
-        [self.meatRecipes addObject:mediterraneanChicken];
-     
+
+       
         self.PastaRecipes = [NSMutableArray array]; // pasta recipes
         
         Recipe *salmonPasta = [[Recipe alloc] init]; //NOSH BOOK
@@ -67,9 +66,8 @@
         chickenPestoPasta.ingredients = @"1 mug Pasta\n1 tablespoon oil to fry\n2 Chicken breasts\n1 Onion, cut into thin wedges\n1/2 red pepper, cut into thin strips\n1 garlic clove, finely chopped\n12 black olives, roughly chopped\n200g pack cherry tomatoes, each cut in half\n1/2 x 200g pack of feta cheese, crumbled\n -Dressing-\n1 tablespoon olive oil\n1 tablespoon green pesto\njuice of a lemon\n1/2 teaspoon sugar\nsalt and pepper";
         chickenPestoPasta.instructions = @" -1-\nMix together the dressing ingredients\n -2-\nCook the pasta. One cooked, drain and return to pan\n -3-\nHeat a little oil in a frying pan and add the chicken breasts. Cook on a high heat for 2 minutes each side. Turn down the heat and cook, with the lid on, for a further 4 minutes each side, depending on the size of the chicken breast. Set aside\n -4-\nFry the onions, garlic and pepper for 2-3 minutes until soft. Add the olives and tomatoes to the pan and take off the heat.\n -5-\n Slice the chicken into fairly thin slices and, together with the pasta add to the frying pan. Mix together.\n -6-\n Sprinkle the feta over the top an drizzle with the dressing.";
         
-        [self.PastaRecipes addObject:chickenPestoPasta];
-        [self.PastaRecipes addObject:salmonPasta];
-        [self.meatRecipes addObject:chickenPestoPasta];
+
+        
         self.fishRecipes = [NSMutableArray array]; // fish recipes
         
         Recipe *limeTunaCousCous = [[Recipe alloc] init];
@@ -77,16 +75,13 @@
         limeTunaCousCous.ingredients = @"3/4 mug couscous\n2 tablespoons olive oil\n1 1/2 mugs boiling water\n185g tin tuna\n1 vegetable stock cube\n125g cherry tomatoes, halved\nzest and juice of a lime\n7cm piece of cucumber, halves, deseeded and thinly sliced\n1 teaspoon sugar\nsalt and pepper\n1/2 x 340g tin sweetcorn";
         limeTunaCousCous.instructions = @" -1- Place the couscous and lime \est in a bowl and pour over the boiling water and crumbled vegetable stock cube. Put a plate over the top to keep the heat in and leave to stand for 5 minutes. \n -2-\n Mix together the limejuice, sugar, salk and pepper and olive oil to make a dressing. \n -3-\n Once the cous cous is cooked, add the drained tuna, tomatoes, cucumber, sweetcorn and the dressing to the couscouus. Stir and serve.";
         
-        Recipe smokedMackerelPastaSalad* = [[Recipe alloc] init];
+        Recipe *smokedMackerelPastaSalad = [[Recipe alloc] init];
         smokedMackerelPastaSalad.name = @"Smoked Mackerel Pasta Salad";
         smokedMackerelPastaSalad.ingredients = @"1 1/2 mugs pasta\n1/2 x 300g pack green beans, trimmed and cut in 1/2\n2 tablespoons cremefraiche\n1 tablespoon mayo\n1 teaspoon dried chives\nzest and juice of 1/2 lemon\n250g pack cooked, smoked mackerel\n1/4 cucumber, chopped\n2 spring onions, chopped";
         smokedMackerelPastaSalad.instructions = @" -1-\nPut the pasta on to boil. Add the beans 5 minutes before the end of cooking time. Once cooked, drain, run under a cold tap and place in a bowl.\n -2-\nMix togwther the creme fraiche, mayo, chives, lemon zest, juice and season with salt and pepper. Add to the pasta and mix\n -3-\n Peel the skin off the backs of the mackerel fillets and then gently flake the fish. Add to the bowl, along with the cucumber and onions. Mix gently and serve";
         
-        [self.fishRecipes addObject:smokedMackerelPastaSalad];
-        [self.fishRecipes addObject:chickpeaChorizocouscous];
-        [self.fishRecipes addObject:limeTunaCousCous];
-        [self.fishRecipes addObject:salmonPasta];
-        [self.fishRecipes addObject:tunaMushroomSpaghetti];
+
+
         
         
         
@@ -98,7 +93,7 @@
         cauliflowerAndBroccoliCheese.ingredients = @"1 small cauliflower, broken into florets\ndouble quanity of cheese sauce (see sauces)\n1 small piece of broccoli, broken into florets\n1/2 mug grated cheese";
         cauliflowerAndBroccoliCheese.instructions = @" -1-\nPreheat the oven to 200 degrees (220 fan oven/ gas mark 7).\n -2-\nBoil the cauliflower and broccoli for 5-7 minutes.\n -3-\nMake the Quick cheese sauce.\n -4-\n Put the drained vegetables in a greased casserole dish and pour the sauce over them. Top with grated cheese and put in the oven for 10-15 minutes until browned on top.";
        
-        [self.VegetarianRecipes addObject:cauliflowerAndBroccoliCheese];
+
         
         self.sauces = [NSMutableArray array];//sauces
         
@@ -118,19 +113,16 @@
         pepperSauce.instructions = @" -1-\nHeat the oil in a saucepan and fry the peppers, onions, garlic, over a medium heat for 5 minutes, until they are really soft.\n -2-\nAdd the sugar and cream and mix\n -3-\nUse a hand-held blender to liquidise, or leave as it is\n -4-\nAdd the cream and season well with salk and freshly ground black pepper. You can add half a teaspoon of chilli powder if you like.";
         
         Recipe *deathSauce = [[Recipe alloc] init];
-        deathSauce.name = @"Super Spicy sauce be careful"
+        deathSauce.name = @"Super Spicy sauce be careful";
         deathSauce.ingredients = @"Man the F*uck up sauce (available at Leeds Chilli Shop)";
         deathSauce.instructions = @"seriously this thing is dangerous only try if you like pain\n1 teaspoon is enough to make 2 meals really spicy";
         deathSauce.cost = @"£5";
         
-        [self.sauces addObject:deathSauce];
-        [self.sauces addObject:quickCheeseSauce];
-        [self.sauces addObject:tomatoSauce];
-        [self.sauces addObject:pepperSauce];
+
         
         self.basics = [NSMutableArray array];
         
-        Recipe *vegetableCookngTimes = [[Recipe alloc] init];
+        Recipe *vegetableCookingTimes = [[Recipe alloc] init];
         vegetableCookingTimes.name = @"Vegetable Cooking Times";
         vegetableCookingTimes.ingredients = @" -Boiling Times-\n\nSwedes and turnips \n 2-3cm chunks - 20-25 mins\nPotatoes \n 2-3cm chunks - 10-15 mins\nParsnips, carrots \n 2cm rings - 20-15mins\nCauliflower \n little florets - 10 mins\nBroccoli \n little florets - 5 mins\nGreen beans \n cut off stalk and tail - 5 mins\nSpinach \n any thick stalks removed - 30secs-1 min\nLeeks \n 2cm rings - 5 mins\nCabbage \n long thin strips - 5 mins\nSugar snaps \n leave as they are - 2 mins\nMangetout \n leave as they are - 1 min";
         vegetableCookingTimes.instructions = @" -Roasting-\n\nPotatoes \n 5-6cm chunks - 40-50 mins\nButternut squash\n peel, cut into 5-6cm chunks - 30-40 mins\nParsnips cut into 4 lengthways - 40-45 mins\nOnions \n cut into 6 wedges - 40-50 mins\nSweet potatoes\n peel, cut into 5-6cm chunks - 40-50 mins\nFennel\n cut into 4 wedes - 30-40 mins\nTomatoes\n cut the skin - 20-25 mins\nPeppers\n cut into large pieces - 25 mins";
@@ -138,16 +130,37 @@
         Recipe *rice = [[Recipe alloc] init];
         rice.name = @"Perfect Rice Every time";
         rice.ingredients = @"For 1 person:\n1/2 mug basmati rice + 1 mug water\n(+1 teaspoon of pilau rice seasoning, optional, but gives a yummy flavor)";
-        rice.instructions = @" -1-\nUsing a pan wih  lid, bring the water to te oil, add the seasoning and stir until it as dissolved.\n -2-\nAdd the rice and stir once. Bring back to the boil. Once boiling, turn down the heat to very low, so that the rice simmers gently. Put the lid on the pan and cook for approximately 10 minutes. Do not stir whilst the rice is cooking, or you will make it sticky. The rice should be cooked once the water has disappeard. Check occasionally to see if the water has boiled away.\n -3-\ntest the rice once he water has boiled awa. If the rice is sill too crunchy and the water has all gone, then you have boiled it too quickly. Add a little more water, replace the lid and cook for another 5 minutes."
+        rice.instructions = @" -1-\nUsing a pan wih  lid, bring the water to te oil, add the seasoning and stir until it as dissolved.\n -2-\nAdd the rice and stir once. Bring back to the boil. Once boiling, turn down the heat to very low, so that the rice simmers gently. Put the lid on the pan and cook for approximately 10 minutes. Do not stir whilst the rice is cooking, or you will make it sticky. The rice should be cooked once the water has disappeard. Check occasionally to see if the water has boiled away.\n -3-\ntest the rice once he water has boiled awa. If the rice is sill too crunchy and the water has all gone, then you have boiled it too quickly. Add a little more water, replace the lid and cook for another 5 minutes.";
         
         Recipe *pasta = [[Recipe alloc] init];
         pasta.name = @"How to cook Pasta";
-        pasta.ingredients @"General Cooking times for different types of Pasta:\nTagliatelle - 4-5 minutes\nSpaghetti - 6 minutes, depending how thick it is\nRadiatore - 10 minutes\nFusili - 10-12 minutes\nPenne - 10-12 miutes\nConchiglie - 6-8 minutes\nMacaroni - 12-15 minutes\nFarfalle - 6-8 minutes";
+        pasta.ingredients = @"General Cooking times for different types of Pasta:\nTagliatelle - 4-5 minutes\nSpaghetti - 6 minutes, depending how thick it is\nRadiatore - 10 minutes\nFusili - 10-12 minutes\nPenne - 10-12 miutes\nConchiglie - 6-8 minutes\nMacaroni - 12-15 minutes\nFarfalle - 6-8 minutes";
         pasta.instructions = @"Boil enough water to cover the pasta. Once the water is boiling, add the pasta. Simmer for the appropriate time, drain and add butter or olice oil to prevent the pasta sticking together.";
         
         [self.basics addObject:vegetableCookingTimes];
         [self.basics addObject:rice];
         [self.basics addObject:pasta];
+        
+        [self.meatRecipes addObject:mediterraneanChicken];
+        [self.meatRecipes addObject:chickpeaChorizocouscous];
+        
+        [self.sauces addObject:deathSauce];
+        [self.sauces addObject:quickCheeseSauce];
+        [self.sauces addObject:tomatoSauce];
+        [self.sauces addObject:pepperSauce];
+        
+        [self.VegetarianRecipes addObject:cauliflowerAndBroccoliCheese];
+        
+        [self.fishRecipes addObject:limeTunaCousCous];
+        [self.fishRecipes addObject:smokedMackerelPastaSalad];
+        [self.fishRecipes addObject:salmonPasta];
+        [self.fishRecipes addObject:tunaMushroomSpaghetti];
+        
+
+        [self.PastaRecipes addObject:chickenPestoPasta];
+        
+        [self.cheapRecipes addObject:beansOnToast];//index 0
+        [self.cheapRecipes addObject:mackerelOnToast]; //index 16
     }
     return self;
 }

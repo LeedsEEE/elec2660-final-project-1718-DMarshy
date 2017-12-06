@@ -9,11 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "AddShopTableViewCell.h"
 #import "ShoppingItemCell.h"
+#import "ShoppingItem.h"
+#import "ShoppingDataModel.h"
 @class AddShopTableViewCell;
 @class ShoppingItemCell;
 @interface ShoppingTableViewController : UITableViewController
 @property (nonatomic, strong) AddShopTableViewCell *addItem;
 @property (nonatomic, strong) ShoppingItemCell *item;
 - (IBAction)ItemName:(UITextField *)sender;
+- (IBAction)AddItemCell:(UIButton *)sender;
+- (IBAction)ItemBought:(UIButton *)sender;
+- (IBAction)nameFieldPressed:(UITextField *)sender;
+@property (nonatomic, strong) ShoppingDataModel *shoppingItem;
+@property (nonatomic, strong) NSString *sharedName;
+
+
 
 @end
