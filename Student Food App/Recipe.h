@@ -13,5 +13,8 @@
 @property (nonatomic, strong) NSString *ingredients;
 @property (nonatomic, strong) NSString *instructions;
 @property (nonatomic, strong) NSString *name;
+@property (nontaomic, strong) NSString *cookingTime;
+@property (nonatomic, strong) NSString *serves;
+@property (nonatomic, strong) NSString *cost;
 @property (nonatomic, strong) NSString *photo;
 @end
