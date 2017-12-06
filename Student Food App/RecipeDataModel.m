@@ -41,9 +41,7 @@
         
         
         self.meatRecipes = [NSMutableArray array]; //meat recipes
-        
-       
-        
+
         Recipe *mediterraneanChicken = [[Recipe alloc] init];
         mediterraneanChicken.name = @"Mediterranean Chicken";
         mediterraneanChicken.ingredients = @"4 chicken thighs\n1 onion, cut into wedges\n3 large potatoes, cut into 3cm cubes\n1 clove garlic, finely chopped\n3 tomatoes, cut into 1/4's\n12 olives, chopped\n1 teaspoon dried basil\n2 tablespoons olive oil\nsalt and pepper\n1/2 mug water + 1 chicken stock cube\npaprika to sprinkle over";
@@ -56,10 +54,7 @@
         
         [self.meatRecipes addObject:chickpeaChorizocouscous];
         [self.meatRecipes addObject:mediterraneanChicken];
-      
-        
-       
-        
+     
         self.PastaRecipes = [NSMutableArray array]; // pasta recipes
         
         Recipe *salmonPasta = [[Recipe alloc] init]; //NOSH BOOK
@@ -132,6 +127,27 @@
         [self.sauces addObject:quickCheeseSauce];
         [self.sauces addObject:tomatoSauce];
         [self.sauces addObject:pepperSauce];
+        
+        self.basics = [NSMutableArray array];
+        
+        Recipe *vegetableCookngTimes = [[Recipe alloc] init];
+        vegetableCookingTimes.name = @"Vegetable Cooking Times";
+        vegetableCookingTimes.ingredients = @" -Boiling Times-\n\nSwedes and turnips \n 2-3cm chunks - 20-25 mins\nPotatoes \n 2-3cm chunks - 10-15 mins\nParsnips, carrots \n 2cm rings - 20-15mins\nCauliflower \n little florets - 10 mins\nBroccoli \n little florets - 5 mins\nGreen beans \n cut off stalk and tail - 5 mins\nSpinach \n any thick stalks removed - 30secs-1 min\nLeeks \n 2cm rings - 5 mins\nCabbage \n long thin strips - 5 mins\nSugar snaps \n leave as they are - 2 mins\nMangetout \n leave as they are - 1 min";
+        vegetableCookingTimes.instructions = @" -Roasting-\n\nPotatoes \n 5-6cm chunks - 40-50 mins\nButternut squash\n peel, cut into 5-6cm chunks - 30-40 mins\nParsnips cut into 4 lengthways - 40-45 mins\nOnions \n cut into 6 wedges - 40-50 mins\nSweet potatoes\n peel, cut into 5-6cm chunks - 40-50 mins\nFennel\n cut into 4 wedes - 30-40 mins\nTomatoes\n cut the skin - 20-25 mins\nPeppers\n cut into large pieces - 25 mins";
+        
+        Recipe *rice = [[Recipe alloc] init];
+        rice.name = @"Perfect Rice Every time";
+        rice.ingredients = @"For 1 person:\n1/2 mug basmati rice + 1 mug water\n(+1 teaspoon of pilau rice seasoning, optional, but gives a yummy flavor)";
+        rice.instructions = @" -1-\nUsing a pan wih  lid, bring the water to te oil, add the seasoning and stir until it as dissolved.\n -2-\nAdd the rice and stir once. Bring back to the boil. Once boiling, turn down the heat to very low, so that the rice simmers gently. Put the lid on the pan and cook for approximately 10 minutes. Do not stir whilst the rice is cooking, or you will make it sticky. The rice should be cooked once the water has disappeard. Check occasionally to see if the water has boiled away.\n -3-\ntest the rice once he water has boiled awa. If the rice is sill too crunchy and the water has all gone, then you have boiled it too quickly. Add a little more water, replace the lid and cook for another 5 minutes."
+        
+        Recipe *pasta = [[Recipe alloc] init];
+        pasta.name = @"How to cook Pasta";
+        pasta.ingredients @"General Cooking times for different types of Pasta:\nTagliatelle - 4-5 minutes\nSpaghetti - 6 minutes, depending how thick it is\nRadiatore - 10 minutes\nFusili - 10-12 minutes\nPenne - 10-12 miutes\nConchiglie - 6-8 minutes\nMacaroni - 12-15 minutes\nFarfalle - 6-8 minutes";
+        pasta.instructions = @"Boil enough water to cover the pasta. Once the water is boiling, add the pasta. Simmer for the appropriate time, drain and add butter or olice oil to prevent the pasta sticking together.";
+        
+        [self.basics addObject:vegetableCookingTimes];
+        [self.basics addObject:rice];
+        [self.basics addObject:pasta];
     }
     return self;
 }
