@@ -33,12 +33,7 @@
         tunaMushroomSpaghetti.name = @"Tuna and Mushroom Spaghetti";
         tunaMushroomSpaghetti.ingredients = @" 1 1/2 portions spaghetti\n185g can tuna in oil, drained\n1 teaspoon oil to fry\njuice of a 1/2 lemon\n1 small onion, sliced\n1/2 mug grated parmesan\n5-6 mushrooms, sliced\n1 desserspoon dried chives\n1/2 mug frozen peas, defrosted\n3 tablespoons Greek yogurt";
         tunaMushroomSpaghetti.instructions = @"   -1-\nCook the spaghetti. Drain and return to the pan. \n -2- \nWhile the spaghetti is cooking, heat a little oil in a wok, fry the onion until i begins to softenn. Add the mushrooms and the peas and cook for 1 minute. Season Well.\n -3-/nTake the pan off the heat and add the yogurt, tuna, lemon juice, grated Parmesan and the chives. Stir gently. Add to the drained spaghetti. Stir gently and serve.";
-    /*
-        Recipe * = [[Recipe alloc] init];
-.name = @" ";
-        .ingredients = ";
-        .instructions = @" ";
-*/
+    
        
         [self.cheapRecipes addObject:beansOnToast];//index 0
         [self.cheapRecipes addObject:mackerelOnToast]; //index 16
@@ -55,10 +50,15 @@
         Recipe *mediterraneanChicken = [[Recipe alloc] init];
         mediterraneanChicken.name = @"Mediterranean Chicken";
         mediterraneanChicken.ingredients = @"4 chicken thighs\n1 onion, cut into wedges\n3 large potatoes, cut into 3cm cubes\n1 clove garlic, finely chopped\n3 tomatoes, cut into 1/4's\n12 olives, chopped\n1 teaspoon dried basil\n2 tablespoons olive oil\nsalt and pepper\n1/2 mug water + 1 chicken stock cube\npaprika to sprinkle over";
-        mediterraneanChicken.instructions = @"";
+        mediterraneanChicken.instructions = @" -1-\n Preheat the oen to 180 degrees/ fn oven 200 degrees/gas mark 6.\n -2- Put all the ingreients, except the sock and paprika, in a casserole dish. Distribute the oil evenly and arrange the pieces so that the skins of the chicken will brown. Add the stock and sprinke the casserole with paprika\n -3-\nPut in the oven for 45-50 minutes until the chicken is browned and cooked through. Test one piece to make sure";
         
+        Recipe *chickpeaChorizocouscous = [[Recipe alloc] init];
+        *chickpeaChorizocouscous.name = @"Chickpeak and Chorizo Couscous";
+        *chickpeaChorizocouscous.ingredients = @"1/2 mug couscous\n1 mug boiling water + 1 vegetable stock cube\n1/2 teaspoon paprika\n1/2 teaspoon cumin\n1/2teaspoon ground coriander\n1\2 tablespoon oil\n1 small onion, sliced\n1 clove garlic, finely chopped\n2 small chorizo sausages, chopped\n400g can chickpeas, drained and rinsed\n2 tomatoes, roughly chopped\n1/4 mug water";
+        *chickpeaChorizocouscous.instructions = @" -1-\nPut the couscous in a bowl and add the boiling water, stock cube, paprika, cumin and coriander. Stir together. Cover with a plate and leave to stand for at least 5 minutes, until the water is absorbed.\n -2-\nHeat the oil in a frying pan or wok. Add the onions, garli and chopped choriza. Fry until the chorizo is browned.\n -3-\nAdd the chickpeas, toatoes and water, and cook for another 1-2 minutes, stirring frequently. Most of the liquid should be gone.\n -4-\n Add the couscous, mix together and serve.";
+        
+        [self.meatRecipes addObject:chickpeaChorizocouscous];
         [self.meatRecipes addObject:mediterraneanChicken];
-       
         [self.meatRecipes addObject:steak]; // index 0
         
        
@@ -85,6 +85,13 @@
         limeTunaCousCous.ingredients = @"3/4 mug couscous\n2 tablespoons olive oil\n1 1/2 mugs boiling water\n185g tin tuna\n1 vegetable stock cube\n125g cherry tomatoes, halved\nzest and juice of a lime\n7cm piece of cucumber, halves, deseeded and thinly sliced\n1 teaspoon sugar\nsalt and pepper\n1/2 x 340g tin sweetcorn";
         limeTunaCousCous.instructions = @" -1- Place the couscous and lime \est in a bowl and pour over the boiling water and crumbled vegetable stock cube. Put a plate over the top to keep the heat in and leave to stand for 5 minutes. \n -2-\n Mix together the limejuice, sugar, salk and pepper and olive oil to make a dressing. \n -3-\n Once the cous cous is cooked, add the drained tuna, tomatoes, cucumber, sweetcorn and the dressing to the couscouus. Stir and serve.";
         
+        Recipe smokedMackerelPastaSalad* = [[Recipe alloc] init];
+        smokedMackerelPastaSalad.name = @"Smoked Mackerel Pasta Salad";
+        smokedMackerelPastaSalad.ingredients = @"1 1/2 mugs pasta\n1/2 x 300g pack green beans, trimmed and cut in 1/2\n2 tablespoons cremefraiche\n1 tablespoon mayo\n1 teaspoon dried chives\nzest and juice of 1/2 lemon\n250g pack cooked, smoked mackerel\n1/4 cucumber, chopped\n2 spring onions, chopped";
+        smokedMackerelPastaSalad.instructions = @" -1-\nPut the pasta on to boil. Add the beans 5 minutes before the end of cooking time. Once cooked, drain, run under a cold tap and place in a bowl.\n -2-\nMix togwther the creme fraiche, mayo, chives, lemon zest, juice and season with salt and pepper. Add to the pasta and mix\n -3-\n Peel the skin off the backs of the mackerel fillets and then gently flake the fish. Add to the bowl, along with the cucumber and onions. Mix gently and serve";
+        
+        [self.fishRecipes addObject:smokedMackerelPastaSalad];
+        [self.fishRecipes addObject:chickpeaChorizocouscous];
         [self.fishRecipes addObject:limeTunaCousCous];
         [self.fishRecipes addObject:salmonPasta];
         
