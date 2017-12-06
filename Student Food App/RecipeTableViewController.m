@@ -63,6 +63,9 @@
         case 6:
             sectionName = @"Sauces";
             break;
+        case 7:
+            sectionName = @"Basics";
+            break;
     }
     return sectionName; //https://stackoverflow.com/questions/10505708/how-to-set-the-uitableview-section-title-programmatically-iphone-ipad
 }
@@ -90,6 +93,9 @@
     }
     else if (section == 6){
         numberOfRows = self.recipe.sauces.count;
+    }
+    else if (section == 7){
+        numberOfRows = self.recipe.basics.count;
     }
     return numberOfRows;
 
@@ -133,13 +139,19 @@
             cell.textLabel.text = tempRecipe.name;
             return cell;
         }
-    else{
+    else if(indexPath.section == 6){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
         Recipe *tempRecipe = [self.recipe.sauces objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
         return cell;
     }
-    
+    else{
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
+        Recipe *tempRecipe = [self.recipe.basics objectAtIndex:indexPath.row];
+        cell.textLabel.text = tempRecipe.name;
+        return cell;
+        
+    }
     
     }
 /*
@@ -213,6 +225,10 @@
             Recipe *tempRecipe = [self.recipe.sauces objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
         }
+         if (indexPath.section == 7) { //basics
+            Recipe *tempRecipe = [self.recipe.basics objectAtIndex:indexPath.row];
+            destinationViewController.recipe = tempRecipe;
+        }        
     }
 }
 
