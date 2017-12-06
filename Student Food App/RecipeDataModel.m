@@ -52,6 +52,13 @@
         steak.ingredients = @"-1 Steak \n-Creme Fraiche";
         steak.instructions = @"preheat the pan on a very high heat,\nprepare the steak with salt pepper and oil, \nplace steak in pan and leave it for 2 minutes the flip and leave for 2 minutes";
         
+        Recipe *mediterraneanChicken = [[Recipe alloc] init];
+        mediterraneanChicken.name = @"Mediterranean Chicken";
+        mediterraneanChicken.ingredients = @"4 chicken thighs\n1 onion, cut into wedges\n3 large potatoes, cut into 3cm cubes\n1 clove garlic, finely chopped\n3 tomatoes, cut into 1/4's\n12 olives, chopped\n1 teaspoon dried basil\n2 tablespoons olive oil\nsalt and pepper\n1/2 mug water + 1 chicken stock cube\npaprika to sprinkle over";
+        mediterraneanChicken.instructions = @"";
+        
+        [self.meatRecipes addObject:mediterraneanChicken];
+        [self.meatRecipes addObject:chickenPestoPasta];
         [self.meatRecipes addObject:steak]; // index 0
         
        
@@ -63,6 +70,12 @@
         salmonPasta.ingredients = @"2 small bunches of Tagliatelle pasta\n 2 tablespoons of double cream\n 1 small piece of salmon\n1 teaspoon of dried chives\n1 tablespoon olive oil to fry\n3 spring onions, chopped";
         salmonPasta.instructions = @" -1-\nCook the tagliatelle. It should only take about 3-4 minutes to cook. Leave to drain\n -2-\n Fry the salmon in a little olive oil (if you have a small pice it should only take 2-3 minutes each side). Add the spring onions to the pan towards the end of the cooking time and allow them to brown a little\n -3-\nRemove the pan from the heat and gently break up the salmon. Add the cream and the chives and return to the heat. As soon as the cream beginns to bubble, add the pasta and stir everything together. Allow the pasta to heat through. This should take around 1 minute.\n -4-\n Season well with salt and pepper";
             
+        Recipe *chickenPestoPasta = [[Recipe alloc] init];
+        chickenPestoPasta.name = @"Chicken With Pesto Pasta";
+        chickenPestoPasta.ingredients = @"1 mug Pasta\n1 tablespoon oil to fry\n2 Chicken breasts\n1 Onion, cut into thin wedges\n1/2 red pepper, cut into thin strips\n1 garlic clove, finely chopped\n12 black olives, roughly chopped\n200g pack cherry tomatoes, each cut in half\n1/2 x 200g pack of feta cheese, crumbled\n -Dressing-\n1 tablespoon olive oil\n1 tablespoon green pesto\njuice of a lemon\n1/2 teaspoon sugar\nsalt and pepper";
+        chickenPestoPasta.instructions = @" -1-\nMix together the dressing ingredients\n -2-\nCook the pasta. One cooked, drain and return to pan\n -3-\nHeat a little oil in a frying pan and add the chicken breasts. Cook on a high heat for 2 minutes each side. Turn down the heat and cook, with the lid on, for a further 4 minutes each side, depending on the size of the chicken breast. Set aside\n -4-\nFry the onions, garlic and pepper for 2-3 minutes until soft. Add the olives and tomatoes to the pan and take off the heat.\n -5-\n Slice the chicken into fairly thin slices and, together with the pasta add to the frying pan. Mix together.\n -6-\n Sprinkle the feta over the top an drizzle with the dressing.";
+        
+        [self.PastaRecipes addObject:chickenPestoPasta];
         [self.PastaRecipes addObject:salmonPasta];
         
         self.fishRecipes = [NSMutableArray array]; // fish recipes
