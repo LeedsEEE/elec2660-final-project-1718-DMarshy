@@ -19,14 +19,14 @@
         
         Recipe *beansOnToast = [[Recipe alloc] init];
         beansOnToast.name = @"Beans On Toast";
-        beansOnToast.ingredients = @"-1 Tin of Baked Beans \n-2 slices ofBread \n-Cheese (Optional)";
-        beansOnToast.instructions = @"just do it";
+        beansOnToast.ingredients = @"1/2 Tin of Baked Beans \n2 slices ofBread \nCheese, sliced or grated";
+        beansOnToast.instructions = @" -1-\nHeat the beans in a pan on a medium heat for 5 minutes until bubbling\n -2-\nToast the bread in a toaster\n -3-\nAdd the cheese on top of the toast and pour the beans on top (you may decide to put the cheese on top of the beans, but if you do you are wrong)";
       //  beansOnToast.photo = @"BeansOnToast.jpg";
         
         Recipe *mackerelOnToast= [[Recipe alloc] init];
         mackerelOnToast.name = @"Mackerel On Toast";
-        mackerelOnToast.ingredients = @"-1 can of mackerel in tomato sauce \n-2 slices ofBread";
-        mackerelOnToast.instructions = @"just do it";
+        mackerelOnToast.ingredients = @"1 can of mackerel in tomato sauce \n2 slices ofBread";
+        mackerelOnToast.instructions = @" -1-\nHeat up the mackerel in tomato sauce while the bread is in the toaster. \n -2-\nPut the mackerel on top of the toast";
      //   mackerelOnToast.photo = @"MackerelOnToast.jpg";
        
         Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
@@ -42,10 +42,7 @@
         
         self.meatRecipes = [NSMutableArray array]; //meat recipes
         
-        Recipe *steak = [[Recipe alloc] init];
-        steak.name = @"Steak";
-        steak.ingredients = @"-1 Steak \n-Creme Fraiche";
-        steak.instructions = @"preheat the pan on a very high heat,\nprepare the steak with salt pepper and oil, \nplace steak in pan and leave it for 2 minutes the flip and leave for 2 minutes";
+       
         
         Recipe *mediterraneanChicken = [[Recipe alloc] init];
         mediterraneanChicken.name = @"Mediterranean Chicken";
@@ -59,7 +56,7 @@
         
         [self.meatRecipes addObject:chickpeaChorizocouscous];
         [self.meatRecipes addObject:mediterraneanChicken];
-        [self.meatRecipes addObject:steak]; // index 0
+      
         
        
         
@@ -77,7 +74,7 @@
         
         [self.PastaRecipes addObject:chickenPestoPasta];
         [self.PastaRecipes addObject:salmonPasta];
-         [self.meatRecipes addObject:chickenPestoPasta];
+        [self.meatRecipes addObject:chickenPestoPasta];
         self.fishRecipes = [NSMutableArray array]; // fish recipes
         
         Recipe *limeTunaCousCous = [[Recipe alloc] init];
@@ -94,6 +91,8 @@
         [self.fishRecipes addObject:chickpeaChorizocouscous];
         [self.fishRecipes addObject:limeTunaCousCous];
         [self.fishRecipes addObject:salmonPasta];
+        [self.fishRecipes addObject:tunaMushroomSpaghetti];
+        
         
         
         self.VegetarianRecipes = [NSMutableArray array]; // veggie recipes
@@ -123,7 +122,13 @@
         pepperSauce.ingredients = @"1 tablespoon of oil to fry\n1 clove garlic, chopped\n1 1/2 red peppers, chopped\n1 tablespoon cream\n1/2 onion, slice\n1/2 teaspoon sugar";
         pepperSauce.instructions = @" -1-\nHeat the oil in a saucepan and fry the peppers, onions, garlic, over a medium heat for 5 minutes, until they are really soft.\n -2-\nAdd the sugar and cream and mix\n -3-\nUse a hand-held blender to liquidise, or leave as it is\n -4-\nAdd the cream and season well with salk and freshly ground black pepper. You can add half a teaspoon of chilli powder if you like.";
         
-            
+        Recipe *deathSauce = [[Recipe alloc] init];
+        deathSauce.name = @"Super Spicy sauce be careful"
+        deathSauce.ingredients = @"Man the F*uck up sauce (available at Leeds Chilli Shop)";
+        deathSauce.instructions = @"seriously this thing is dangerous only try if you like pain\n1 teaspoon is enough to make 2 meals really spicy";
+        deathSauce.cost = @"£5";
+        
+        [self.sauces addObject:deathSauce];
         [self.sauces addObject:quickCheeseSauce];
         [self.sauces addObject:tomatoSauce];
         [self.sauces addObject:pepperSauce];
