@@ -37,7 +37,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 7;
+    return 8;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
@@ -77,13 +77,13 @@
         numberOfRows = self.recipe.cheapRecipes.count;
     }
     else if (section == 2){
-        numberOfRows = self.recipe.meatRecipes.count;
-    }
-    else if (section == 3){
         numberOfRows = self.recipe.PastaRecipes.count;
     }
-    else if (section == 4){
+    else if (section == 3){
         numberOfRows = self.recipe.fishRecipes.count;
+    }
+    else if (section == 4){
+        numberOfRows = self.recipe.meatRecipes.count;
     }
     else if (section == 5){
         numberOfRows = self.recipe.VegetarianRecipes.count;
@@ -111,19 +111,19 @@
     }
         else if (indexPath.section == 2){
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-            Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+            Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
             cell.textLabel.text = tempRecipe.name;
             return cell;
     }
         else if (indexPath.section == 3){
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-            Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
+            Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
             cell.textLabel.text = tempRecipe.name;
             return cell;
         }
         else if (indexPath.section == 4){
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-            Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
+            Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
             cell.textLabel.text = tempRecipe.name;
             return cell;
         }
