@@ -58,7 +58,7 @@
         mediterraneanChicken.instructions = @"";
         
         [self.meatRecipes addObject:mediterraneanChicken];
-        [self.meatRecipes addObject:chickenPestoPasta];
+       
         [self.meatRecipes addObject:steak]; // index 0
         
        
@@ -77,7 +77,7 @@
         
         [self.PastaRecipes addObject:chickenPestoPasta];
         [self.PastaRecipes addObject:salmonPasta];
-        
+         [self.meatRecipes addObject:chickenPestoPasta];
         self.fishRecipes = [NSMutableArray array]; // fish recipes
         
         Recipe *limeTunaCousCous = [[Recipe alloc] init];

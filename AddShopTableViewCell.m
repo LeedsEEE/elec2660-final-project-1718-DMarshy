@@ -13,10 +13,10 @@
 {
     self = [super init];
     if (self) {
-        /*NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:2 forKey:@"numberOfRows"];
         [defaults synchronize];
-        self.numberOfCells = [defaults integerForKey:@"numberOfRows"];*/
+        self.numberOfCells = [defaults integerForKey:@"numberOfRows"];
     }
     return self;
 }

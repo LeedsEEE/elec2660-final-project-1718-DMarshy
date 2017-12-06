@@ -9,7 +9,7 @@
 #import "ShoppingDataModel.h"
 
 @implementation ShoppingDataModel
-
+/*
 - (instancetype)init
 {
     self = [super init];
@@ -18,5 +18,5 @@
         if{
     }
     return self;
-}
+}*/
 @end

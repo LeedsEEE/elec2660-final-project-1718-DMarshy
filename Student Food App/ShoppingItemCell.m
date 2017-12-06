@@ -36,6 +36,8 @@
     }
     return self;
 }*/
+
+
 - (IBAction)ItemBought:(UIButton *)sender {
         self.addItemCell.numberOfCells =self.addItemCell.numberOfCells-1;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
