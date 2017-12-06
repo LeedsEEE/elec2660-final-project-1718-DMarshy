@@ -10,8 +10,10 @@
 #import "AddShopTableViewCell.h"
 #import "ShoppingItemCell.h"
 @class AddShopTableViewCell;
-
+@class ShoppingItemCell;
 @interface ShoppingTableViewController : UITableViewController
 @property (nonatomic, strong) AddShopTableViewCell *addItem;
 @property (nonatomic, strong) ShoppingItemCell *item;
+- (IBAction)ItemName:(UITextField *)sender;
+
 @end

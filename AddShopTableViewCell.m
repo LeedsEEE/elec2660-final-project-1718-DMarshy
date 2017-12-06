@@ -13,23 +13,23 @@
 {
     self = [super init];
     if (self) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        /*NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:2 forKey:@"numberOfRows"];
         [defaults synchronize];
-        self.numberOfCells = [defaults integerForKey:@"numberOfRows"];
+        self.numberOfCells = [defaults integerForKey:@"numberOfRows"];*/
     }
     return self;
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+ /*
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setInteger:2 forKey:@"numberOfRows"];
     [defaults synchronize];
     self.numberOfCells = [defaults integerForKey:@"numberOfRows"];
     
-
+*/
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -42,9 +42,13 @@
 - (IBAction)AddShopItem:(UIButton *)sender {
     self.numberOfCells ++;
      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:([defaults integerForKey:@"numberOfRows"]+1) forKey:@"numberOfRows"];
+    NSInteger newNumberOfRows = [defaults integerForKey:@"numberOfRows"]+1;
+    [defaults setInteger:newNumberOfRows forKey:@"numberOfRows"];
+ 
+    [defaults synchronize];
     NSLog(@"number of rows = %ld",[defaults integerForKey:@"numberOfRows"]);
     self.shoppingTableViewController = [[ShoppingTableViewController alloc]init];
+
 
     //[self.shoppingTableViewController.tableView reloadData];
     

@@ -23,6 +23,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   /* NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:2 forKey:@"numberOfRows"];
+    [defaults synchronize];*/
 }
 
 - (void)didReceiveMemoryWarning {

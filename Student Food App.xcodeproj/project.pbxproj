@@ -14,6 +14,8 @@
 		AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368001FC44F3800DC947A /* InventoryDataModel.m */; };
 		AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368031FC4542600DC947A /* InventoryViewController.m */; };
 		AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368091FC461C000DC947A /* InventoryTableViewCell.m */; };
+		AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */; };
+		AC8676F01FD731B000021516 /* ShoppingDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8676EF1FD731B000021516 /* ShoppingDataModel.m */; };
 		ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */; };
 		ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */; };
 		ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */; };
@@ -27,7 +29,6 @@
 		ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */; };
 		ACB8369B1FC302D600B419B0 /* Student_Food_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB8369A1FC302D600B419B0 /* Student_Food_AppTests.m */; };
 		ACB836A61FC302D600B419B0 /* Student_Food_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */; };
-		ACD05F721FD5B2F40020269B /* BeansOnToast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACD05F711FD5B2F40020269B /* BeansOnToast.jpg */; };
 		ACDC94621FC858F700227F1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC94611FC858F700227F1F /* CoreData.framework */; };
 		ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */; };
 		ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE71D011FC32241006D93BD /* RecipeViewController.m */; };
@@ -68,6 +69,9 @@
 		AC5368031FC4542600DC947A /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryViewController.m; path = "Student Food App/InventoryViewController.m"; sourceTree = "<group>"; };
 		AC5368081FC461C000DC947A /* InventoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewCell.h; path = "Student Food App/InventoryTableViewCell.h"; sourceTree = "<group>"; };
 		AC5368091FC461C000DC947A /* InventoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryTableViewCell.m; path = "Student Food App/InventoryTableViewCell.m"; sourceTree = "<group>"; };
+		AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeansOnToast.jpg; sourceTree = "<group>"; };
+		AC8676EE1FD731B000021516 /* ShoppingDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingDataModel.h; sourceTree = "<group>"; };
+		AC8676EF1FD731B000021516 /* ShoppingDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingDataModel.m; sourceTree = "<group>"; };
 		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
 		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
 		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewController.h; path = "Student Food App/InventoryTableViewController.h"; sourceTree = "<group>"; };
@@ -94,7 +98,6 @@
 		ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student_Food_AppUITests.m; sourceTree = "<group>"; };
 		ACB836A71FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD05F711FD5B2F40020269B /* BeansOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BeansOnToast.jpg; path = ../../../Desktop/BeansOnToast.jpg; sourceTree = "<group>"; };
 		ACDC94611FC858F700227F1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */,
 				ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */,
 				ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */,
+				AC8676EE1FD731B000021516 /* ShoppingDataModel.h */,
+				AC8676EF1FD731B000021516 /* ShoppingDataModel.m */,
 				ACA61D361FC309E900BE5127 /* Recipe.h */,
 				ACA61D371FC309E900BE5127 /* Recipe.m */,
 				ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */,
@@ -214,7 +219,7 @@
 		ACB8367D1FC302D600B419B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ACD05F711FD5B2F40020269B /* BeansOnToast.jpg */,
+				AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */,
 				ACB8367E1FC302D600B419B0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -353,7 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD05F721FD5B2F40020269B /* BeansOnToast.jpg in Resources */,
+				AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */,
 				ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */,
 				ACB8368D1FC302D600B419B0 /* Assets.xcassets in Resources */,
 				ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */,
@@ -397,6 +402,7 @@
 				ACEB8F4B1FCC75240042E983 /* InventoryItem+CoreDataClass.m in Sources */,
 				ACA61D381FC309E900BE5127 /* Recipe.m in Sources */,
 				ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */,
+				AC8676F01FD731B000021516 /* ShoppingDataModel.m in Sources */,
 				AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */,
 				ACB836851FC302D600B419B0 /* FirstViewController.m in Sources */,
 				ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */,

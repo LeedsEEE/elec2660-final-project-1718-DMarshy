@@ -257,7 +257,7 @@
                                 <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciO-Ri-Cwr" id="AcW-et-WMY">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="06i-Xx-zYl">
@@ -382,7 +382,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oq2-Cw-69a" id="YgC-wF-mBt">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwA-Ji-KFg">
@@ -405,7 +405,7 @@
                                 <rect key="frame" x="0.0" y="136" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mCG-nw-gCn" id="FUc-TN-VpT">
-                                    <frame key="frameInset" width="375" height="52"/>
+                                    <frame key="frameInset" width="375" height="53"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gE-S3-vqd">
@@ -414,14 +414,18 @@
                                                 <action selector="ItemBought:" destination="mCG-nw-gCn" eventType="touchUpInside" id="3u9-YM-RKJ"/>
                                             </connections>
                                         </button>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-wv-PZ0">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Item Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-wv-PZ0">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="248" id="PdF-CC-zZf"/>
                                                 <constraint firstAttribute="height" constant="30" id="aMk-9O-I2w"/>
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <action selector="ItemName:" destination="T7E-4L-HsY" eventType="editingDidEnd" id="IKr-lP-Ui9"/>
+                                                <action selector="ItemNameAdded:" destination="mCG-nw-gCn" eventType="editingDidEnd" id="91g-Nn-S3J"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -431,9 +435,6 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="4gE-S3-vqd" secondAttribute="trailing" constant="20" id="aYc-E9-KqR"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="ItemName" destination="8pP-wv-PZ0" id="Ytq-DH-ZB1"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
