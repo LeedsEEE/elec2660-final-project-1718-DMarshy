@@ -27,6 +27,9 @@
    /* NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setInteger:2 forKey:@"numberOfRows"];
     [defaults synchronize];*/
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,7 +110,8 @@
    
     if(indexPath.section == 0){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddRecipeCell" forIndexPath:indexPath];
-        cell.textLabel.text = @"Add Recipe";
+        cell.textLabel.text = @"Recipe";
+        cell.detailTextLabel.text = @"Cooking Time";
         return cell;
     }
     else if (indexPath.section == 1){

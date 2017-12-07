@@ -11,6 +11,9 @@
 #import "Inventory.h"
 #import <CoreData/CoreData.h> 
 #import "InventoryItem+AddInventoryItem.h"
+#import "InventoryTableViewCell.h"
+@class InventoryTableViewCell;
+
 
 @interface InventoryViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 - (IBAction)InventoryTextField:(UITextField *)sender;
@@ -24,5 +27,6 @@
 @property (nonatomic, strong) InventoryItem *inventoryItem;
 @property (weak, nonatomic) IBOutlet UIPickerView *amount;
 @property NSInteger Row;
+@property (nonatomic, strong) InventoryTableViewCell *inventoryTableViewCell;
 
 @end

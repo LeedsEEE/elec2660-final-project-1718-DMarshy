@@ -22,8 +22,22 @@
     
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+
     [inventorydefaults setObject:@"Cheese" forKey:[NSString stringWithFormat:@"k%d",1]];
-    [inventorydefaults setObject:@"poop" forKey:[NSString stringWithFormat:@"k%d",2]]; //setting first objects value
+    [inventorydefaults setObject:@"bread" forKey:[NSString stringWithFormat:@"k%d",2]];
+    [inventorydefaults setObject:@"fixpls" forKey:[NSString stringWithFormat:@"k%d",3]];
+    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%d",3]];
+    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%d",3]];
+    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%ld",(long)4]];
+    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%ld",(long)4]];
+    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%ld",(long)5]];
+    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%ld",(long)5]];
+    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%ld",(long)6]];
+    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%ld",(long)6]];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;//https://stackoverflow.com/questions/20884381/tableview-showing-behind-tab-bar
+    //setting first objects value
         [inventorydefaults synchronize];
 
     
@@ -99,9 +113,11 @@
         NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
         for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] == nil); i++) {
             cell.invItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%ld",indexPath.row+1]];
-            cell.stepperCount.text = [NSString stringWithFormat:@"%d",i];
-            cell.stepperValue.value = [inventorydefaults integerForKey:[NSString stringWithFormat:@"a%d",i]];
-            
+            cell.stepperCount.tag = indexPath.row;
+            cell.stepperValue.tag = indexPath.row;
+            cell.stepperCount.text = [NSString stringWithFormat:@"%ld",[inventorydefaults integerForKey:[NSString stringWithFormat:@"a%ld",indexPath.row+1]]];
+            cell.stepperValue.value = [inventorydefaults integerForKey:[NSString stringWithFormat:@"a%ld",indexPath.row+1]];
+            cell.tag =indexPath.row;
         }
         [inventorydefaults synchronize];
         return cell;

@@ -35,8 +35,10 @@ numberOfRowsInComponent:(NSInteger)component{
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component{
     NSString *coordinate = [NSString stringWithFormat:@"%ld",row+1];
-    self.Row = row;
+    self.Row = row+1;
+    NSLog(@"Picker Value = %ld",self.Row);
     return coordinate;
+
     
 }
 
@@ -54,7 +56,7 @@ numberOfRowsInComponent:(NSInteger)component{
     [inventorydefaults setInteger:self.Row forKey:[NSString stringWithFormat:@"a%d",i]];
     [inventorydefaults setObject:self.nameField.text forKey:[NSString stringWithFormat:@"k%d",i]];
     [inventorydefaults synchronize];
-    self.outputTextView.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]];
+    self.outputTextView.text = [NSString stringWithFormat:@"Item name =%@\nAmount = %ld",[inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]],[inventorydefaults integerForKey:[NSString stringWithFormat:@"a%d",i]]];
 
 }
 

@@ -29,8 +29,15 @@
 
 - (IBAction)StepperPressed:(UIStepper *)sender {
   
-    
     self.stepperCount.text = [NSString stringWithFormat:@"%d",(int)sender.value];
     
+    NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+    
+    [inventorydefaults setInteger:sender.value forKey:[NSString stringWithFormat:@"a%d",(int)self.stepperValue.tag]];
+    [inventorydefaults setObject:[NSString stringWithFormat:@"%d",(int)sender.value] forKey:[NSString stringWithFormat:@"c%d",(int)self.stepperCount.tag]];
+    
+    NSLog(@"value = %f for Row = %ld",sender.value,self.stepperValue.tag);
+    
+    [inventorydefaults synchronize];
 }
 @end

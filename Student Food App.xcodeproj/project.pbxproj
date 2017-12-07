@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		AC00329C1FD6CA2900B177E8 /* AddShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */; };
 		AC00329F1FD6CB1200B177E8 /* ShoppingItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */; };
+		AC049A0E1FD9AD7300A5351F /* CauliflowerBroccoliCheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0499FD1FD9AD7300A5351F /* CauliflowerBroccoliCheese.jpg */; };
+		AC049A0F1FD9AD7300A5351F /* ChickenPestoPasta.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AC0499FE1FD9AD7300A5351F /* ChickenPestoPasta.jpeg */; };
+		AC049A101FD9AD7300A5351F /* MackerelOnToast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0499FF1FD9AD7300A5351F /* MackerelOnToast.jpg */; };
+		AC049A111FD9AD7300A5351F /* ManTheFuckUp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A001FD9AD7300A5351F /* ManTheFuckUp.jpg */; };
+		AC049A121FD9AD7300A5351F /* Pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A011FD9AD7300A5351F /* Pasta.jpg */; };
+		AC049A131FD9AD7300A5351F /* PepperSauce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A021FD9AD7300A5351F /* PepperSauce.jpg */; };
+		AC049A141FD9AD7300A5351F /* Rice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A031FD9AD7300A5351F /* Rice.jpg */; };
+		AC049A151FD9AD7300A5351F /* SalmonPasta.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A041FD9AD7300A5351F /* SalmonPasta.jpeg */; };
+		AC049A161FD9AD7300A5351F /* TomtoSauce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A051FD9AD7300A5351F /* TomtoSauce.jpg */; };
+		AC049A171FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A061FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg */; };
+		AC049A181FD9AD7300A5351F /* Untitled document.docx in Resources */ = {isa = PBXBuildFile; fileRef = AC049A071FD9AD7300A5351F /* Untitled document.docx */; };
+		AC049A191FD9AD7300A5351F /* Vegetables.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A081FD9AD7300A5351F /* Vegetables.jpg */; };
+		AC049A1A1FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A091FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg */; };
+		AC049A1B1FD9AD7300A5351F /* LimeTunaCouscous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0A1FD9AD7300A5351F /* LimeTunaCouscous.jpg */; };
+		AC049A1C1FD9AD7300A5351F /* MediterraneanChicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0B1FD9AD7300A5351F /* MediterraneanChicken.jpg */; };
+		AC049A1D1FD9AD7300A5351F /* QuickCheeseSauce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0C1FD9AD7300A5351F /* QuickCheeseSauce.jpg */; };
+		AC049A1E1FD9AD7300A5351F /* SmokedMackerelPasta.JPG in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0D1FD9AD7300A5351F /* SmokedMackerelPasta.JPG */; };
 		AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5367FD1FC44EE400DC947A /* Inventory.m */; };
 		AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368001FC44F3800DC947A /* InventoryDataModel.m */; };
 		AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368031FC4542600DC947A /* InventoryViewController.m */; };
@@ -18,6 +35,7 @@
 		AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48B1FD860B1006EF502 /* Red-x.png */; };
 		AC92C48E1FD860FA006EF502 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48D1FD860FA006EF502 /* Icon-29.png */; };
 		AC92C4911FD87C25006EF502 /* ShoppingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC92C4901FD87C25006EF502 /* ShoppingItem.m */; };
+		AC983F211FD9B26200AC1CE8 /* serves.png in Resources */ = {isa = PBXBuildFile; fileRef = AC983F201FD9B26200AC1CE8 /* serves.png */; };
 		ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */; };
 		ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */; };
 		ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */; };
@@ -61,6 +79,23 @@
 		AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddShopTableViewCell.m; path = ../AddShopTableViewCell.m; sourceTree = "<group>"; };
 		AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingItemCell.h; sourceTree = "<group>"; };
 		AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingItemCell.m; sourceTree = "<group>"; };
+		AC0499FD1FD9AD7300A5351F /* CauliflowerBroccoliCheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CauliflowerBroccoliCheese.jpg; sourceTree = "<group>"; };
+		AC0499FE1FD9AD7300A5351F /* ChickenPestoPasta.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChickenPestoPasta.jpeg; sourceTree = "<group>"; };
+		AC0499FF1FD9AD7300A5351F /* MackerelOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MackerelOnToast.jpg; sourceTree = "<group>"; };
+		AC049A001FD9AD7300A5351F /* ManTheFuckUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ManTheFuckUp.jpg; sourceTree = "<group>"; };
+		AC049A011FD9AD7300A5351F /* Pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pasta.jpg; sourceTree = "<group>"; };
+		AC049A021FD9AD7300A5351F /* PepperSauce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PepperSauce.jpg; sourceTree = "<group>"; };
+		AC049A031FD9AD7300A5351F /* Rice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rice.jpg; sourceTree = "<group>"; };
+		AC049A041FD9AD7300A5351F /* SalmonPasta.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SalmonPasta.jpeg; sourceTree = "<group>"; };
+		AC049A051FD9AD7300A5351F /* TomtoSauce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TomtoSauce.jpg; sourceTree = "<group>"; };
+		AC049A061FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TunaMushroomSpaghetti.jpg; sourceTree = "<group>"; };
+		AC049A071FD9AD7300A5351F /* Untitled document.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Untitled document.docx"; sourceTree = "<group>"; };
+		AC049A081FD9AD7300A5351F /* Vegetables.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vegetables.jpg; sourceTree = "<group>"; };
+		AC049A091FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChickpeaChorizoCouscous.jpg; sourceTree = "<group>"; };
+		AC049A0A1FD9AD7300A5351F /* LimeTunaCouscous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LimeTunaCouscous.jpg; sourceTree = "<group>"; };
+		AC049A0B1FD9AD7300A5351F /* MediterraneanChicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MediterraneanChicken.jpg; sourceTree = "<group>"; };
+		AC049A0C1FD9AD7300A5351F /* QuickCheeseSauce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QuickCheeseSauce.jpg; sourceTree = "<group>"; };
+		AC049A0D1FD9AD7300A5351F /* SmokedMackerelPasta.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmokedMackerelPasta.JPG; sourceTree = "<group>"; };
 		AC5367FC1FC44EE400DC947A /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inventory.h; path = "Student Food App/Inventory.h"; sourceTree = "<group>"; };
 		AC5367FD1FC44EE400DC947A /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Inventory.m; path = "Student Food App/Inventory.m"; sourceTree = "<group>"; };
 		AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryDataModel.h; path = "Student Food App/InventoryDataModel.h"; sourceTree = "<group>"; };
@@ -76,6 +111,7 @@
 		AC92C48D1FD860FA006EF502 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		AC92C48F1FD87C25006EF502 /* ShoppingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingItem.h; sourceTree = "<group>"; };
 		AC92C4901FD87C25006EF502 /* ShoppingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingItem.m; sourceTree = "<group>"; };
+		AC983F201FD9B26200AC1CE8 /* serves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serves.png; sourceTree = "<group>"; };
 		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
 		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
 		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewController.h; path = "Student Food App/InventoryTableViewController.h"; sourceTree = "<group>"; };
@@ -220,6 +256,24 @@
 		ACB8367D1FC302D600B419B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC983F201FD9B26200AC1CE8 /* serves.png */,
+				AC0499FD1FD9AD7300A5351F /* CauliflowerBroccoliCheese.jpg */,
+				AC0499FE1FD9AD7300A5351F /* ChickenPestoPasta.jpeg */,
+				AC0499FF1FD9AD7300A5351F /* MackerelOnToast.jpg */,
+				AC049A001FD9AD7300A5351F /* ManTheFuckUp.jpg */,
+				AC049A011FD9AD7300A5351F /* Pasta.jpg */,
+				AC049A021FD9AD7300A5351F /* PepperSauce.jpg */,
+				AC049A031FD9AD7300A5351F /* Rice.jpg */,
+				AC049A041FD9AD7300A5351F /* SalmonPasta.jpeg */,
+				AC049A051FD9AD7300A5351F /* TomtoSauce.jpg */,
+				AC049A061FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg */,
+				AC049A071FD9AD7300A5351F /* Untitled document.docx */,
+				AC049A081FD9AD7300A5351F /* Vegetables.jpg */,
+				AC049A091FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg */,
+				AC049A0A1FD9AD7300A5351F /* LimeTunaCouscous.jpg */,
+				AC049A0B1FD9AD7300A5351F /* MediterraneanChicken.jpg */,
+				AC049A0C1FD9AD7300A5351F /* QuickCheeseSauce.jpg */,
+				AC049A0D1FD9AD7300A5351F /* SmokedMackerelPasta.JPG */,
 				AC92C48D1FD860FA006EF502 /* Icon-29.png */,
 				AC92C48B1FD860B1006EF502 /* Red-x.png */,
 				AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */,
@@ -372,10 +426,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC049A111FD9AD7300A5351F /* ManTheFuckUp.jpg in Resources */,
+				AC049A161FD9AD7300A5351F /* TomtoSauce.jpg in Resources */,
+				AC049A151FD9AD7300A5351F /* SalmonPasta.jpeg in Resources */,
+				AC049A171FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg in Resources */,
+				AC049A141FD9AD7300A5351F /* Rice.jpg in Resources */,
+				AC983F211FD9B26200AC1CE8 /* serves.png in Resources */,
+				AC049A181FD9AD7300A5351F /* Untitled document.docx in Resources */,
+				AC049A1C1FD9AD7300A5351F /* MediterraneanChicken.jpg in Resources */,
+				AC049A101FD9AD7300A5351F /* MackerelOnToast.jpg in Resources */,
+				AC049A1E1FD9AD7300A5351F /* SmokedMackerelPasta.JPG in Resources */,
 				AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */,
+				AC049A1A1FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg in Resources */,
+				AC049A131FD9AD7300A5351F /* PepperSauce.jpg in Resources */,
 				AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */,
 				ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */,
+				AC049A0F1FD9AD7300A5351F /* ChickenPestoPasta.jpeg in Resources */,
+				AC049A0E1FD9AD7300A5351F /* CauliflowerBroccoliCheese.jpg in Resources */,
+				AC049A1B1FD9AD7300A5351F /* LimeTunaCouscous.jpg in Resources */,
+				AC049A1D1FD9AD7300A5351F /* QuickCheeseSauce.jpg in Resources */,
+				AC049A191FD9AD7300A5351F /* Vegetables.jpg in Resources */,
 				ACB8368D1FC302D600B419B0 /* Assets.xcassets in Resources */,
+				AC049A121FD9AD7300A5351F /* Pasta.jpg in Resources */,
 				ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */,
 				AC92C48E1FD860FA006EF502 /* Icon-29.png in Resources */,
 			);

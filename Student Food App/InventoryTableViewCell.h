@@ -10,13 +10,14 @@
 #import "Inventory.h"
 #import "InventoryDataModel.h"
 #import "InventoryTableViewController.h"
+@class InventoryTableViewController;
 
 @interface InventoryTableViewCell : UITableViewCell
 - (IBAction)StepperPressed:(UIStepper *)sender;
 @property (weak, nonatomic) IBOutlet UIStepper *stepperValue;
 @property (weak, nonatomic) IBOutlet UILabel *stepperCount;
 @property (weak, nonatomic) IBOutlet UILabel *invItemName;
-
+@property (strong, nonatomic) InventoryTableViewController *inventory;
 
 
 @end

@@ -19,6 +19,7 @@
 @property (nonatomic, strong) ShoppingItemCell *item;
 @property (nonatomic, strong) ShoppingDataModel *shoppingItem;
 @property (nonatomic, strong) NSString *sharedName;
+- (IBAction)itemRemoved:(UIButton *)sender;
 
 
 

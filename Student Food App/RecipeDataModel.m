@@ -24,7 +24,7 @@
         beansOnToast.photo = @"BeansOnToast.jpg";
         beansOnToast.cookingTime = @"10 minutes";
         beansOnToast.serves = @"1";
-        beansOnToast.cost = @"£1";
+        beansOnToast.cost = @"£1\n/person";
             
         Recipe *mackerelOnToast= [[Recipe alloc] init];
         mackerelOnToast.name = @"Mackerel On Toast";
@@ -33,7 +33,7 @@
         mackerelOnToast.photo = @"MackerelOnToast.jpg";//http://lilinhaangel.com/2014/11/5-minute-fish-lunch-recipes/
         mackerelOnToast.cookingTime = @"5 minutes";
         mackerelOnToast.serves = @"1";
-        mackerelOnToast.cost = @"£1";     
+        mackerelOnToast.cost = @"£1\n/person";
               
         self.meatRecipes = [NSMutableArray array]; //meat recipes
 
@@ -43,7 +43,7 @@
         mediterraneanChicken.instructions = @" -1-\n Preheat the oen to 180 degrees/ fn oven 200 degrees/gas mark 6.\n -2- Put all the ingreients, except the sock and paprika, in a casserole dish. Distribute the oil evenly and arrange the pieces so that the skins of the chicken will brown. Add the stock and sprinke the casserole with paprika\n -3-\nPut in the oven for 45-50 minutes until the chicken is browned and cooked through. Test one piece to make sure";
         mediterraneanChicken.cookingTime = @"1 hour 10 minutes";
         mediterraneanChicken.serves = @"2";
-        mediterraneanChicken.cost = @"£1.93 /person";
+        mediterraneanChicken.cost = @"£1.93\n/person";
         mediterraneanChicken.photo = @"MediterraneanChicken.jpg";//https://www.thecookierookie.com/balsamic-glazed-mediterranean-chicken-bake/
         
         Recipe *chickpeaChorizocouscous = [[Recipe alloc] init];
@@ -51,7 +51,7 @@
         chickpeaChorizocouscous.ingredients = @"1/2 mug couscous\n1 mug boiling water + 1 vegetable stock cube\n1/2 teaspoon paprika\n1/2 teaspoon cumin\n1/2teaspoon ground coriander\n1\2 tablespoon oil\n1 small onion, sliced\n1 clove garlic, finely chopped\n2 small chorizo sausages, chopped\n400g can chickpeas, drained and rinsed\n2 tomatoes, roughly chopped\n1/4 mug water";
         chickpeaChorizocouscous.instructions = @" -1-\nPut the couscous in a bowl and add the boiling water, stock cube, paprika, cumin and coriander. Stir together. Cover with a plate and leave to stand for at least 5 minutes, until the water is absorbed.\n -2-\nHeat the oil in a frying pan or wok. Add the onions, garli and chopped choriza. Fry until the chorizo is browned.\n -3-\nAdd the chickpeas, toatoes and water, and cook for another 1-2 minutes, stirring frequently. Most of the liquid should be gone.\n -4-\n Add the couscous, mix together and serve.";
         chickpeaChorizocouscous.cookingTime = @"10 minutes";
-        chickpeaChorizocouscous.cost = @"£0.82 /person";
+        chickpeaChorizocouscous.cost = @"£0.82 \n/person";
         chickpeaChorizocouscous.serves = @"2-3";
         chickpeaChorizocouscous.photo = @"ChickpeaChorizoCouscous.jpg";//http://www.seriouseats.com/recipes/2010/08/chickpeas-and-chorizo-recipe.html
        
@@ -63,7 +63,7 @@
         chickenPestoPasta.instructions = @" -1-\nMix together the dressing ingredients\n -2-\nCook the pasta. One cooked, drain and return to pan\n -3-\nHeat a little oil in a frying pan and add the chicken breasts. Cook on a high heat for 2 minutes each side. Turn down the heat and cook, with the lid on, for a further 4 minutes each side, depending on the size of the chicken breast. Set aside\n -4-\nFry the onions, garlic and pepper for 2-3 minutes until soft. Add the olives and tomatoes to the pan and take off the heat.\n -5-\n Slice the chicken into fairly thin slices and, together with the pasta add to the frying pan. Mix together.\n -6-\n Sprinkle the feta over the top an drizzle with the dressing.";
         chickenPestoPasta.cookingTime = @"30 minutes";
         chickenPestoPasta.serves = @"2-3";
-        chickenPestoPasta.cost = @"£2.21 /person";
+        chickenPestoPasta.cost = @"£2.21\n/person";
         chickenPestoPasta.photo = @"ChickenPestoPasta.jpeg";//http://www.taste.com.au/recipes/chicken-broccoli-pesto-pasta/b912042c-dfb1-4ca1-9261-1e2442ae203e
         self.fishRecipes = [NSMutableArray array]; // fish recipes
         
@@ -73,7 +73,7 @@
         limeTunaCousCous.instructions = @" -1- Place the couscous and lime \est in a bowl and pour over the boiling water and crumbled vegetable stock cube. Put a plate over the top to keep the heat in and leave to stand for 5 minutes. \n -2-\n Mix together the limejuice, sugar, salk and pepper and olive oil to make a dressing. \n -3-\n Once the cous cous is cooked, add the drained tuna, tomatoes, cucumber, sweetcorn and the dressing to the couscouus. Stir and serve.";
         limeTunaCousCous.cookingTime = @"20 minutes";
         limeTunaCousCous.serves = @"2";
-        limeTunaCousCous.cost = @"£1.37 /person";
+        limeTunaCousCous.cost = @"£1.37\n/person";
         limeTunaCousCous.photo = @"LimeTunaCouscous.jpg";//http://www.winwithprinces.co.uk/tuna/winning-recipes.winner5.php
         
         Recipe *smokedMackerelPastaSalad = [[Recipe alloc] init];
@@ -82,7 +82,7 @@
         smokedMackerelPastaSalad.instructions = @" -1-\nPut the pasta on to boil. Add the beans 5 minutes before the end of cooking time. Once cooked, drain, run under a cold tap and place in a bowl.\n -2-\nMix togwther the creme fraiche, mayo, chives, lemon zest, juice and season with salt and pepper. Add to the pasta and mix\n -3-\n Peel the skin off the backs of the mackerel fillets and then gently flake the fish. Add to the bowl, along with the cucumber and onions. Mix gently and serve";
         smokedMackerelPastaSalad.cookingTime = @"20 minutes";
         smokedMackerelPastaSalad.serves = @"2-3";
-        smokedMackerelPastaSalad.cost = @"£1.77";
+        smokedMackerelPastaSalad.cost = @"£1.77\n/person";
         smokedMackerelPastaSalad.photo = @"SmokedMackerelPasta.JPG";//http://notjustanyoldbaking.blogspot.co.uk/2012/11/smoked-mackerel-tomato-and-linguine.html
         
         Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
@@ -91,7 +91,7 @@
         tunaMushroomSpaghetti.instructions = @"   -1-\nCook the spaghetti. Drain and return to the pan. \n -2- \nWhile the spaghetti is cooking, heat a little oil in a wok, fry the onion until i begins to softenn. Add the mushrooms and the peas and cook for 1 minute. Season Well.\n -3-/nTake the pan off the heat and add the yogurt, tuna, lemon juice, grated Parmesan and the chives. Stir gently. Add to the drained spaghetti. Stir gently and serve.";
         tunaMushroomSpaghetti.cookingTime = @"25 minutes";
         tunaMushroomSpaghetti.serves = @"2-3";
-        tunaMushroomSpaghetti.cost = @"£1.63 /person";
+        tunaMushroomSpaghetti.cost = @"£1.63\n/person";
         tunaMushroomSpaghetti.photo = @"TunaMushroomSpaghetti.jpg";//http://www.goodfoodforkids.org/tuna-mushroom-and-pea-pasta/
             
         Recipe *salmonPasta = [[Recipe alloc] init]; //NOSH BOOK
@@ -100,7 +100,7 @@
         salmonPasta.instructions = @" -1-\nCook the tagliatelle. It should only take about 3-4 minutes to cook. Leave to drain\n -2-\n Fry the salmon in a little olive oil (if you have a small pice it should only take 2-3 minutes each side). Add the spring onions to the pan towards the end of the cooking time and allow them to brown a little\n -3-\nRemove the pan from the heat and gently break up the salmon. Add the cream and the chives and return to the heat. As soon as the cream beginns to bubble, add the pasta and stir everything together. Allow the pasta to heat through. This should take around 1 minute.\n -4-\n Season well with salt and pepper";
         salmonPasta.cookingTime = @"15 minutes";
         salmonPasta.serves = @"1";
-        salmonPasta.cost = @"£1.09 /person";
+        salmonPasta.cost = @"£1.09\n/person";
         salmonPasta.photo = @"SalmonPasta.jpeg";//http://www.taste.com.au/recipes/salmon-dill-caper-pasta/ebd66993-35e4-4898-a765-fb42ef3d71bd
         
         self.VegetarianRecipes = [NSMutableArray array]; // veggie recipes
@@ -112,8 +112,8 @@
         cauliflowerAndBroccoliCheese.instructions = @" -1-\nPreheat the oven to 200 degrees (220 fan oven/ gas mark 7).\n -2-\nBoil the cauliflower and broccoli for 5-7 minutes.\n -3-\nMake the Quick cheese sauce.\n -4-\n Put the drained vegetables in a greased casserole dish and pour the sauce over them. Top with grated cheese and put in the oven for 10-15 minutes until browned on top.";
         cauliflowerAndBroccoliCheese.cookingTime = @"30 minutes";
         cauliflowerAndBroccoliCheese.serves = @"2";
-        cauliflowerAndBroccoliCheese.cost =@"£1.32 /person";
-        cualiflowerAndBroccoliCheeese.photo = @"CauliflowerBroccoliCheese.jpg";//http://www.dinner4tonight.com/cauliflower-and-broccoli-cheese-bake.html
+        cauliflowerAndBroccoliCheese.cost =@"£1.32\n/person";
+        cauliflowerAndBroccoliCheese.photo = @"CauliflowerBroccoliCheese.jpg";//http://www.dinner4tonight.com/cauliflower-and-broccoli-cheese-bake.html
         
         self.sauces = [NSMutableArray array];//sauces
         
@@ -143,7 +143,7 @@
         deathSauce.ingredients = @"Man the F*uck up sauce (available at Leeds Chilli Shop)";
         deathSauce.instructions = @"seriously this thing is dangerous only try if you like pain\n1 teaspoon is enough to make 2 meals really spicy";
         deathSauce.cookingTime = @"1 minute";
-        deathSauce.cost = @"£5";
+        deathSauce.cost = @"£5\n/bottle";
         deathSauce.photo = @"ManTheFuckUp.jpg";//https://shop.hopburnsblack.co.uk/products/manthefuckupsauce
 
         

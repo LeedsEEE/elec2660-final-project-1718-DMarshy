@@ -24,6 +24,9 @@
     [inventorydefaults setObject:@"Baked Beans" forKey:[NSString stringWithFormat:@"s%d",2]]; //setting first objects value
     [inventorydefaults synchronize];
     NSLog(@"SAVED VALUE = %@",[inventorydefaults stringForKey:[NSString stringWithFormat:@"s%d",1]]);
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -215,4 +218,7 @@
 }
 */
 
+- (IBAction)itemRemoved:(UIButton *)sender {
+    
+}
 @end
