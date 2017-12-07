@@ -30,7 +30,7 @@
         mackerelOnToast.name = @"Mackerel On Toast";
         mackerelOnToast.ingredients = @"1 can of mackerel in tomato sauce \n2 slices ofBread";
         mackerelOnToast.instructions = @" -1-\nHeat up the mackerel in tomato sauce while the bread is in the toaster. \n -2-\nPut the mackerel on top of the toast";
-        mackerelOnToast.photo = @"MackerelOnToast.jpg";
+        mackerelOnToast.photo = @"MackerelOnToast.jpg";//http://lilinhaangel.com/2014/11/5-minute-fish-lunch-recipes/
         mackerelOnToast.cookingTime = @"5 minutes";
         mackerelOnToast.serves = @"1";
         mackerelOnToast.cost = @"£1";     
@@ -44,7 +44,7 @@
         mediterraneanChicken.cookingTime = @"1 hour 10 minutes";
         mediterraneanChicken.serves = @"2";
         mediterraneanChicken.cost = @"£1.93 /person";
-        mediterraneanChicken.photo = @"MediterraneanChicken.jpg";
+        mediterraneanChicken.photo = @"MediterraneanChicken.jpg";//https://www.thecookierookie.com/balsamic-glazed-mediterranean-chicken-bake/
         
         Recipe *chickpeaChorizocouscous = [[Recipe alloc] init];
         chickpeaChorizocouscous.name = @"Chickpeak and Chorizo Couscous";
@@ -53,7 +53,7 @@
         chickpeaChorizocouscous.cookingTime = @"10 minutes";
         chickpeaChorizocouscous.cost = @"£0.82 /person";
         chickpeaChorizocouscous.serves = @"2-3";
-        chickpeaChorizocouscous.photo = @"ChickpeaChorizoCouscous.jpg";
+        chickpeaChorizocouscous.photo = @"ChickpeaChorizoCouscous.jpg";//http://www.seriouseats.com/recipes/2010/08/chickpeas-and-chorizo-recipe.html
        
         self.PastaRecipes = [NSMutableArray array]; // pasta recipes
                     
@@ -64,7 +64,7 @@
         chickenPestoPasta.cookingTime = @"30 minutes";
         chickenPestoPasta.serves = @"2-3";
         chickenPestoPasta.cost = @"£2.21 /person";
-        chickenPestoPasta.photo = @"ChickenPestoPasta.jpeg";       
+        chickenPestoPasta.photo = @"ChickenPestoPasta.jpeg";//http://www.taste.com.au/recipes/chicken-broccoli-pesto-pasta/b912042c-dfb1-4ca1-9261-1e2442ae203e
         self.fishRecipes = [NSMutableArray array]; // fish recipes
         
         Recipe *limeTunaCousCous = [[Recipe alloc] init];
@@ -74,7 +74,7 @@
         limeTunaCousCous.cookingTime = @"20 minutes";
         limeTunaCousCous.serves = @"2";
         limeTunaCousCous.cost = @"£1.37 /person";
-        limeTunaCousCous.photo = @"LimeTunaCouscous.jpg";
+        limeTunaCousCous.photo = @"LimeTunaCouscous.jpg";//http://www.winwithprinces.co.uk/tuna/winning-recipes.winner5.php
         
         Recipe *smokedMackerelPastaSalad = [[Recipe alloc] init];
         smokedMackerelPastaSalad.name = @"Smoked Mackerel Pasta Salad";
@@ -83,7 +83,7 @@
         smokedMackerelPastaSalad.cookingTime = @"20 minutes";
         smokedMackerelPastaSalad.serves = @"2-3";
         smokedMackerelPastaSalad.cost = @"£1.77";
-        smokedMackerelPastaSalad.photo = @"SmokedMackerelPasta.JPG";
+        smokedMackerelPastaSalad.photo = @"SmokedMackerelPasta.JPG";//http://notjustanyoldbaking.blogspot.co.uk/2012/11/smoked-mackerel-tomato-and-linguine.html
         
         Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
         tunaMushroomSpaghetti.name = @"Tuna and Mushroom Spaghetti";
@@ -92,7 +92,7 @@
         tunaMushroomSpaghetti.cookingTime = @"25 minutes";
         tunaMushroomSpaghetti.serves = @"2-3";
         tunaMushroomSpaghetti.cost = @"£1.63 /person";
-        tunaMushroomSpaghetti.photo = @"TunaMushroomSpaghetti.jpg";
+        tunaMushroomSpaghetti.photo = @"TunaMushroomSpaghetti.jpg";//http://www.goodfoodforkids.org/tuna-mushroom-and-pea-pasta/
             
         Recipe *salmonPasta = [[Recipe alloc] init]; //NOSH BOOK
         salmonPasta.name = @"Salmon Pasta";
@@ -101,7 +101,7 @@
         salmonPasta.cookingTime = @"15 minutes";
         salmonPasta.serves = @"1";
         salmonPasta.cost = @"£1.09 /person";
-        salmonPasta.photo = @"SalmonPasta.jpeg";
+        salmonPasta.photo = @"SalmonPasta.jpeg";//http://www.taste.com.au/recipes/salmon-dill-caper-pasta/ebd66993-35e4-4898-a765-fb42ef3d71bd
         
         self.VegetarianRecipes = [NSMutableArray array]; // veggie recipes
         
@@ -113,7 +113,7 @@
         cauliflowerAndBroccoliCheese.cookingTime = @"30 minutes";
         cauliflowerAndBroccoliCheese.serves = @"2";
         cauliflowerAndBroccoliCheese.cost =@"£1.32 /person";
-        cualiflowerAndBroccoliCheeese.photo = @"CauliflowerBroccoliCheese.jpg";
+        cualiflowerAndBroccoliCheeese.photo = @"CauliflowerBroccoliCheese.jpg";//http://www.dinner4tonight.com/cauliflower-and-broccoli-cheese-bake.html
         
         self.sauces = [NSMutableArray array];//sauces
         
@@ -122,21 +122,21 @@
         quickCheeseSauce.ingredients = @"1 mug grated cheese\n1 mug milk\n1 tablespoon flour\n1/8 teaspoon paprika\n2cm cube butter\nsalt and pepper";
         quickCheeseSauce.instructions = @"-1-\nWithout the heat on, put the grated chees into a saucepan, add the flour, salt, pepper and paprika and stir well.\n -2-\n Add the mil and butter. Put on a low heat and bring to the boil, stirring all the time. The sauce should thicken.";
         quickCheeseSauce.cookingTime = @"10 minutes";
-        quickCheeseSauce.photo = @"QuickCheeseSauce.jpg";
+        quickCheeseSauce.photo = @"QuickCheeseSauce.jpg";//https://www.fifteenspatulas.com/homemade-nacho-cheese-sauce/
         
         Recipe *tomatoSauce = [[Recipe alloc] init];
         tomatoSauce.name = @"Piquant Tomnato Sauce";
         tomatoSauce.ingredients = @"1 tablespoon of oil to fry\n1 tablepoon tomato puree\n1 onion, sliced\n1 tablespoon white win vinegar\n400g tin tomatoes\n1teaspoon sugar\n1 teaspoon black pepper";
         tomatoSauce.instructions = @" -1-\nHeat the oil in a saucepan and fry the onions until they become soft. Add the tomatoes\n -2-\nAdd the rest of the ingredients and bring to the boil. Simmer for 2-3 minutes.\n -3-\nBlitz with a hand-held blender if you have one or use as it is.";
         tomatoSauce.cookingTime = @"15 minutes";
-        tomatoSauce.photo = @"TomatoSauce.jpg";
+        tomatoSauce.photo = @"TomatoSauce.jpg";//http://uprootkitchen.com/2015/01/26/homemade-tomato-sauce/
         
         Recipe *pepperSauce = [[Recipe alloc] init];
         pepperSauce.name = @"Pepper Sauce";
         pepperSauce.ingredients = @"1 tablespoon of oil to fry\n1 clove garlic, chopped\n1 1/2 red peppers, chopped\n1 tablespoon cream\n1/2 onion, slice\n1/2 teaspoon sugar";
         pepperSauce.instructions = @" -1-\nHeat the oil in a saucepan and fry the peppers, onions, garlic, over a medium heat for 5 minutes, until they are really soft.\n -2-\nAdd the sugar and cream and mix\n -3-\nUse a hand-held blender to liquidise, or leave as it is\n -4-\nAdd the cream and season well with salk and freshly ground black pepper. You can add half a teaspoon of chilli powder if you like.";
         pepperSauce.cookingTime = @"10 minutes";
-        pepperSauce.photo = @"PepperSauce.jpg";
+        pepperSauce.photo = @"PepperSauce.jpg";//https://www.budgetbytes.com/2017/02/creamy-roasted-red-pepper-sauce/
         
         Recipe *deathSauce = [[Recipe alloc] init];
         deathSauce.name = @"Super Spicy sauce be careful";
@@ -144,7 +144,7 @@
         deathSauce.instructions = @"seriously this thing is dangerous only try if you like pain\n1 teaspoon is enough to make 2 meals really spicy";
         deathSauce.cookingTime = @"1 minute";
         deathSauce.cost = @"£5";
-        deathSauce.photo = @"ManTheFuckUp.jpg";
+        deathSauce.photo = @"ManTheFuckUp.jpg";//https://shop.hopburnsblack.co.uk/products/manthefuckupsauce
 
         
         self.basics = [NSMutableArray array];
@@ -153,23 +153,23 @@
         vegetableCookingTimes.name = @"Vegetable Cooking Times";
         vegetableCookingTimes.ingredients = @" -Boiling Times-\n\nSwedes and turnips \n 2-3cm chunks - 20-25 mins\nPotatoes \n 2-3cm chunks - 10-15 mins\nParsnips, carrots \n 2cm rings - 20-15mins\nCauliflower \n little florets - 10 mins\nBroccoli \n little florets - 5 mins\nGreen beans \n cut off stalk and tail - 5 mins\nSpinach \n any thick stalks removed - 30secs-1 min\nLeeks \n 2cm rings - 5 mins\nCabbage \n long thin strips - 5 mins\nSugar snaps \n leave as they are - 2 mins\nMangetout \n leave as they are - 1 min";
         vegetableCookingTimes.instructions = @" -Roasting-\n\nPotatoes \n 5-6cm chunks - 40-50 mins\nButternut squash\n peel, cut into 5-6cm chunks - 30-40 mins\nParsnips cut into 4 lengthways - 40-45 mins\nOnions \n cut into 6 wedges - 40-50 mins\nSweet potatoes\n peel, cut into 5-6cm chunks - 40-50 mins\nFennel\n cut into 4 wedes - 30-40 mins\nTomatoes\n cut the skin - 20-25 mins\nPeppers\n cut into large pieces - 25 mins";
-        vegetableCookingTimes.photo = @"Vegetables.jpg";
+        vegetableCookingTimes.photo = @"Vegetables.jpg";//http://www.cookinglight.com/recipes/sheet-pan-roasted-vegetables
         
         Recipe *rice = [[Recipe alloc] init];
         rice.name = @"Perfect Rice Every time";
         rice.ingredients = @"For 1 person:\n1/2 mug basmati rice + 1 mug water\n(+1 teaspoon of pilau rice seasoning, optional, but gives a yummy flavor)";
         rice.instructions = @" -1-\nUsing a pan wih  lid, bring the water to te oil, add the seasoning and stir until it as dissolved.\n -2-\nAdd the rice and stir once. Bring back to the boil. Once boiling, turn down the heat to very low, so that the rice simmers gently. Put the lid on the pan and cook for approximately 10 minutes. Do not stir whilst the rice is cooking, or you will make it sticky. The rice should be cooked once the water has disappeard. Check occasionally to see if the water has boiled away.\n -3-\ntest the rice once he water has boiled awa. If the rice is sill too crunchy and the water has all gone, then you have boiled it too quickly. Add a little more water, replace the lid and cook for another 5 minutes.";
         rice.cookingTime = @"15 minutes";
-        rice.photo = @"Rice.jpg";
+        rice.photo = @"Rice.jpg";//http://www.vegrecipesofindia.com/how-to-cook-rice-in-a-pot-pan-stove/
         
         Recipe *pasta = [[Recipe alloc] init];
         pasta.name = @"How to cook Pasta";
         pasta.ingredients = @"General Cooking times for different types of Pasta:\nTagliatelle - 4-5 minutes\nSpaghetti - 6 minutes, depending how thick it is\nRadiatore - 10 minutes\nFusili - 10-12 minutes\nPenne - 10-12 miutes\nConchiglie - 6-8 minutes\nMacaroni - 12-15 minutes\nFarfalle - 6-8 minutes";
         pasta.instructions = @"Boil enough water to cover the pasta. Once the water is boiling, add the pasta. Simmer for the appropriate time, drain and add butter or olice oil to prevent the pasta sticking together.";
         pasta.cookingTime = @"12-15 minutes";
-        pasta.photo = @"Pasta.jpg";
+        pasta.photo = @"Pasta.jpg";//http://food.ndtv.com/food-drinks/know-the-different-types-of-pasta-a-pronounciation-guide-1278640
         
-        [self.basics addObject:vegetableCookingTimes];
+        [self.basics addObject:vegetableCookingTimes];//All recipes from the book: "NOSH For students: A fun student cook book, Joy May,2016"(apart from beans on toast)
         [self.basics addObject:rice];
         [self.basics addObject:pasta];
         
