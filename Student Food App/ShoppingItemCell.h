@@ -16,5 +16,7 @@
 
 - (IBAction)ItemBought:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *ItemName;
+@property (strong, nonatomic) ShoppingTableViewController *shopping;
+
 
 @end

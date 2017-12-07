@@ -42,9 +42,17 @@
     [self.shopping.shoppingArray addObject:tempItemName.name];
     NSLog(@"item = %@",tempItemName.name);
     
+    NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+    if([[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] isEqualToString:@"Enter Item"]){
+        
+        [inventorydefaults setObject:self.ItemName.text forKey:[NSString stringWithFormat:@"s%d",1]];
+        [inventorydefaults synchronize];
+    }
+    else{
+    
     self.addedItemName.text = [NSString stringWithFormat:@"%@ Added!",tempItemName.name];
     
-    NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+
     int i;
     for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] != NULL; i++) {
         
@@ -52,7 +60,7 @@
     [inventorydefaults setObject:self.ItemName.text forKey:[NSString stringWithFormat:@"s%d",i]];
     [inventorydefaults synchronize];
     
-    
+    }
     
 }
 @end

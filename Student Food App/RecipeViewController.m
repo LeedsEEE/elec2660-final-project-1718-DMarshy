@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
+    self.ingredientsLabel.textContainerInset = UIEdgeInsetsMake(2, 3, 2, 2);//https://stackoverflow.com/questions/34015927/uitextview-last-line-is-not-shown
+    self.ingredientsLabel.textContainer.lineFragmentPadding = 2;
+    self.instructionsLabel.textContainerInset = UIEdgeInsetsMake(2, 3, 2, 2);
+    self.instructionsLabel.textContainer.lineFragmentPadding = 2;
 
     self.recipeNameLabel.text = self.recipe.name;
     self.ingredientsLabel.text = self.recipe.ingredients;

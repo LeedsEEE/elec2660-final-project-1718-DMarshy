@@ -19,16 +19,20 @@
     self.item = [[ShoppingItemCell alloc] init];
     self.shoppingItem = [[ShoppingDataModel alloc] init];
     
-     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+  /*   NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     [inventorydefaults setObject:@"Steak" forKey:[NSString stringWithFormat:@"s%d",1]];
     [inventorydefaults setObject:@"Baked Beans" forKey:[NSString stringWithFormat:@"s%d",2]]; //setting first objects value
     [inventorydefaults synchronize];
-    NSLog(@"SAVED VALUE = %@",[inventorydefaults stringForKey:[NSString stringWithFormat:@"s%d",1]]);
+    NSLog(@"SAVED VALUE = %@",[inventorydefaults stringForKey:[NSString stringWithFormat:@"s%d",1]]);*/
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
 
 }
+-(void)reloadData{
+    [self.tableView reloadData];
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
 }
@@ -53,18 +57,24 @@
     else if(section == 1){
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     int i;
-    
+        
+        {if([inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] == NULL){
+            [inventorydefaults setObject:@"Enter Item" forKey:[NSString stringWithFormat:@"s%d",1]];
+            [inventorydefaults synchronize];
+            numberOfRows = 1;
+        }
+        else{
     for (i = 1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] != NULL; i++) {//checking how many objects have values
         NSLog(@"Array value = %@",[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]]);
         
         numberOfRows = i;
         NSLog(@"%ld",numberOfRows);
     }
-    
+        }
     }
-    return numberOfRows;
+        
+}return numberOfRows;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
@@ -80,6 +90,7 @@
         for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] == nil); i++) {
             
             cell.ItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]];
+            cell.ItemName.tag = indexPath.row+1;
             
         }
         return cell;
