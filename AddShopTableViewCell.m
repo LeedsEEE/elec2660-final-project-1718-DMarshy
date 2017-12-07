@@ -9,17 +9,7 @@
 #import "AddShopTableViewCell.h"
 
 @implementation AddShopTableViewCell
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setInteger:2 forKey:@"numberOfRows"];
-        [defaults synchronize];
-        self.numberOfCells = [defaults integerForKey:@"numberOfRows"];
-    }
-    return self;
-}
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -32,19 +22,5 @@
     // Configure the view for the selected state
 }
 
-/*
-- (IBAction)AddShopItem:(UIButton *)sender {
-    self.numberOfCells ++;
-     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSInteger newNumberOfRows = [defaults integerForKey:@"numberOfRows"]+1;
-    [defaults setInteger:newNumberOfRows forKey:@"numberOfRows"];
- 
-    [defaults synchronize];
-    NSLog(@"number of rows = %ld",[defaults integerForKey:@"numberOfRows"]);
-    self.shoppingTableViewController = [[ShoppingTableViewController alloc]init];
 
-
-    [self.shoppingTableViewController.tableView reloadData];
-    
-}*/
 @end

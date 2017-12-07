@@ -11,5 +11,6 @@
 @interface Inventory : NSObject
 @property (nonatomic, strong) NSString *itemName;
 @property int itemCount;
+@property NSInteger key;
 
 @end

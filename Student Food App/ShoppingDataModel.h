@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ShoppingItem.h"
 
 @interface ShoppingDataModel : NSObject
-@property (nonatomic, strong) NSArray *shoppingArray;
+@property (nonatomic, strong) NSMutableArray *shoppingArray;
 
 @end

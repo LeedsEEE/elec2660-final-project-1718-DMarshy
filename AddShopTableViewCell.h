@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ShoppingTableViewController.h"
-@class ShoppingTableViewController;
+
 
 @interface AddShopTableViewCell : UITableViewCell
-- (IBAction)AddShopItem:(UIButton *)sender;
-@property NSInteger numberOfCells;
-@property (weak, nonatomic) IBOutlet UIButton *AddItemtext;
-@property (strong, nonatomic) ShoppingTableViewController *shoppingTableViewController;
+
+
+
 
 @end

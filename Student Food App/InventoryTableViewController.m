@@ -19,14 +19,17 @@
     
 
    self.inventory = [[InventoryDataModel alloc] init];
-
-   
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+    [inventorydefaults setObject:@"Cheese" forKey:[NSString stringWithFormat:@"k%d",1]];
+    [inventorydefaults setObject:@"poop" forKey:[NSString stringWithFormat:@"k%d",2]]; //setting first objects value
+        [inventorydefaults synchronize];
+
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadData];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -38,65 +41,76 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-        [self.additem.fetchedResultsController fetchedObjects];
+
     
-    NSInteger numberOfRows;
+    NSInteger numberOfRows = 0;
     if(section == 0){
     
         numberOfRows = self.inventory.inventoryArray.count;
+        
     }
-    else{
-         numberOfRows = [[[self.additem fetchedResultsController] sections] count];
-    }
-    NSLog(@"fetched results controller count %ld",[[[self.additem fetchedResultsController] sections] count]);
+    else if(section == 1){
+        NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+        int i;
+     
+        for (i = 1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL; i++) {//checking how many objects have values
+            NSLog(@"Array value = %@",[inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]]);
+            
+                numberOfRows = i;
     
-    return numberOfRows;
+            }
+     
+    }
+    NSLog(@"number of rows = %ld",numberOfRows);
+                       return numberOfRows;
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-          // [self.additem.fetchedResultsController fetchedObjects];
     
-    if (indexPath.row == 0) {
+    
+    if (indexPath.section == 0) {
+        if(indexPath.row == 0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
 
+            return cell;
+        }
+        else {
+            
+            InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
+            
+            Inventory *tempItem = [self.inventory.inventoryArray objectAtIndex:indexPath.row];
+            cell.invItemName.text = tempItem.itemName;
+            cell.stepperValue.value = tempItem.itemCount;
+            cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
+            return cell;
+        }
+        
+    }
+    
+    else {
+        InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
+
+                int i;
+        NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+        for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] == nil); i++) {
+            cell.invItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%ld",indexPath.row+1]];
+            cell.stepperCount.text = [NSString stringWithFormat:@"%d",i];
+            cell.stepperValue.value = [inventorydefaults integerForKey:[NSString stringWithFormat:@"a%d",i]];
+            
+        }
+        [inventorydefaults synchronize];
         return cell;
     }
-    else if(indexPath.row >0 & indexPath.row < self.inventory.inventoryArray.count){
-        
-        InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
-        Inventory *tempItem = [self.inventory.inventoryArray objectAtIndex:indexPath.row];
-        cell.invItemName.text = tempItem.itemName;
-        
-        cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
-        cell.stepperValue.value = tempItem.itemCount;
-                return cell;
-    }
-    else{
-        InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
-        
-
-     /*  NSMutableArray *DictionaryArray =[[NSMutableArray alloc] init];
-        DictionaryArray = [self.inventorydictionary valueForKey:@"name"];
-        Inventory *tempAddedItem = [DictionaryArray objectAtIndex:(indexPath.row-self.inventory.inventoryArray.count)];
-        cell.invItemName.text = [tempAddedItem valueForKey:@"name"];
-        NSLog(@"tempaddeditem = %@",tempAddedItem.itemName);
-        cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempAddedItem.itemCount];
-        cell.stepperValue.value = tempAddedItem.itemCount;
-        */
-        NSManagedObject *object = [self.additem.fetchedResultsController objectAtIndexPath:indexPath];
-        cell.invItemName.text = [object valueForKey:@"name"];
-        cell.stepperCount.text = @"0";
-        cell.stepperValue.value = 0;
-           return cell;
-    }
     
+
     }
 
-    
+
 
 
 

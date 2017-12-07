@@ -31,11 +31,7 @@
      //   mackerelOnToast.photo = @"MackerelOnToast.jpg";
         mackerelOnToast.cookingTime = @"5 minutes";
        
-        Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
-        tunaMushroomSpaghetti.name = @"Tuna and Mushroom Spaghetti";
-        tunaMushroomSpaghetti.ingredients = @" 1 1/2 portions spaghetti\n185g can tuna in oil, drained\n1 teaspoon oil to fry\njuice of a 1/2 lemon\n1 small onion, sliced\n1/2 mug grated parmesan\n5-6 mushrooms, sliced\n1 desserspoon dried chives\n1/2 mug frozen peas, defrosted\n3 tablespoons Greek yogurt";
-        tunaMushroomSpaghetti.instructions = @"   -1-\nCook the spaghetti. Drain and return to the pan. \n -2- \nWhile the spaghetti is cooking, heat a little oil in a wok, fry the onion until i begins to softenn. Add the mushrooms and the peas and cook for 1 minute. Season Well.\n -3-/nTake the pan off the heat and add the yogurt, tuna, lemon juice, grated Parmesan and the chives. Stir gently. Add to the drained spaghetti. Stir gently and serve.";
-    
+        
        
 
         
@@ -46,20 +42,18 @@
         mediterraneanChicken.name = @"Mediterranean Chicken";
         mediterraneanChicken.ingredients = @"4 chicken thighs\n1 onion, cut into wedges\n3 large potatoes, cut into 3cm cubes\n1 clove garlic, finely chopped\n3 tomatoes, cut into 1/4's\n12 olives, chopped\n1 teaspoon dried basil\n2 tablespoons olive oil\nsalt and pepper\n1/2 mug water + 1 chicken stock cube\npaprika to sprinkle over";
         mediterraneanChicken.instructions = @" -1-\n Preheat the oen to 180 degrees/ fn oven 200 degrees/gas mark 6.\n -2- Put all the ingreients, except the sock and paprika, in a casserole dish. Distribute the oil evenly and arrange the pieces so that the skins of the chicken will brown. Add the stock and sprinke the casserole with paprika\n -3-\nPut in the oven for 45-50 minutes until the chicken is browned and cooked through. Test one piece to make sure";
+        mediterraneanChicken.cookingTime = @"1 hour 10 minutes";
         
         Recipe *chickpeaChorizocouscous = [[Recipe alloc] init];
         chickpeaChorizocouscous.name = @"Chickpeak and Chorizo Couscous";
         chickpeaChorizocouscous.ingredients = @"1/2 mug couscous\n1 mug boiling water + 1 vegetable stock cube\n1/2 teaspoon paprika\n1/2 teaspoon cumin\n1/2teaspoon ground coriander\n1\2 tablespoon oil\n1 small onion, sliced\n1 clove garlic, finely chopped\n2 small chorizo sausages, chopped\n400g can chickpeas, drained and rinsed\n2 tomatoes, roughly chopped\n1/4 mug water";
         chickpeaChorizocouscous.instructions = @" -1-\nPut the couscous in a bowl and add the boiling water, stock cube, paprika, cumin and coriander. Stir together. Cover with a plate and leave to stand for at least 5 minutes, until the water is absorbed.\n -2-\nHeat the oil in a frying pan or wok. Add the onions, garli and chopped choriza. Fry until the chorizo is browned.\n -3-\nAdd the chickpeas, toatoes and water, and cook for another 1-2 minutes, stirring frequently. Most of the liquid should be gone.\n -4-\n Add the couscous, mix together and serve.";
-        
+        chickpeaChorizocouscous.cookingTime = @"10 minutes";
 
        
         self.PastaRecipes = [NSMutableArray array]; // pasta recipes
         
-        Recipe *salmonPasta = [[Recipe alloc] init]; //NOSH BOOK
-        salmonPasta.name = @"Salmon Pasta";
-        salmonPasta.ingredients = @"2 small bunches of Tagliatelle pasta\n 2 tablespoons of double cream\n 1 small piece of salmon\n1 teaspoon of dried chives\n1 tablespoon olive oil to fry\n3 spring onions, chopped";
-        salmonPasta.instructions = @" -1-\nCook the tagliatelle. It should only take about 3-4 minutes to cook. Leave to drain\n -2-\n Fry the salmon in a little olive oil (if you have a small pice it should only take 2-3 minutes each side). Add the spring onions to the pan towards the end of the cooking time and allow them to brown a little\n -3-\nRemove the pan from the heat and gently break up the salmon. Add the cream and the chives and return to the heat. As soon as the cream beginns to bubble, add the pasta and stir everything together. Allow the pasta to heat through. This should take around 1 minute.\n -4-\n Season well with salt and pepper";
+
             
         Recipe *chickenPestoPasta = [[Recipe alloc] init];
         chickenPestoPasta.name = @"Chicken With Pesto Pasta";
@@ -80,8 +74,15 @@
         smokedMackerelPastaSalad.ingredients = @"1 1/2 mugs pasta\n1/2 x 300g pack green beans, trimmed and cut in 1/2\n2 tablespoons cremefraiche\n1 tablespoon mayo\n1 teaspoon dried chives\nzest and juice of 1/2 lemon\n250g pack cooked, smoked mackerel\n1/4 cucumber, chopped\n2 spring onions, chopped";
         smokedMackerelPastaSalad.instructions = @" -1-\nPut the pasta on to boil. Add the beans 5 minutes before the end of cooking time. Once cooked, drain, run under a cold tap and place in a bowl.\n -2-\nMix togwther the creme fraiche, mayo, chives, lemon zest, juice and season with salt and pepper. Add to the pasta and mix\n -3-\n Peel the skin off the backs of the mackerel fillets and then gently flake the fish. Add to the bowl, along with the cucumber and onions. Mix gently and serve";
         
+        Recipe *tunaMushroomSpaghetti = [[Recipe alloc] init]; //NOSH BOOK
+        tunaMushroomSpaghetti.name = @"Tuna and Mushroom Spaghetti";
+        tunaMushroomSpaghetti.ingredients = @" 1 1/2 portions spaghetti\n185g can tuna in oil, drained\n1 teaspoon oil to fry\njuice of a 1/2 lemon\n1 small onion, sliced\n1/2 mug grated parmesan\n5-6 mushrooms, sliced\n1 desserspoon dried chives\n1/2 mug frozen peas, defrosted\n3 tablespoons Greek yogurt";
+        tunaMushroomSpaghetti.instructions = @"   -1-\nCook the spaghetti. Drain and return to the pan. \n -2- \nWhile the spaghetti is cooking, heat a little oil in a wok, fry the onion until i begins to softenn. Add the mushrooms and the peas and cook for 1 minute. Season Well.\n -3-/nTake the pan off the heat and add the yogurt, tuna, lemon juice, grated Parmesan and the chives. Stir gently. Add to the drained spaghetti. Stir gently and serve.";
 
-
+        Recipe *salmonPasta = [[Recipe alloc] init]; //NOSH BOOK
+        salmonPasta.name = @"Salmon Pasta";
+        salmonPasta.ingredients = @"2 small bunches of Tagliatelle pasta\n 2 tablespoons of double cream\n 1 small piece of salmon\n1 teaspoon of dried chives\n1 tablespoon olive oil to fry\n3 spring onions, chopped";
+        salmonPasta.instructions = @" -1-\nCook the tagliatelle. It should only take about 3-4 minutes to cook. Leave to drain\n -2-\n Fry the salmon in a little olive oil (if you have a small pice it should only take 2-3 minutes each side). Add the spring onions to the pan towards the end of the cooking time and allow them to brown a little\n -3-\nRemove the pan from the heat and gently break up the salmon. Add the cream and the chives and return to the heat. As soon as the cream beginns to bubble, add the pasta and stir everything together. Allow the pasta to heat through. This should take around 1 minute.\n -4-\n Season well with salt and pepper";
         
         
         

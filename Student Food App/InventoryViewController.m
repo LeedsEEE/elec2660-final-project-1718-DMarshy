@@ -17,42 +17,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        self.inventory.inventoryArray = [NSMutableArray alloc];
-        self.managedObjectContext = self.managedObjectContext;
-      // [self initializeFetchedResultsController];
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = appDelegate.managedObjectContext;
+    self.inventory = [[InventoryDataModel alloc] init];
+    self.amount.delegate = self;
+    self.amount.dataSource = self;
+
+}
+
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component{
+    return 100;
+}
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component{
+    NSString *coordinate = [NSString stringWithFormat:@"%ld",row+1];
+    self.Row = row;
+    return coordinate;
     
 }
-/*
-- (void)initializeFetchedResultsController{
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"InventoryItem"];
-    
-    NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
-    
-    [request setSortDescriptors:@[nameSort]];
-    
-    NSManagedObjectContext *moc = self.managedObjectContext; //Retrieve the main queue NSManagedObjectContext
-    
-    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:nil cacheName:nil]];
-    [[self fetchedResultsController] setDelegate:self];
-    
-    NSError *error = nil;
-    if (![[self fetchedResultsController] performFetch:&error]) {
-        NSLog(@"Failed to initialize FetchedResultsController: %@\n%@", [error localizedDescription], [error userInfo]);
-        abort();
-    }
-}//https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/nsfetchedresultscontroller.html
-*/
+
+
 
 
 - (IBAction)addToList:(UIButton *)sender{
     
+    NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
+    int i;
+    for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL; i++) {
 
-    NSDictionary *ItemInfo = @{@"name":self.nameField.text,@"amount":self.amountTextField.text};
-    self.outputTextView.text = [NSString stringWithFormat:@"description = %@\n array = %@\n",[InventoryItem addItemInfoFromDictionary:ItemInfo].description,
-    [self.fetchedResultsController fetchedObjects]];
-    
+        
+    }
+    [inventorydefaults setInteger:self.Row forKey:[NSString stringWithFormat:@"a%d",i]];
+    [inventorydefaults setObject:self.nameField.text forKey:[NSString stringWithFormat:@"k%d",i]];
+    [inventorydefaults synchronize];
+    self.outputTextView.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]];
+
 }
 
 

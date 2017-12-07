@@ -12,6 +12,7 @@
 
 @interface InventoryDataModel : NSObject
 @property (nonatomic, strong) NSMutableArray *inventoryArray;
+@property (nonatomic,strong) NSMutableArray *addedInventoryArray;
 
 
 

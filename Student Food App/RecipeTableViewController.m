@@ -81,13 +81,13 @@
         numberOfRows = self.recipe.cheapRecipes.count;
     }
     else if (section == 2){
-        numberOfRows = self.recipe.PastaRecipes.count;
+        numberOfRows = self.recipe.meatRecipes.count;
     }
     else if (section == 3){
-        numberOfRows = self.recipe.fishRecipes.count;
+        numberOfRows = self.recipe.PastaRecipes.count;
     }
     else if (section == 4){
-        numberOfRows = self.recipe.meatRecipes.count;
+        numberOfRows = self.recipe.fishRecipes.count;
     }
     else if (section == 5){
         numberOfRows = self.recipe.VegetarianRecipes.count;
@@ -114,27 +114,31 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
         Recipe *tempRecipe = [self.recipe.cheapRecipes objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
+        cell.detailTextLabel.text = tempRecipe.cookingTime;
 
         return cell;
     }
     else if (indexPath.section == 2){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-        Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
+        Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
-   
+        cell.detailTextLabel.text = tempRecipe.cookingTime;
+
         return cell;
     }
     else if (indexPath.section == 3){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-        Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
+        Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
+        cell.detailTextLabel.text = tempRecipe.cookingTime;
 
         return cell;
     }
     else if (indexPath.section == 4){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
-        Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+        Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
+        cell.detailTextLabel.text = tempRecipe.cookingTime;
 
         return cell;
     }
@@ -142,18 +146,24 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
         Recipe *tempRecipe = [self.recipe.VegetarianRecipes objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
+        cell.detailTextLabel.text = tempRecipe.cookingTime;
+
         return cell;
     }
     else if(indexPath.section == 6){
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
         Recipe *tempRecipe = [self.recipe.sauces objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
+        cell.detailTextLabel.text = tempRecipe.cookingTime;
+
         return cell;
     }
     else{
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell" forIndexPath:indexPath];
         Recipe *tempRecipe = [self.recipe.basics objectAtIndex:indexPath.row];
         cell.textLabel.text = tempRecipe.name;
+        cell.detailTextLabel.text = tempRecipe.cookingTime;
+
         return cell;
         
     }
@@ -211,15 +221,15 @@
             destinationViewController.recipe = tempRecipe;
         }
         if (indexPath.section == 2) { //meat meals
-            Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
+            Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
         }
         if (indexPath.section == 3) { //pasta meals
-            Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
+            Recipe *tempRecipe = [self.recipe.PastaRecipes objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
         }
         if (indexPath.section == 4) { //fish meals
-            Recipe *tempRecipe = [self.recipe.meatRecipes objectAtIndex:indexPath.row];
+            Recipe *tempRecipe = [self.recipe.fishRecipes objectAtIndex:indexPath.row];
             destinationViewController.recipe = tempRecipe;
         }
         if (indexPath.section == 5) { //veggie meals
