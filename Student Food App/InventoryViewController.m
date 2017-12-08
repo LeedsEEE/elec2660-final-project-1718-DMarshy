@@ -30,7 +30,7 @@
 numberOfRowsInComponent:(NSInteger)component{
     return 100;
 }
-- (NSString *)pickerView:(UIPickerView *)pickerView
+- (NSString *)pickerView:(UIPickerView *)pickerView//sets data in picker to be value of the row+1
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component{
     NSString *coordinate = [NSString stringWithFormat:@"%ld",row+1];
@@ -42,45 +42,25 @@ numberOfRowsInComponent:(NSInteger)component{
 }
 
 
-
-
 - (IBAction)addToList:(UIButton *)sender{
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     int i;
     
-    for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL; i++) {
+    for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL; i++) {//loops through saved data to find first empty cell
         
     }
-    [inventorydefaults setInteger:self.Row forKey:[NSString stringWithFormat:@"a%d",i]];
+    [inventorydefaults setInteger:self.Row forKey:[NSString stringWithFormat:@"a%d",i]];//sets input text to first empty cell
     [inventorydefaults setObject:self.nameField.text forKey:[NSString stringWithFormat:@"k%d",i]];
-    [inventorydefaults synchronize];
-    self.outputTextView.text = [NSString stringWithFormat:@"Item name =%@\nAmount = %ld",[inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]],[inventorydefaults integerForKey:[NSString stringWithFormat:@"a%d",i]]];
+    [inventorydefaults synchronize];//saves data
+    self.outputTextView.text = [NSString stringWithFormat:@"Item name =%@\nAmount = %ld",[inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]],[inventorydefaults integerForKey:[NSString stringWithFormat:@"a%d",i]]];//displays the input data in text view
 
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
 
 
 - (IBAction)InventoryTextField:(UITextField *)sender {
  
-     NSString *tempItemName = [[NSString alloc] init];
+     NSString *tempItemName = [[NSString alloc] init];//creates a temporary item
      tempItemName = sender.text;
 
     NSLog(@"item = %@",tempItemName);

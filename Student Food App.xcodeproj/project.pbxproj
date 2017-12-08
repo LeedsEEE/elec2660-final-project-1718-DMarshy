@@ -19,7 +19,6 @@
 		AC049A151FD9AD7300A5351F /* SalmonPasta.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A041FD9AD7300A5351F /* SalmonPasta.jpeg */; };
 		AC049A161FD9AD7300A5351F /* TomtoSauce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A051FD9AD7300A5351F /* TomtoSauce.jpg */; };
 		AC049A171FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A061FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg */; };
-		AC049A181FD9AD7300A5351F /* Untitled document.docx in Resources */ = {isa = PBXBuildFile; fileRef = AC049A071FD9AD7300A5351F /* Untitled document.docx */; };
 		AC049A191FD9AD7300A5351F /* Vegetables.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A081FD9AD7300A5351F /* Vegetables.jpg */; };
 		AC049A1A1FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A091FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg */; };
 		AC049A1B1FD9AD7300A5351F /* LimeTunaCouscous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0A1FD9AD7300A5351F /* LimeTunaCouscous.jpg */; };
@@ -33,7 +32,6 @@
 		AC64EB9B1FDABD7C004D7497 /* icons8-ereader-30.png in Resources */ = {isa = PBXBuildFile; fileRef = AC64EB9A1FDABD7C004D7497 /* icons8-ereader-30.png */; };
 		AC64EB9D1FDABDCC004D7497 /* icons8-in-inventory-30.png in Resources */ = {isa = PBXBuildFile; fileRef = AC64EB9C1FDABDCC004D7497 /* icons8-in-inventory-30.png */; };
 		AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */; };
-		AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48B1FD860B1006EF502 /* Red-x.png */; };
 		AC92C48E1FD860FA006EF502 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48D1FD860FA006EF502 /* Icon-29.png */; };
 		AC983F211FD9B26200AC1CE8 /* serves.png in Resources */ = {isa = PBXBuildFile; fileRef = AC983F201FD9B26200AC1CE8 /* serves.png */; };
 		ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */; };
@@ -86,7 +84,6 @@
 		AC049A041FD9AD7300A5351F /* SalmonPasta.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SalmonPasta.jpeg; sourceTree = "<group>"; };
 		AC049A051FD9AD7300A5351F /* TomtoSauce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TomtoSauce.jpg; sourceTree = "<group>"; };
 		AC049A061FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TunaMushroomSpaghetti.jpg; sourceTree = "<group>"; };
-		AC049A071FD9AD7300A5351F /* Untitled document.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Untitled document.docx"; sourceTree = "<group>"; };
 		AC049A081FD9AD7300A5351F /* Vegetables.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vegetables.jpg; sourceTree = "<group>"; };
 		AC049A091FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChickpeaChorizoCouscous.jpg; sourceTree = "<group>"; };
 		AC049A0A1FD9AD7300A5351F /* LimeTunaCouscous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LimeTunaCouscous.jpg; sourceTree = "<group>"; };
@@ -102,7 +99,6 @@
 		AC64EB9A1FDABD7C004D7497 /* icons8-ereader-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ereader-30.png"; sourceTree = "<group>"; };
 		AC64EB9C1FDABDCC004D7497 /* icons8-in-inventory-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-in-inventory-30.png"; sourceTree = "<group>"; };
 		AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeansOnToast.jpg; sourceTree = "<group>"; };
-		AC92C48B1FD860B1006EF502 /* Red-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-x.png"; sourceTree = "<group>"; };
 		AC92C48D1FD860FA006EF502 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		AC983F201FD9B26200AC1CE8 /* serves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serves.png; sourceTree = "<group>"; };
 		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipeTableViewController.h; path = "Student Food App/RecipeTableViewController.h"; sourceTree = "<group>"; };
@@ -263,7 +259,6 @@
 				AC049A041FD9AD7300A5351F /* SalmonPasta.jpeg */,
 				AC049A051FD9AD7300A5351F /* TomtoSauce.jpg */,
 				AC049A061FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg */,
-				AC049A071FD9AD7300A5351F /* Untitled document.docx */,
 				AC049A081FD9AD7300A5351F /* Vegetables.jpg */,
 				AC049A091FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg */,
 				AC049A0A1FD9AD7300A5351F /* LimeTunaCouscous.jpg */,
@@ -271,7 +266,6 @@
 				AC049A0C1FD9AD7300A5351F /* QuickCheeseSauce.jpg */,
 				AC049A0D1FD9AD7300A5351F /* SmokedMackerelPasta.JPG */,
 				AC92C48D1FD860FA006EF502 /* Icon-29.png */,
-				AC92C48B1FD860B1006EF502 /* Red-x.png */,
 				AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */,
 				ACB8367E1FC302D600B419B0 /* main.m */,
 			);
@@ -418,12 +412,10 @@
 				AC049A171FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg in Resources */,
 				AC049A141FD9AD7300A5351F /* Rice.jpg in Resources */,
 				AC983F211FD9B26200AC1CE8 /* serves.png in Resources */,
-				AC049A181FD9AD7300A5351F /* Untitled document.docx in Resources */,
 				AC049A1C1FD9AD7300A5351F /* MediterraneanChicken.jpg in Resources */,
 				AC049A101FD9AD7300A5351F /* MackerelOnToast.jpg in Resources */,
 				AC049A1E1FD9AD7300A5351F /* SmokedMackerelPasta.JPG in Resources */,
 				AC64EB8F1FDAABF6004D7497 /* icons8-checkmark-50.png in Resources */,
-				AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */,
 				AC049A1A1FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg in Resources */,
 				AC049A131FD9AD7300A5351F /* PepperSauce.jpg in Resources */,
 				AC64EB9D1FDABDCC004D7497 /* icons8-in-inventory-30.png in Resources */,

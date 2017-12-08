@@ -16,14 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.item = [[ShoppingItemCell alloc] init];
+    self.item = [[ShoppingItemCell alloc] init];//initialises cell
 
     
-  /*   NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
-    [inventorydefaults setObject:@"Steak" forKey:[NSString stringWithFormat:@"s%d",1]];
-    [inventorydefaults setObject:@"Baked Beans" forKey:[NSString stringWithFormat:@"s%d",2]]; //setting first objects value
-    [inventorydefaults synchronize];
-    NSLog(@"SAVED VALUE = %@",[inventorydefaults stringForKey:[NSString stringWithFormat:@"s%d",1]]);*/
+  
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -59,9 +55,9 @@
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     int i;
         
-        {if([inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] == NULL){
-            [inventorydefaults setObject:@"Enter Item" forKey:[NSString stringWithFormat:@"s%d",1]];
-            [inventorydefaults synchronize];
+        {if([inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] == NULL){//Checks if first item is empty
+            [inventorydefaults setObject:@"Enter Item" forKey:[NSString stringWithFormat:@"s%d",1]];//makes enter item cell
+            [inventorydefaults synchronize];//saves first item
             numberOfRows = 1;
         }
         else{
@@ -81,16 +77,16 @@
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     if(indexPath.section == 0){
         
-    InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
+    InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];//add item cell
                      return cell;
     }
     else {
         ShoppingItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ShoppingItemCell" forIndexPath:indexPath];
         
         int i;
-        for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] == nil); i++) {
+        for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] == nil); i++) {//loops through checking if object for key is empty
             
-            cell.ItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]];
+            cell.ItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]];//sets data of cells
             cell.ItemName.tag = indexPath.row+1;
           
         }
@@ -98,77 +94,32 @@
 }
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
 
 
 - (IBAction)itemRemoved:(UIButton *)sender {
     NSUserDefaults *inventorydefaults =[NSUserDefaults standardUserDefaults];
-    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:self.tableView];
-    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:buttonPosition];
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:self.tableView];//gets what position the button is
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:buttonPosition];//converts it to an index path
     
     if([[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] isEqualToString:@"Enter Item"]){
         [inventorydefaults setObject:@"Enter Item" forKey:[NSString stringWithFormat:@"s%d",1]];//adding empty item in cell 1 if first item removed
-        NSLog(@"if statement");
+        NSLog(@"Cell 1 remade");
     }
     else {
-        [inventorydefaults removeObjectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]];
-        [inventorydefaults synchronize];
+        [inventorydefaults removeObjectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]];//removes object
+        [inventorydefaults synchronize];//saves user defaults
         NSLog(@"item = %@",[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]]);
         int i;
         
-        for (i=(int)indexPath.row+1;[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i+1]] != NULL; i++) {
-            [inventorydefaults setObject:[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i+1]] forKey:[NSString stringWithFormat:@"s%d",i]];
-            [inventorydefaults removeObjectForKey:[NSString stringWithFormat:@"s%d",i+1]];
-            [inventorydefaults synchronize];
+        for (i=(int)indexPath.row+1;[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i+1]] != NULL; i++) {//loops through checking if keys after removed item are empty
+            [inventorydefaults setObject:[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i+1]] forKey:[NSString stringWithFormat:@"s%d",i]];//saves next item details to current
+            [inventorydefaults removeObjectForKey:[NSString stringWithFormat:@"s%d",i+1]];//removes next cell
+            [inventorydefaults synchronize];//saves
                         NSLog(@"for loop runs");
         }
         
         
-    [self.tableView reloadData];
+    [self.tableView reloadData];//reloads data
         }
 
     }

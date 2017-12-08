@@ -86,12 +86,12 @@
 
                 int i;
         NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
-        for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] == nil) ; i++) {
-            cell.invItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%ld",indexPath.row+1]];
+        for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] == nil) ; i++) {//loops through to find empty cell
+            cell.invItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%ld",indexPath.row+1]];//sets item name of empty cell
             cell.stepperCount.tag = indexPath.row;
             cell.stepperValue.tag = indexPath.row;
-            cell.stepperCount.text = [NSString stringWithFormat:@"%ld",[inventorydefaults integerForKey:[NSString stringWithFormat:@"a%ld",indexPath.row+1]]];
-            cell.stepperValue.value = [inventorydefaults integerForKey:[NSString stringWithFormat:@"a%ld",indexPath.row+1]];
+            cell.stepperCount.text = [NSString stringWithFormat:@"%ld",[inventorydefaults integerForKey:[NSString stringWithFormat:@"a%ld",indexPath.row+1]]];//sets text displaying item count
+            cell.stepperValue.value = [inventorydefaults integerForKey:[NSString stringWithFormat:@"a%ld",indexPath.row+1]];//sets value of stepper
             cell.tag =indexPath.row;
         }
         [inventorydefaults synchronize];

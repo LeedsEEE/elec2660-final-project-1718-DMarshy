@@ -18,32 +18,17 @@
     [super viewDidLoad];
   
     
-    // Do any additional setup after loading the view.
+
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
+#pragma Shop Item name added
 - (IBAction)nameentered:(UITextField *)sender {
-    NSString *tempItemName = [[NSString alloc] init];
+    NSString *tempItemName = [[NSString alloc] init];//create temp string of the text input
     tempItemName = sender.text;
 
     NSLog(@"item = %@",tempItemName);
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
-    if([[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] isEqualToString:@"Enter Item"]){
+    if([[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] isEqualToString:@"Enter Item"]){//checks if first item is 'empty'
         self.addedItemName.text = [NSString stringWithFormat:@"%@ Added!",tempItemName];
         [inventorydefaults setObject:self.ItemName.text forKey:[NSString stringWithFormat:@"s%d",1]];
         [inventorydefaults synchronize];
@@ -51,11 +36,11 @@
     else{
     self.addedItemName.text = [NSString stringWithFormat:@"%@ Added!",tempItemName];
     int i;
-    for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] != NULL; i++) {
+    for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] != NULL; i++) {//loops through to find first empty cell
         
           }
-    [inventorydefaults setObject:self.ItemName.text forKey:[NSString stringWithFormat:@"s%d",i]];
-    [inventorydefaults synchronize];
+    [inventorydefaults setObject:self.ItemName.text forKey:[NSString stringWithFormat:@"s%d",i]];//sets cell data to user input text at first empty cell
+    [inventorydefaults synchronize];//saves NSUserDefaults
     
     }
     

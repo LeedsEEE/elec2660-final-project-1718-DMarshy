@@ -29,11 +29,11 @@
 
 - (IBAction)StepperPressed:(UIStepper *)sender {
   
-    self.stepperCount.text = [NSString stringWithFormat:@"%d",(int)sender.value];
+    self.stepperCount.text = [NSString stringWithFormat:@"%d",(int)sender.value];//updates text to correspond to the value of the stepper
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     
-    [inventorydefaults setInteger:sender.value forKey:[NSString stringWithFormat:@"a%d",(int)self.stepperValue.tag+1]];
+    [inventorydefaults setInteger:sender.value forKey:[NSString stringWithFormat:@"a%d",(int)self.stepperValue.tag+1]];//saves value of stepper to user defaults so it is loaded up again when app is closed
     [inventorydefaults setObject:[NSString stringWithFormat:@"%d",(int)sender.value] forKey:[NSString stringWithFormat:@"c%d",(int)self.stepperCount.tag]];
     
     NSLog(@"value = %f for Row = %ld",sender.value,self.stepperValue.tag);
