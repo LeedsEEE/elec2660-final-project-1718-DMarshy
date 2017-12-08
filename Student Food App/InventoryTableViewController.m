@@ -20,17 +20,6 @@
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
 
-    [inventorydefaults setObject:@"Cheese" forKey:[NSString stringWithFormat:@"k%d",1]];
-    [inventorydefaults setObject:@"bread" forKey:[NSString stringWithFormat:@"k%d",2]];
-    [inventorydefaults setObject:@"fixpls" forKey:[NSString stringWithFormat:@"k%d",3]];
-    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%d",3]];
-    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%d",3]];
-    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%ld",(long)4]];
-    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%ld",(long)4]];
-    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%ld",(long)5]];
-    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%ld",(long)5]];
-    [inventorydefaults setInteger:1 forKey:[NSString stringWithFormat:@"a%ld",(long)6]];
-    [inventorydefaults setObject:@"1" forKey:[NSString stringWithFormat:@"a%ld",(long)6]];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;//https://stackoverflow.com/questions/20884381/tableview-showing-behind-tab-bar
@@ -61,14 +50,15 @@
     NSInteger numberOfRows = 0;
     if(section == 0){
     
-
+        return 1;
         
     }
     else if(section == 1){
         NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
         int i;
      
-        for (i = 1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL ; i++) {//checking how many objects have values
+        for (i = 1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL ; i++) {
+            //checking how many objects have values
             NSLog(@"Array value = %@",[inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]]);
             
                 numberOfRows = i;
@@ -84,13 +74,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    
-        if(indexPath.row == 0) {
+    if(indexPath.section == 0){
+        
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
 
             return cell;
-        }
-  
+       
+    }
     else {
         InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
 
@@ -107,8 +97,8 @@
         [inventorydefaults synchronize];
         return cell;
     }
-    
-    }
+}
+
 
 
 

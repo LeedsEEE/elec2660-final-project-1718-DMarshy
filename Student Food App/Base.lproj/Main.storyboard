@@ -251,7 +251,7 @@
                                 <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciO-Ri-Cwr" id="AcW-et-WMY">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="06i-Xx-zYl">
@@ -479,9 +479,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uii-x1-SVX">
-                                <frame key="frameInset" minX="54" minY="147" width="267" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Item Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uii-x1-SVX">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -494,13 +492,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Enter to add Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR6-ka-nDO">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="DIL-EW-a39" secondAttribute="trailing" constant="15" id="7Lc-91-oTX"/>
+                            <constraint firstItem="tR6-ka-nDO" firstAttribute="centerX" secondItem="QlD-qq-nuS" secondAttribute="centerX" id="7tF-yL-0p3"/>
                             <constraint firstItem="DIL-EW-a39" firstAttribute="centerX" secondItem="QlD-qq-nuS" secondAttribute="centerX" id="Dyf-Td-hch"/>
                             <constraint firstItem="HKk-bI-Ulv" firstAttribute="top" secondItem="DIL-EW-a39" secondAttribute="bottom" constant="316" id="GEm-9n-Rlu"/>
+                            <constraint firstItem="HKk-bI-Ulv" firstAttribute="top" secondItem="tR6-ka-nDO" secondAttribute="bottom" constant="395" id="c9a-n6-SJ2"/>
                             <constraint firstItem="DIL-EW-a39" firstAttribute="top" secondItem="iFE-c7-vzy" secondAttribute="bottom" constant="189" id="gbY-eg-ofD"/>
+                            <constraint firstItem="Uii-x1-SVX" firstAttribute="centerX" secondItem="QlD-qq-nuS" secondAttribute="centerX" id="ix8-xl-VbB"/>
+                            <constraint firstItem="tR6-ka-nDO" firstAttribute="top" secondItem="Uii-x1-SVX" secondAttribute="bottom" constant="25" id="lek-6e-65O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tR6-ka-nDO" secondAttribute="trailing" constant="38" id="rQC-1q-19V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uii-x1-SVX" secondAttribute="trailing" constant="38" id="ugt-d9-QWM"/>
                         </constraints>
                     </view>
                     <connections>
