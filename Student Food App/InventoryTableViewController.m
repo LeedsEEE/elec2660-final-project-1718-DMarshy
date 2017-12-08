@@ -16,10 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
-   self.inventory = [[InventoryDataModel alloc] init];
-    
+        
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
 
@@ -64,14 +61,14 @@
     NSInteger numberOfRows = 0;
     if(section == 0){
     
-        numberOfRows = self.inventory.inventoryArray.count;
+
         
     }
     else if(section == 1){
         NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
         int i;
      
-        for (i = 1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL; i++) {//checking how many objects have values
+        for (i = 1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL ; i++) {//checking how many objects have values
             NSLog(@"Array value = %@",[inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]]);
             
                 numberOfRows = i;
@@ -87,31 +84,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    if (indexPath.section == 0) {
+    
         if(indexPath.row == 0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
 
             return cell;
         }
-        else {
-            
-            InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
-            
-            Inventory *tempItem = [self.inventory.inventoryArray objectAtIndex:indexPath.row];
-            cell.invItemName.text = tempItem.itemName;
-            cell.stepperValue.value = tempItem.itemCount;
-            cell.stepperCount.text = [NSString stringWithFormat:@"%d",tempItem.itemCount];
-            return cell;
-        }
-        
-    }
-    
+  
     else {
         InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell" forIndexPath:indexPath];
 
                 int i;
         NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
-        for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] == nil); i++) {
+        for (i=1; !([inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] == nil) ; i++) {
             cell.invItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%ld",indexPath.row+1]];
             cell.stepperCount.tag = indexPath.row;
             cell.stepperValue.tag = indexPath.row;
@@ -123,8 +108,8 @@
         return cell;
     }
     
-
     }
+
 
 
 

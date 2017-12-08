@@ -18,15 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+#pragma Recipe layout/Look
     self.ingredientsLabel.textContainerInset = UIEdgeInsetsMake(2, 3, 2, 2);//https://stackoverflow.com/questions/34015927/uitextview-last-line-is-not-shown
     self.ingredientsLabel.textContainer.lineFragmentPadding = 2;
     self.instructionsLabel.textContainerInset = UIEdgeInsetsMake(2, 3, 2, 2);
-    self.instructionsLabel.textContainer.lineFragmentPadding = 2;
+    self.instructionsLabel.textContainer.lineFragmentPadding = 2;//This sets the boundaries within the text views so text isn't too close to the edges
 
-    self.recipeNameLabel.text = self.recipe.name;
+    self.recipeNameLabel.text = self.recipe.name;//setting the text for the labels
     self.ingredientsLabel.text = self.recipe.ingredients;
     self.instructionsLabel.text = self.recipe.instructions;
-    self.recipeImageView.image = [UIImage imageNamed:self.recipe.photo];
+    self.recipeImageView.image = [UIImage imageNamed:self.recipe.photo];//loads image with the name saves as .image string
     self.servesLabel.text = self.recipe.serves;
     self.costLabel.text = self.recipe.cost;
     self.recipeImageView.layer.cornerRadius = 10;
@@ -40,14 +41,15 @@
     self.ingredientsLabel.layer.cornerRadius = 5;
     self.ingredientsLabel.clipsToBounds = YES;
     self.instructionsLabel.layer.cornerRadius = 5;
-    self.instructionsLabel.clipsToBounds = YES;
+    self.instructionsLabel.clipsToBounds = YES;//setting curved corners and borders for the image and text views
     
 
 
             }
 - (void)viewDidLayoutSubviews {
-    [self.instructionsLabel setContentOffset:CGPointZero animated:NO];
+    [self.instructionsLabel setContentOffset:CGPointZero animated:NO];//forces text views to load at the top of the text
     [self.ingredientsLabel setContentOffset:CGPointZero animated:NO];//https://stackoverflow.com/questions/26835944/uitextview-text-content-doesnt-start-from-the-top
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,14 +57,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -26,15 +26,15 @@
 		AC049A1C1FD9AD7300A5351F /* MediterraneanChicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0B1FD9AD7300A5351F /* MediterraneanChicken.jpg */; };
 		AC049A1D1FD9AD7300A5351F /* QuickCheeseSauce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0C1FD9AD7300A5351F /* QuickCheeseSauce.jpg */; };
 		AC049A1E1FD9AD7300A5351F /* SmokedMackerelPasta.JPG in Resources */ = {isa = PBXBuildFile; fileRef = AC049A0D1FD9AD7300A5351F /* SmokedMackerelPasta.JPG */; };
-		AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5367FD1FC44EE400DC947A /* Inventory.m */; };
-		AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368001FC44F3800DC947A /* InventoryDataModel.m */; };
 		AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368031FC4542600DC947A /* InventoryViewController.m */; };
 		AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5368091FC461C000DC947A /* InventoryTableViewCell.m */; };
+		AC64EB8F1FDAABF6004D7497 /* icons8-checkmark-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AC64EB8E1FDAABF6004D7497 /* icons8-checkmark-50.png */; };
+		AC64EB991FDABD4F004D7497 /* icons8-checklist-30.png in Resources */ = {isa = PBXBuildFile; fileRef = AC64EB981FDABD4F004D7497 /* icons8-checklist-30.png */; };
+		AC64EB9B1FDABD7C004D7497 /* icons8-ereader-30.png in Resources */ = {isa = PBXBuildFile; fileRef = AC64EB9A1FDABD7C004D7497 /* icons8-ereader-30.png */; };
+		AC64EB9D1FDABDCC004D7497 /* icons8-in-inventory-30.png in Resources */ = {isa = PBXBuildFile; fileRef = AC64EB9C1FDABDCC004D7497 /* icons8-in-inventory-30.png */; };
 		AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */; };
-		AC8676F01FD731B000021516 /* ShoppingDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8676EF1FD731B000021516 /* ShoppingDataModel.m */; };
 		AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48B1FD860B1006EF502 /* Red-x.png */; };
 		AC92C48E1FD860FA006EF502 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AC92C48D1FD860FA006EF502 /* Icon-29.png */; };
-		AC92C4911FD87C25006EF502 /* ShoppingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC92C4901FD87C25006EF502 /* ShoppingItem.m */; };
 		AC983F211FD9B26200AC1CE8 /* serves.png in Resources */ = {isa = PBXBuildFile; fileRef = AC983F201FD9B26200AC1CE8 /* serves.png */; };
 		ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */; };
 		ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */; };
@@ -52,9 +52,6 @@
 		ACDC94621FC858F700227F1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC94611FC858F700227F1F /* CoreData.framework */; };
 		ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */; };
 		ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE71D011FC32241006D93BD /* RecipeViewController.m */; };
-		ACEB8F4B1FCC75240042E983 /* InventoryItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */; };
-		ACEB8F4C1FCC75240042E983 /* InventoryItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */; };
-		ACEB8F4F1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,10 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddShopTableViewCell.h; path = ../AddShopTableViewCell.h; sourceTree = "<group>"; };
-		AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddShopTableViewCell.m; path = ../AddShopTableViewCell.m; sourceTree = "<group>"; };
-		AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingItemCell.h; sourceTree = "<group>"; };
-		AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingItemCell.m; sourceTree = "<group>"; };
+		AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddShopTableViewCell.h; sourceTree = "<group>"; };
+		AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddShopTableViewCell.m; sourceTree = "<group>"; };
+		AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingItemCell.h; path = "Student Food App/ShoppingItemCell.h"; sourceTree = "<group>"; };
+		AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingItemCell.m; path = "Student Food App/ShoppingItemCell.m"; sourceTree = "<group>"; };
 		AC0499FD1FD9AD7300A5351F /* CauliflowerBroccoliCheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CauliflowerBroccoliCheese.jpg; sourceTree = "<group>"; };
 		AC0499FE1FD9AD7300A5351F /* ChickenPestoPasta.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChickenPestoPasta.jpeg; sourceTree = "<group>"; };
 		AC0499FF1FD9AD7300A5351F /* MackerelOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MackerelOnToast.jpg; sourceTree = "<group>"; };
@@ -96,32 +93,28 @@
 		AC049A0B1FD9AD7300A5351F /* MediterraneanChicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MediterraneanChicken.jpg; sourceTree = "<group>"; };
 		AC049A0C1FD9AD7300A5351F /* QuickCheeseSauce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QuickCheeseSauce.jpg; sourceTree = "<group>"; };
 		AC049A0D1FD9AD7300A5351F /* SmokedMackerelPasta.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmokedMackerelPasta.JPG; sourceTree = "<group>"; };
-		AC5367FC1FC44EE400DC947A /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inventory.h; path = "Student Food App/Inventory.h"; sourceTree = "<group>"; };
-		AC5367FD1FC44EE400DC947A /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Inventory.m; path = "Student Food App/Inventory.m"; sourceTree = "<group>"; };
-		AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryDataModel.h; path = "Student Food App/InventoryDataModel.h"; sourceTree = "<group>"; };
-		AC5368001FC44F3800DC947A /* InventoryDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryDataModel.m; path = "Student Food App/InventoryDataModel.m"; sourceTree = "<group>"; };
 		AC5368021FC4542600DC947A /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryViewController.h; path = "Student Food App/InventoryViewController.h"; sourceTree = "<group>"; };
 		AC5368031FC4542600DC947A /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryViewController.m; path = "Student Food App/InventoryViewController.m"; sourceTree = "<group>"; };
 		AC5368081FC461C000DC947A /* InventoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewCell.h; path = "Student Food App/InventoryTableViewCell.h"; sourceTree = "<group>"; };
 		AC5368091FC461C000DC947A /* InventoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryTableViewCell.m; path = "Student Food App/InventoryTableViewCell.m"; sourceTree = "<group>"; };
+		AC64EB8E1FDAABF6004D7497 /* icons8-checkmark-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-checkmark-50.png"; sourceTree = "<group>"; };
+		AC64EB981FDABD4F004D7497 /* icons8-checklist-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-checklist-30.png"; sourceTree = "<group>"; };
+		AC64EB9A1FDABD7C004D7497 /* icons8-ereader-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ereader-30.png"; sourceTree = "<group>"; };
+		AC64EB9C1FDABDCC004D7497 /* icons8-in-inventory-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-in-inventory-30.png"; sourceTree = "<group>"; };
 		AC8676EC1FD70AE400021516 /* BeansOnToast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeansOnToast.jpg; sourceTree = "<group>"; };
-		AC8676EE1FD731B000021516 /* ShoppingDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingDataModel.h; sourceTree = "<group>"; };
-		AC8676EF1FD731B000021516 /* ShoppingDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingDataModel.m; sourceTree = "<group>"; };
 		AC92C48B1FD860B1006EF502 /* Red-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-x.png"; sourceTree = "<group>"; };
 		AC92C48D1FD860FA006EF502 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
-		AC92C48F1FD87C25006EF502 /* ShoppingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingItem.h; sourceTree = "<group>"; };
-		AC92C4901FD87C25006EF502 /* ShoppingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingItem.m; sourceTree = "<group>"; };
 		AC983F201FD9B26200AC1CE8 /* serves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serves.png; sourceTree = "<group>"; };
-		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
-		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
+		ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipeTableViewController.h; path = "Student Food App/RecipeTableViewController.h"; sourceTree = "<group>"; };
+		ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipeTableViewController.m; path = "Student Food App/RecipeTableViewController.m"; sourceTree = "<group>"; };
 		ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewController.h; path = "Student Food App/InventoryTableViewController.h"; sourceTree = "<group>"; };
 		ACA61D311FC3084100BE5127 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryTableViewController.m; path = "Student Food App/InventoryTableViewController.m"; sourceTree = "<group>"; };
-		ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingTableViewController.h; sourceTree = "<group>"; };
-		ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingTableViewController.m; sourceTree = "<group>"; };
-		ACA61D361FC309E900BE5127 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
-		ACA61D371FC309E900BE5127 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
-		ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDataModel.h; sourceTree = "<group>"; };
-		ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDataModel.m; sourceTree = "<group>"; };
+		ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingTableViewController.h; path = "Student Food App/ShoppingTableViewController.h"; sourceTree = "<group>"; };
+		ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingTableViewController.m; path = "Student Food App/ShoppingTableViewController.m"; sourceTree = "<group>"; };
+		ACA61D361FC309E900BE5127 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = "Student Food App/Recipe.h"; sourceTree = "<group>"; };
+		ACA61D371FC309E900BE5127 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = "Student Food App/Recipe.m"; sourceTree = "<group>"; };
+		ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipeDataModel.h; path = "Student Food App/RecipeDataModel.h"; sourceTree = "<group>"; };
+		ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipeDataModel.m; path = "Student Food App/RecipeDataModel.m"; sourceTree = "<group>"; };
 		ACB8367A1FC302D600B419B0 /* Student Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB8367E1FC302D600B419B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACB836801FC302D600B419B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,18 +129,12 @@
 		ACB836A11FC302D600B419B0 /* Student Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB836A51FC302D600B419B0 /* Student_Food_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student_Food_AppUITests.m; sourceTree = "<group>"; };
 		ACB836A71FC302D600B419B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD6D3531FD9699C00E04677 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingViewController.h; path = ../ShoppingViewController.h; sourceTree = "<group>"; };
-		ACD6D3541FD9699C00E04677 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingViewController.m; path = ../ShoppingViewController.m; sourceTree = "<group>"; };
+		ACD6D3531FD9699C00E04677 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
+		ACD6D3541FD9699C00E04677 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
 		ACDC94611FC858F700227F1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		ACDC94641FC85F9A00227F1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
-		ACE71D011FC32241006D93BD /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
-		ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "InventoryItem+CoreDataClass.h"; path = "Student Food App/InventoryItem+CoreDataClass.h"; sourceTree = "<group>"; };
-		ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "InventoryItem+CoreDataClass.m"; path = "Student Food App/InventoryItem+CoreDataClass.m"; sourceTree = "<group>"; };
-		ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "InventoryItem+CoreDataProperties.h"; path = "Student Food App/InventoryItem+CoreDataProperties.h"; sourceTree = "<group>"; };
-		ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "InventoryItem+CoreDataProperties.m"; path = "Student Food App/InventoryItem+CoreDataProperties.m"; sourceTree = "<group>"; };
-		ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "InventoryItem+AddInventoryItem.h"; path = "Student Food App/InventoryItem+AddInventoryItem.h"; sourceTree = "<group>"; };
-		ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "InventoryItem+AddInventoryItem.m"; path = "Student Food App/InventoryItem+AddInventoryItem.m"; sourceTree = "<group>"; };
+		ACE71D001FC32241006D93BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipeViewController.h; path = "Student Food App/RecipeViewController.h"; sourceTree = "<group>"; };
+		ACE71D011FC32241006D93BD /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipeViewController.m; path = "Student Food App/RecipeViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,12 +166,6 @@
 		AC4C93661FCD89AA002C4CFA /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
-				ACEB8F4D1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.h */,
-				ACEB8F4E1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m */,
-				AC5367FC1FC44EE400DC947A /* Inventory.h */,
-				AC5367FD1FC44EE400DC947A /* Inventory.m */,
-				AC5367FF1FC44F3800DC947A /* InventoryDataModel.h */,
-				AC5368001FC44F3800DC947A /* InventoryDataModel.m */,
 				AC5368021FC4542600DC947A /* InventoryViewController.h */,
 				AC5368031FC4542600DC947A /* InventoryViewController.m */,
 				ACA61D301FC3084100BE5127 /* InventoryTableViewController.h */,
@@ -195,12 +176,43 @@
 			name = Inventory;
 			sourceTree = "<group>";
 		};
+		AC64EB8C1FDA8DEE004D7497 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				ACA61D361FC309E900BE5127 /* Recipe.h */,
+				ACA61D371FC309E900BE5127 /* Recipe.m */,
+				ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */,
+				ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */,
+				ACE71D001FC32241006D93BD /* RecipeViewController.h */,
+				ACE71D011FC32241006D93BD /* RecipeViewController.m */,
+				ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */,
+				ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */,
+			);
+			name = Recipe;
+			sourceTree = "<group>";
+		};
+		AC64EB8D1FDA8DF3004D7497 /* Shopping list */ = {
+			isa = PBXGroup;
+			children = (
+				AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */,
+				AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */,
+				AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */,
+				AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */,
+				ACD6D3531FD9699C00E04677 /* ShoppingViewController.h */,
+				ACD6D3541FD9699C00E04677 /* ShoppingViewController.m */,
+				ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */,
+				ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */,
+			);
+			name = "Shopping list";
+			sourceTree = "<group>";
+		};
 		ACB836711FC302D500B419B0 = {
 			isa = PBXGroup;
 			children = (
-				ACD6D34F1FD941C500E04677 /* Core data */,
-				AC4C93661FCD89AA002C4CFA /* Inventory */,
 				ACB8367C1FC302D600B419B0 /* Student Food App */,
+				AC64EB8D1FDA8DF3004D7497 /* Shopping list */,
+				AC64EB8C1FDA8DEE004D7497 /* Recipe */,
+				AC4C93661FCD89AA002C4CFA /* Inventory */,
 				ACB836991FC302D600B419B0 /* Student Food AppTests */,
 				ACB836A41FC302D600B419B0 /* Student Food AppUITests */,
 				ACB8367B1FC302D600B419B0 /* Products */,
@@ -222,31 +234,12 @@
 			isa = PBXGroup;
 			children = (
 				ACB836891FC302D600B419B0 /* Main.storyboard */,
-				AC92C48F1FD87C25006EF502 /* ShoppingItem.h */,
-				AC92C4901FD87C25006EF502 /* ShoppingItem.m */,
-				AC00329D1FD6CB1200B177E8 /* ShoppingItemCell.h */,
-				AC00329E1FD6CB1200B177E8 /* ShoppingItemCell.m */,
-				AC00329A1FD6CA2900B177E8 /* AddShopTableViewCell.h */,
-				AC00329B1FD6CA2900B177E8 /* AddShopTableViewCell.m */,
-				ACD6D3531FD9699C00E04677 /* ShoppingViewController.h */,
-				ACD6D3541FD9699C00E04677 /* ShoppingViewController.m */,
-				ACA61D331FC3085900BE5127 /* ShoppingTableViewController.h */,
-				ACA61D341FC3085900BE5127 /* ShoppingTableViewController.m */,
-				AC8676EE1FD731B000021516 /* ShoppingDataModel.h */,
-				AC8676EF1FD731B000021516 /* ShoppingDataModel.m */,
-				ACA61D361FC309E900BE5127 /* Recipe.h */,
-				ACA61D371FC309E900BE5127 /* Recipe.m */,
-				ACA61D391FC30C0C00BE5127 /* RecipeDataModel.h */,
-				ACA61D3A1FC30C0C00BE5127 /* RecipeDataModel.m */,
-				ACE71D001FC32241006D93BD /* RecipeViewController.h */,
-				ACE71D011FC32241006D93BD /* RecipeViewController.m */,
-				ACA61D2D1FC307FC00BE5127 /* RecipeTableViewController.h */,
-				ACA61D2E1FC307FC00BE5127 /* RecipeTableViewController.m */,
 				ACB836801FC302D600B419B0 /* AppDelegate.h */,
 				ACB836811FC302D600B419B0 /* AppDelegate.m */,
 				ACB8368C1FC302D600B419B0 /* Assets.xcassets */,
 				ACB8368E1FC302D600B419B0 /* LaunchScreen.storyboard */,
 				ACB836911FC302D600B419B0 /* Info.plist */,
+				AC64EB8E1FDAABF6004D7497 /* icons8-checkmark-50.png */,
 				ACB8367D1FC302D600B419B0 /* Supporting Files */,
 				ACDC94631FC85F9A00227F1F /* Model.xcdatamodeld */,
 			);
@@ -256,6 +249,9 @@
 		ACB8367D1FC302D600B419B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC64EB9C1FDABDCC004D7497 /* icons8-in-inventory-30.png */,
+				AC64EB9A1FDABD7C004D7497 /* icons8-ereader-30.png */,
+				AC64EB981FDABD4F004D7497 /* icons8-checklist-30.png */,
 				AC983F201FD9B26200AC1CE8 /* serves.png */,
 				AC0499FD1FD9AD7300A5351F /* CauliflowerBroccoliCheese.jpg */,
 				AC0499FE1FD9AD7300A5351F /* ChickenPestoPasta.jpeg */,
@@ -298,17 +294,6 @@
 				ACB836A71FC302D600B419B0 /* Info.plist */,
 			);
 			path = "Student Food AppUITests";
-			sourceTree = "<group>";
-		};
-		ACD6D34F1FD941C500E04677 /* Core data */ = {
-			isa = PBXGroup;
-			children = (
-				ACEB8F471FCC75240042E983 /* InventoryItem+CoreDataClass.h */,
-				ACEB8F481FCC75240042E983 /* InventoryItem+CoreDataClass.m */,
-				ACEB8F491FCC75240042E983 /* InventoryItem+CoreDataProperties.h */,
-				ACEB8F4A1FCC75240042E983 /* InventoryItem+CoreDataProperties.m */,
-			);
-			name = "Core data";
 			sourceTree = "<group>";
 		};
 		ACDC94601FC858F700227F1F /* Frameworks */ = {
@@ -427,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC049A111FD9AD7300A5351F /* ManTheFuckUp.jpg in Resources */,
+				AC64EB991FDABD4F004D7497 /* icons8-checklist-30.png in Resources */,
 				AC049A161FD9AD7300A5351F /* TomtoSauce.jpg in Resources */,
 				AC049A151FD9AD7300A5351F /* SalmonPasta.jpeg in Resources */,
 				AC049A171FD9AD7300A5351F /* TunaMushroomSpaghetti.jpg in Resources */,
@@ -436,9 +422,11 @@
 				AC049A1C1FD9AD7300A5351F /* MediterraneanChicken.jpg in Resources */,
 				AC049A101FD9AD7300A5351F /* MackerelOnToast.jpg in Resources */,
 				AC049A1E1FD9AD7300A5351F /* SmokedMackerelPasta.JPG in Resources */,
+				AC64EB8F1FDAABF6004D7497 /* icons8-checkmark-50.png in Resources */,
 				AC92C48C1FD860B1006EF502 /* Red-x.png in Resources */,
 				AC049A1A1FD9AD7300A5351F /* ChickpeaChorizoCouscous.jpg in Resources */,
 				AC049A131FD9AD7300A5351F /* PepperSauce.jpg in Resources */,
+				AC64EB9D1FDABDCC004D7497 /* icons8-in-inventory-30.png in Resources */,
 				AC8676ED1FD70AE400021516 /* BeansOnToast.jpg in Resources */,
 				ACB836901FC302D600B419B0 /* LaunchScreen.storyboard in Resources */,
 				AC049A0F1FD9AD7300A5351F /* ChickenPestoPasta.jpeg in Resources */,
@@ -450,6 +438,7 @@
 				AC049A121FD9AD7300A5351F /* Pasta.jpg in Resources */,
 				ACB8368B1FC302D600B419B0 /* Main.storyboard in Resources */,
 				AC92C48E1FD860FA006EF502 /* Icon-29.png in Resources */,
+				AC64EB9B1FDABD7C004D7497 /* icons8-ereader-30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,24 +463,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5368011FC44F3800DC947A /* InventoryDataModel.m in Sources */,
 				ACA61D3B1FC30C0C00BE5127 /* RecipeDataModel.m in Sources */,
 				ACDC94651FC85F9A00227F1F /* Model.xcdatamodeld in Sources */,
 				AC5368041FC4542600DC947A /* InventoryViewController.m in Sources */,
-				AC92C4911FD87C25006EF502 /* ShoppingItem.m in Sources */,
 				AC00329C1FD6CA2900B177E8 /* AddShopTableViewCell.m in Sources */,
 				ACA61D2F1FC307FC00BE5127 /* RecipeTableViewController.m in Sources */,
 				ACA61D351FC3085900BE5127 /* ShoppingTableViewController.m in Sources */,
-				ACEB8F4F1FCC76AD0042E983 /* InventoryItem+AddInventoryItem.m in Sources */,
 				AC00329F1FD6CB1200B177E8 /* ShoppingItemCell.m in Sources */,
-				AC5367FE1FC44EE400DC947A /* Inventory.m in Sources */,
 				ACE71D021FC32241006D93BD /* RecipeViewController.m in Sources */,
-				ACEB8F4C1FCC75240042E983 /* InventoryItem+CoreDataProperties.m in Sources */,
 				ACD6D3551FD9699C00E04677 /* ShoppingViewController.m in Sources */,
-				ACEB8F4B1FCC75240042E983 /* InventoryItem+CoreDataClass.m in Sources */,
 				ACA61D381FC309E900BE5127 /* Recipe.m in Sources */,
 				ACB836821FC302D600B419B0 /* AppDelegate.m in Sources */,
-				AC8676F01FD731B000021516 /* ShoppingDataModel.m in Sources */,
 				AC53680A1FC461C000DC947A /* InventoryTableViewCell.m in Sources */,
 				ACA61D321FC3084100BE5127 /* InventoryTableViewController.m in Sources */,
 				ACB8367F1FC302D600B419B0 /* main.m in Sources */,

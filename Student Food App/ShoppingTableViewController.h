@@ -9,18 +9,21 @@
 #import <UIKit/UIKit.h>
 #import "AddShopTableViewCell.h"
 #import "ShoppingItemCell.h"
-#import "ShoppingItem.h"
-#import "ShoppingDataModel.h"
+#import "InventoryTableViewCell.h"
+
 @class AddShopTableViewCell;
 @class ShoppingItemCell;
-
 @interface ShoppingTableViewController : UITableViewController
 @property (nonatomic, strong) AddShopTableViewCell *addItem;
 @property (nonatomic, strong) ShoppingItemCell *item;
-@property (nonatomic, strong) ShoppingDataModel *shoppingItem;
+@property (nonatomic, strong) InventoryTableViewCell *inventoryTableViewCell;
+@property NSInteger tag;
 @property (nonatomic, strong) NSString *sharedName;
 - (IBAction)itemRemoved:(UIButton *)sender;
 -(void)reloadData;
+
+
+
 
 
 @end

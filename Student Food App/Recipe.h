@@ -10,11 +10,11 @@
 
 @interface Recipe : NSObject
 
-@property (nonatomic, strong) NSString *ingredients;
+@property (nonatomic, strong) NSString *ingredients;//recipe item with these properties
 @property (nonatomic, strong) NSString *instructions;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *cookingTime;
 @property (nonatomic, strong) NSString *serves;
 @property (nonatomic, strong) NSString *cost;
-@property (nonatomic, strong) NSString *photo;
+@property (nonatomic, strong) NSString *photo;//string to reference saved image name
 @end

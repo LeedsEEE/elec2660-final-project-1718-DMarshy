@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.shopping = [[ShoppingDataModel alloc] init];
+  
     
     // Do any additional setup after loading the view.
 }
@@ -37,22 +37,19 @@
 */
 
 - (IBAction)nameentered:(UITextField *)sender {
-    ShoppingItem *tempItemName = [[ShoppingItem alloc] init];
-    tempItemName.name = sender.text;
-    [self.shopping.shoppingArray addObject:tempItemName.name];
-    NSLog(@"item = %@",tempItemName.name);
+    NSString *tempItemName = [[NSString alloc] init];
+    tempItemName = sender.text;
+
+    NSLog(@"item = %@",tempItemName);
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     if([[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] isEqualToString:@"Enter Item"]){
-        
+        self.addedItemName.text = [NSString stringWithFormat:@"%@ Added!",tempItemName];
         [inventorydefaults setObject:self.ItemName.text forKey:[NSString stringWithFormat:@"s%d",1]];
         [inventorydefaults synchronize];
     }
     else{
-    
-    self.addedItemName.text = [NSString stringWithFormat:@"%@ Added!",tempItemName.name];
-    
-
+    self.addedItemName.text = [NSString stringWithFormat:@"%@ Added!",tempItemName];
     int i;
     for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] != NULL; i++) {
         

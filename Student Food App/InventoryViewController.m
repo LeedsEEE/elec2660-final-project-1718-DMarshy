@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.inventory = [[InventoryDataModel alloc] init];
     self.amount.delegate = self;
     self.amount.dataSource = self;
 
@@ -49,8 +48,8 @@ numberOfRowsInComponent:(NSInteger)component{
     
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     int i;
+    
     for (i=1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"k%d",i]] != NULL; i++) {
-
         
     }
     [inventorydefaults setInteger:self.Row forKey:[NSString stringWithFormat:@"a%d",i]];
@@ -81,11 +80,10 @@ numberOfRowsInComponent:(NSInteger)component{
 
 - (IBAction)InventoryTextField:(UITextField *)sender {
  
-     Inventory *tempItemName = [[Inventory alloc] init];
-     tempItemName.itemName = sender.text;
-     tempItemName.itemCount = 0;
-     [self.inventory.inventoryArray addObject: tempItemName];
-    NSLog(@"item = %@",tempItemName.itemName);
+     NSString *tempItemName = [[NSString alloc] init];
+     tempItemName = sender.text;
+
+    NSLog(@"item = %@",tempItemName);
 
 }
 

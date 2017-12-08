@@ -11,7 +11,7 @@
 #import <CoreData/CoreData.h>
 
 @interface RecipeDataModel : NSObject
-@property (nonatomic, strong) NSMutableArray *cheapRecipes;
+@property (nonatomic, strong) NSMutableArray *cheapRecipes;//different arrays for different types of meal
 @property (nonatomic, strong) NSMutableArray *meatRecipes;
 @property (nonatomic, strong) NSMutableArray *PastaRecipes;
 @property (nonatomic, strong) NSMutableArray *fishRecipes;

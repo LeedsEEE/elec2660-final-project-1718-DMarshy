@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.item = [[ShoppingItemCell alloc] init];
-    self.shoppingItem = [[ShoppingDataModel alloc] init];
+
     
   /*   NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     [inventorydefaults setObject:@"Steak" forKey:[NSString stringWithFormat:@"s%d",1]];
@@ -32,6 +32,7 @@
 -(void)reloadData{
     [self.tableView reloadData];
 }
+
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
@@ -65,10 +66,10 @@
         }
         else{
     for (i = 1; [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]] != NULL; i++) {//checking how many objects have values
-        NSLog(@"Array value = %@",[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i]]);
+        
         
         numberOfRows = i;
-        NSLog(@"%ld",numberOfRows);
+        
     }
         }
     }
@@ -80,7 +81,7 @@
     NSUserDefaults *inventorydefaults = [NSUserDefaults standardUserDefaults];
     if(indexPath.section == 0){
         
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddItemCell" forIndexPath:indexPath];
+    InventoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InventoryCell2" forIndexPath:indexPath];
                      return cell;
     }
     else {
@@ -91,7 +92,7 @@
             
             cell.ItemName.text = [inventorydefaults objectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]];
             cell.ItemName.tag = indexPath.row+1;
-            
+          
         }
         return cell;
 }
@@ -141,95 +142,39 @@
 }
 */
 
-/*
-- (IBAction)ItemBought:(UIButton *)sender {
-    NSInteger i;
-    for (i = 1 ; i<100 ; i++) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSInteger p=i+1;
-        NSString *tempNewObject = [defaults objectForKey:[NSString stringWithFormat:@"key%ld",p]];
-        NSString *tempcurrentObject = [NSString stringWithFormat:@"key%ld",i];
-        [defaults setObject:tempNewObject forKey:tempcurrentObject];
-        [defaults synchronize];
-    }
-    //    self.addItem.numberOfCells = self.addItem.numberOfCells-1;
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSInteger newNumberOfRows = [defaults integerForKey:@"numberOfRows"]-1;
-        [defaults setInteger:newNumberOfRows forKey:@"numberOfRows"];
-        [defaults synchronize];
-        NSLog(@"number of rows = %ld",[defaults integerForKey:@"numberOfRows"]);
-        [self.tableView reloadData];
-    }
 
-- (IBAction)nameFieldPressed:(UITextField *)sender {
-    NSInteger selectedRow = self.tableView.indexPathForSelectedRow.row;
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:selectedRow forKey:@"selected name field"];
-    [defaults synchronize];
-    NSLog(@"selected row = %ld",[defaults integerForKey:@"selected name field"]);
-}*/
-/*
-- (IBAction)ItemName:(UITextField *)sender {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-  
-   // [defaults setInteger:Row forKey:[NSString stringWithFormat:@"%ld",Row]];
-    //[defaults setValue:sender.text forKey:[NSString stringWithFormat:@"%ld",Row]];
-    
-    
-    if([defaults integerForKey:@"selected name field"] == 1){
-        [defaults setObject:sender.text forKey:@"keys1"];
-        NSLog(@"NAME = %@",[defaults stringForKey:@"name1"]);
-        [defaults synchronize];
-    }
-    if([defaults integerForKey:@"selected name field"] == 2){
-        NSLog(@"ROW2 = %ld",[defaults integerForKey:[NSString stringWithFormat:@"%d",2]]);
-        [defaults setObject:sender.text forKey:@"keys2"];
-            [defaults synchronize];
-    }
-    if([defaults integerForKey:@"selected name field"] == 3){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)3]];
-            [defaults synchronize];
 
-    }
-    if([defaults integerForKey:[NSString stringWithFormat:@"%d",4]] == 4){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)4]];
-            [defaults synchronize];
-
-    }
-    if([defaults integerForKey:[NSString stringWithFormat:@"%d",5]] == 5){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)5]];
-            [defaults synchronize];
-
-    }
-    if(self.tableView.indexPathForSelectedRow.row == 6){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)6]];
-            [defaults synchronize];
-    }
-    if(self.tableView.indexPathForSelectedRow.row == 7){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)7]];
-            [defaults synchronize];
-    }
-    if(self.tableView.indexPathForSelectedRow.row == 8){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)8]];
-            [defaults synchronize];
-    }
-    if(self.tableView.indexPathForSelectedRow.row == 9){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)9]];
-            [defaults synchronize];
-    }
-    if(self.tableView.indexPathForSelectedRow.row == 10){
-        [defaults setObject:sender.text forKey:[NSString stringWithFormat:@"key%ld",(long)10]];
-            [defaults synchronize];
-    }
-    else{
-    [defaults synchronize];
-      
-    }
-  //  NSLog(@"ROW = %ld",[defaults integerForKey:[NSString stringWithFormat:@"%d",1]]);
-}
-*/
 
 - (IBAction)itemRemoved:(UIButton *)sender {
+    NSUserDefaults *inventorydefaults =[NSUserDefaults standardUserDefaults];
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:buttonPosition];
     
-}
+    if([[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",1]] isEqualToString:@"Enter Item"]){
+        [inventorydefaults setObject:@"Enter Item" forKey:[NSString stringWithFormat:@"s%d",1]];//adding empty item in cell 1 if first item removed
+        NSLog(@"if statement");
+    }
+    else {
+        [inventorydefaults removeObjectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]];
+        [inventorydefaults synchronize];
+        NSLog(@"item = %@",[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%ld",indexPath.row+1]]);
+        int i;
+        
+        for (i=(int)indexPath.row+1;[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i+1]] != NULL; i++) {
+            [inventorydefaults setObject:[inventorydefaults objectForKey:[NSString stringWithFormat:@"s%d",i+1]] forKey:[NSString stringWithFormat:@"s%d",i]];
+            [inventorydefaults removeObjectForKey:[NSString stringWithFormat:@"s%d",i+1]];
+            [inventorydefaults synchronize];
+                        NSLog(@"for loop runs");
+        }
+        
+        
+    [self.tableView reloadData];
+        }
+
+    }
+
+
+
+
+
 @end

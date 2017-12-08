@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Inventory.h"
-#import "InventoryDataModel.h"
+
 #import "InventoryTableViewController.h"
 @class InventoryTableViewController;
 

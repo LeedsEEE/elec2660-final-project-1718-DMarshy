@@ -10,6 +10,7 @@
 #import "RecipeDataModel.h"
 #import "Recipe.h"
 
+#pragma recipe view controller properties
 
 @interface RecipeViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *recipeNameLabel;

@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ShoppingItem.h"
-#import "ShoppingDataModel.h"
+
 
 @interface ShoppingViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *ItemName;
 - (IBAction)nameentered:(UITextField *)sender;
-@property (nonatomic, strong) ShoppingItem *shoppingItem;
-@property (nonatomic, strong) ShoppingDataModel *shopping;
+
 @property (weak, nonatomic) IBOutlet UILabel *addedItemName;
 @end
